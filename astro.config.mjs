@@ -47,7 +47,8 @@ export default defineConfig({
 			// RedeemID: sign in with the store's customer account; access from Shopify tags.
 			// Secrets: REDEEMID_SHOPIFY_STORE_DOMAIN, REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_ID,
 			// REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_SECRET (confidential clients only),
-			// REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_SECRET (webhooks).
+			// REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_SECRET (webhooks),
+			// REDEEMID_SHOPIFY_STOREFRONT_PRIVATE_TOKEN (Join page plans and checkout).
 			authProviders: [
 				// The store comes from the REDEEMID_SHOPIFY_STORE_DOMAIN secret.
 				redeemid({
