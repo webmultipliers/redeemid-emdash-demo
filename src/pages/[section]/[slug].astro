@@ -3,12 +3,13 @@ import {getEmDashEntry,getEmDashCollection} from 'emdash';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import RichText from '../../components/ui/RichText.astro';
 import StoryCard from '../../components/StoryCard.astro';
+import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
 const {section,slug}=Astro.params;
 if(!section||!slug)return Astro.redirect('/404');
 if(['category','tag','topic','series'].includes(section)) { return Astro.rewrite(new Request(new URL('/archive-view?kind='+section+'&slug='+slug,Astro.url))); }
 const map={stories:'posts',briefings:'briefings',reports:'reports',guides:'guides',corrections:'corrections'} as const;
 const collection=map[section as keyof typeof map]; if(!collection)return Astro.redirect('/404');
 const {entry,cacheHint}=await getEmDashEntry(collection,slug); if(!entry)return Astro.redirect('/404'); Astro.cache.set(cacheHint);
-const data=entry.data; const author='author_name' in data ? data.author_name : undefined; const access=data.terms?.access?.[0]?.name || 'Free';
+const data=entry.data; const author='author_name' in data ? data.author_name : undefined;
 ---
-<SiteLayout title={data.title} description={data.dek} content={{collection,id:data.id,slug:entry.id}}><article class="article"><div class="card-section">{section}</div><h1 {...entry.edit.title}>{data.title}</h1><p class="dek" {...entry.edit.dek}>{data.dek}</p><div class="byline">{author} <span class="badge">{access}</span></div><hr style="border:0;border-top:1px solid #e3e0d8;margin:28px 0"/><div class="article-body"><RichText value={data.content} collection={collection} terms={data.terms}/></div></article></SiteLayout>
+<SiteLayout title={data.title} description={data.dek} content={{collection,id:data.id,slug:entry.id}}><article class="article"><div class="card-section">{section}</div><h1 {...entry.edit.title}>{data.title}</h1><p class="dek" {...entry.edit.dek}>{data.dek}</p><div class="byline">{author} <AccessBadge collection={collection} terms={data.terms} content={data.content} class="badge"/></div><hr style="border:0;border-top:1px solid #e3e0d8;margin:28px 0"/><div class="article-body"><RichText value={data.content} collection={collection} terms={data.terms}/></div></article></SiteLayout>

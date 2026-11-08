@@ -16,23 +16,33 @@ const redeemidConfig = {
 		{ slug: "gold", name: "Gold", tags: ["gold-member"] },
 		{ slug: "premium", name: "Gold + Silver", tags: ["gold-member", "silver-member"], match: "all" },
 	],
+	// Content rules, as on the WordPress demo. A story's own Paywall break can
+	// pick its levels; a break with none picked follows these rules.
 	rules: [
-		// Stories: the Access term decides. Free stories have no rule.
-		{ collection: "posts", taxonomy: "access", term: "members", levels: [] },
-		{ collection: "posts", taxonomy: "access", term: "silver", levels: ["silver"] },
-		{ collection: "posts", taxonomy: "access", term: "gold", levels: ["gold"] },
-		{ collection: "posts", taxonomy: "access", term: "premium", levels: ["premium"] },
-		// Briefings need any signed-in member.
-		{ collection: "briefings", levels: [] },
-		// Reports need Gold; the Harbor Money series and its Port budgets child need
-		// Gold + Silver; Pensions has its own rule, Silver.
+		// Sections: Investigations needs Gold, Culture needs Silver. A story in
+		// both needs both (rules combine most restrictive).
+		{ collection: "posts", taxonomy: "category", term: "investigations", levels: ["gold"] },
+		{ collection: "posts", taxonomy: "category", term: "culture", levels: ["silver"] },
+		// "Free to read" opens a story whatever its section says.
+		{ collection: "posts", taxonomy: "tag", term: "free-to-read", levels: [], open: true },
+		// Briefings need any signed-in member; the Weekend edition is open.
+		{ collection: "briefings", levels: ["signed-in"] },
+		{ collection: "briefings", taxonomy: "edition", term: "weekend", levels: [], open: true },
+		// Reports need Gold. The Harbor Money series needs Gold + Silver, and its
+		// Port budgets child inherits that; Pensions has its own rule, Silver.
 		{ collection: "reports", levels: ["gold"] },
 		{ collection: "reports", taxonomy: "series", term: "harbor-money", levels: ["premium"] },
-		{ collection: "reports", taxonomy: "series", term: "port-budgets", levels: ["premium"] },
 		{ collection: "reports", taxonomy: "series", term: "pensions", levels: ["silver"] },
 		// City guides are open, except Fennel Hill (Silver).
 		{ collection: "guides", taxonomy: "neighborhood", term: "fennel-hill", levels: ["silver"] },
-		// Corrections are always free: no rule.
+		// Elections 2026 coverage needs a signed-in reader, in every collection
+		// but Corrections, which are always free.
+		...["posts", "briefings", "reports", "guides"].map((collection) => ({
+			collection,
+			taxonomy: "topic",
+			term: "elections-2026",
+			levels: ["signed-in"],
+		})),
 	],
 };
 

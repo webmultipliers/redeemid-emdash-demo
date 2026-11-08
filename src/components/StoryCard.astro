@@ -1,4 +1,5 @@
 ---
-const {entry,compact=false}=Astro.props; const terms=entry.data.terms || {}; const access=terms.access?.[0]?.name || terms.access?.[0]?.label || 'Free'; const section=terms.category?.[0]?.name || terms.category?.[0]?.label || 'The Ledger';
+import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
+const {entry,compact=false,collection='posts'}=Astro.props; const terms=entry.data.terms || {}; const section=terms.category?.[0]?.name || terms.category?.[0]?.label || 'The Ledger';
 ---
-<article class:list={['story-card',{'compact':compact}]}><div class="card-section">{section}</div><h3><a href={'/stories/'+entry.id+'/'}>{access !== 'Free' && <span aria-label="Members story">♙ </span>}{entry.data.title}</a></h3><p>{entry.data.dek}</p><div class="byline">{entry.data.author_name} <span class="badge">{access}</span></div></article>
+<article class:list={['story-card',{'compact':compact}]}><div class="card-section">{section}</div><h3><a href={'/stories/'+entry.id+'/'}>{entry.data.title}</a></h3><p>{entry.data.dek}</p><div class="byline">{entry.data.author_name} <AccessBadge collection={collection} terms={terms} content={entry.data.content} class="badge"/></div></article>
