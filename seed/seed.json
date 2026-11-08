@@ -1613,6 +1613,364 @@
 						}
 					]
 				}
+			},
+			{
+				"id": "pages:tag-gates",
+				"slug": "tag-gates",
+				"status": "published",
+				"data": {
+					"title": "Tag gates",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "t1",
+							"style": "h2",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t2",
+									"text": "Tag gates",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t4",
+									"text": "Each part below is a Members only block set to a level. Readers who can't read a part see the wall in its place. Every locked part ends with a LEDGER-SECRET marker for leak checks.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t6",
+									"text": "Open control: everyone reads this. LEDGER-OPEN-TAG-GATES",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t7",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t8",
+									"text": "Signed in",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t9",
+							"levels": [
+								"signed-in"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t10",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t11",
+									"text": "Any signed-in member reads this. LEDGER-SECRET-TAG-SIGNED-IN",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t12"
+						},
+						{
+							"_type": "block",
+							"_key": "t13",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t14",
+									"text": "Silver",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t15",
+							"levels": [
+								"silver"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t16",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t17",
+									"text": "Silver members read this. LEDGER-SECRET-TAG-SILVER",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t18"
+						},
+						{
+							"_type": "block",
+							"_key": "t19",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t20",
+									"text": "Gold",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t21",
+							"levels": [
+								"gold"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t22",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t23",
+									"text": "Gold members read this. LEDGER-SECRET-TAG-GOLD",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-plan",
+							"_key": "t24",
+							"handle": "silver-membership",
+							"title": "",
+							"label": "Add Silver"
+						},
+						{
+							"_type": "block",
+							"_key": "t25",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t26",
+									"text": "A plan card inside a Gold part reaches Gold members only. LEDGER-SECRET-PRODUCT",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t27"
+						},
+						{
+							"_type": "block",
+							"_key": "t28",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t29",
+									"text": "Gold + Silver (both tags)",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t30",
+							"levels": [
+								"premium"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t31",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t32",
+									"text": "Members with both tags read this. LEDGER-SECRET-TAG-PREMIUM",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t33"
+						},
+						{
+							"_type": "block",
+							"_key": "t34",
+							"style": "h3",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t35",
+									"text": "Silver or Gold (either tag)",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t36",
+							"levels": [
+								"silver",
+								"gold"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t37",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t38",
+									"text": "Silver or Gold members read this. LEDGER-SECRET-TAG-ANY",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t39"
+						},
+						{
+							"_type": "block",
+							"_key": "t40",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t41",
+									"text": "After the gates: everyone reads on here. LEDGER-OPEN-TAG-GATES-END",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "pages:members-area",
+				"slug": "members-area",
+				"status": "published",
+				"data": {
+					"title": "Members area",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "t42",
+							"style": "h2",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t43",
+									"text": "Members area",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t44",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t45",
+									"text": "This page has no rule, so it is open; the part below is a Members only block with no level picked, so any signed-in member reads it.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members",
+							"_key": "t46",
+							"levels": []
+						},
+						{
+							"_type": "block",
+							"_key": "t47",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t48",
+									"text": "Welcome back. This part is for signed-in members. LEDGER-SECRET-MEMBERS-AREA",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-members-end",
+							"_key": "t49"
+						},
+						{
+							"_type": "block",
+							"_key": "t50",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t51",
+									"text": "Everyone reads this line. LEDGER-OPEN-MEMBERS-AREA",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
 			}
 		],
 		"posts": [
@@ -3227,6 +3585,58 @@
 				"taxonomies": {
 					"category": [
 						"investigations"
+					]
+				}
+			},
+			{
+				"id": "posts:members-only-article",
+				"slug": "members-only-article",
+				"status": "published",
+				"data": {
+					"title": "A members-only article",
+					"dek": "A test story: the opening is free, the rest is for signed-in members.",
+					"author_name": "The Editorial Board",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "t52",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t53",
+									"text": "The opening of this story is free to everyone. LEDGER-OPEN-MEMBERS-ONLY",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "t54",
+							"levels": [
+								"signed-in"
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "t55",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "t56",
+									"text": "The rest is for signed-in members. LEDGER-SECRET-MEMBERS-ONLY",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"opinion"
 					]
 				}
 			}

@@ -24,8 +24,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(ac337986b2d4935edd430db188fa355e)
       '@redeemid/emdash':
-        specifier: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.4/redeemid-emdash-0.0.4.tgz
-        version: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.4/redeemid-emdash-0.0.4.tgz(a067fb3610ba5a433b625645056c2d90)
+        specifier: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.5/redeemid-emdash-0.0.5.tgz
+        version: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.5/redeemid-emdash-0.0.5.tgz(a067fb3610ba5a433b625645056c2d90)
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.3.0(@types/node@26.5.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -1369,9 +1369,9 @@ packages:
     resolution: {integrity: sha512-djfIGU9n6DRrunlvj2nIDAp17URo/nA4jSXGvf+Gupx8NLLy9fmJBZ3GL8yhqn9lSVc+cKCharjOa3aOBnWbRw==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.4/redeemid-emdash-0.0.4.tgz':
-    resolution: {integrity: sha512-oceCP/6848TXCWcRZ8VlWbECHbvu31ppYPUsk4AHnliXv1Ov5fibPD+ZbU2SwmPnlUPC9lGIMK1c343KmmsCYQ==, tarball: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.4/redeemid-emdash-0.0.4.tgz}
-    version: 0.0.4
+  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.5/redeemid-emdash-0.0.5.tgz':
+    resolution: {integrity: sha512-nqCXllEt1e9Ch4X+IXf5cJuMty03IJVIoH9DpOjEb2/yTjNYBhpVLOiWdJ3WddZ9Y5wN9oAdq0I/k8DGIp8gYA==, tarball: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.5/redeemid-emdash-0.0.5.tgz}
+    version: 0.0.5
     peerDependencies:
       '@emdash-cms/auth': '>=1.1.0'
       astro: '>=6'
@@ -5411,7 +5411,7 @@ snapshots:
 
   '@portabletext/types@4.0.2': {}
 
-  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.4/redeemid-emdash-0.0.4.tgz(a067fb3610ba5a433b625645056c2d90)':
+  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.5/redeemid-emdash-0.0.5.tgz(a067fb3610ba5a433b625645056c2d90)':
     dependencies:
       '@emdash-cms/auth': 1.1.0(astro@7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1))(kysely@0.29.5)
       astro: 7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1)
