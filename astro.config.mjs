@@ -45,11 +45,12 @@ export default defineConfig({
 			// The builder chooses the site's EmDash version; its owner cannot act on an update notice.
 			updateCheck: false,
 			// RedeemID: sign in with the store's customer account; access from Shopify tags.
-			// Secrets: REDEEMID_CLIENT_ID, REDEEMID_CLIENT_SECRET, REDEEMID_WEBHOOK_SECRET.
+			// Secrets: REDEEMID_SHOPIFY_STORE_DOMAIN, REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_ID,
+			// REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_SECRET (confidential clients only),
+			// REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_SECRET (webhooks).
 			authProviders: [
+				// The store comes from the REDEEMID_SHOPIFY_STORE_DOMAIN secret.
 				redeemid({
-					shop: process.env.REDEEMID_SHOP ?? "hf96dz-hn.myshopify.com",
-					allowInsecureShop: (process.env.REDEEMID_SHOP ?? "").startsWith("http://127.0.0.1"),
 					levels: [
 						{ slug: "silver", name: "Silver", tags: ["silver-member"] },
 						{ slug: "gold", name: "Gold", tags: ["gold-member"] },
