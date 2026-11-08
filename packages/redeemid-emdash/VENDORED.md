@@ -1,1 +1,1 @@
-Vendored from webmultipliers/redeemid-emdash@7ea3a33 plus all-of levels (redeemid-emdash PR pending). Refresh by copying src/ again; don't edit here.
+Vendored from webmultipliers/redeemid-emdash PR #4 (ad93ee3): API-named settings, public Customer Account clients, Storefront plans and checkout. Refresh by copying src/ again; don't edit here.
