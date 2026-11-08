@@ -1,5 +1,15 @@
 ---
+/**
+ * The members part of an entry, behind RedeemID's gate. Readers who may read
+ * it see it; everyone else sees a sign-in or upgrade prompt.
+ */
+import Gate from '@redeemid/emdash/components/Gate.astro';
 import RichText from './ui/RichText.astro';
-const {value,dek}=Astro.props;
+const {value,collection,terms}=Astro.props;
 ---
-<div class="members-content" data-members-content data-teaser={dek}>{value && <RichText value={value}/>}</div>
+<div class="members-content" data-members-content>
+	<Gate collection={collection} terms={terms}>
+		{value && <RichText value={value}/>}
+		<div slot="locked" class="members-locked"><a class="join" href="/join/">Become a member</a></div>
+	</Gate>
+</div>

@@ -1,7 +1,7 @@
 node_modules
 dist
 .astro
-.wrangler/state/v3/observability/
+.wrangler/
 .emdash/migrations.json
 uploads
 data.db
