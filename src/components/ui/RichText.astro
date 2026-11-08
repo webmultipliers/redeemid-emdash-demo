@@ -6,16 +6,17 @@ import { PortableText } from "emdash/ui";
 /**
  * An entry body. Pass `collection` (and `terms`) to apply RedeemID's
  * Paywall break and rules; the members part never reaches the page for
- * readers who can't read it.
+ * readers who can't read it. Pass `id` on the entry's own page so the
+ * meter counts it.
  */
-type Props = ComponentProps<typeof PortableText> & { class?: string; collection?: string; terms?: Record<string, any> };
+type Props = ComponentProps<typeof PortableText> & { class?: string; collection?: string; terms?: Record<string, any>; id?: string };
 
-const { class: className, collection, terms, ...props } = Astro.props;
+const { class: className, collection, terms, id, ...props } = Astro.props;
 ---
 
 <div class:list={["rich-text", className]}>
 	{collection ? (
-		<Content value={props.value} collection={collection} terms={terms}>
+		<Content value={props.value} collection={collection} terms={terms} id={id}>
 			<p slot="locked" class="redeemid-locked__title">Keep reading with a membership</p>
 		</Content>
 	) : (
