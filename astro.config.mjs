@@ -34,6 +34,8 @@ const redeemidConfig = {
 	],
 	// The wall's join link.
 	join: { href: "/join/", label: "Become a member" },
+	// Signed-in readers without access open 2 locked stories a month free.
+	meter: { limit: 2, period: "month" },
 	// Content rules, as on the WordPress demo. A story's own Paywall break can
 	// pick its levels; a break with none picked follows these rules.
 	rules: [
