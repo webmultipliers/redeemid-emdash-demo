@@ -1378,14 +1378,16 @@
 							"_key": "r53",
 							"handle": "gold-membership",
 							"title": "Gold",
-							"label": "Become a member"
+							"label": "Become a member",
+							"levels": ["gold"]
 						},
 						{
 							"_type": "redeemid-plan",
 							"_key": "r54",
 							"handle": "silver-membership",
 							"title": "Silver",
-							"label": "Become a member"
+							"label": "Become a member",
+							"levels": ["silver"]
 						}
 					]
 				}
@@ -1781,7 +1783,8 @@
 							"_key": "t24",
 							"handle": "silver-membership",
 							"title": "",
-							"label": "Add Silver"
+							"label": "Add Silver",
+							"levels": ["silver"]
 						},
 						{
 							"_type": "block",
