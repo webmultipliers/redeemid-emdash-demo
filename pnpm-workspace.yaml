@@ -1,6 +1,3 @@
-packages:
-  - packages/*
-
 # Match the standalone EmDash templates' supply-chain policy.
 allowBuilds:
   esbuild: true
