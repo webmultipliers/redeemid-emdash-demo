@@ -12,7 +12,6 @@ export interface Briefing {
   title: string;
   dek?: string;
   content?: PortableTextBlock[];
-  members_content?: PortableTextBlock[];
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;
@@ -28,7 +27,6 @@ export interface Correction {
   title: string;
   dek?: string;
   content?: PortableTextBlock[];
-  members_content?: PortableTextBlock[];
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;
@@ -44,7 +42,6 @@ export interface Guide {
   title: string;
   dek?: string;
   content?: PortableTextBlock[];
-  members_content?: PortableTextBlock[];
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;
@@ -58,17 +55,7 @@ export interface Page {
   slug: string | null;
   status: string;
   title: string;
-  heading?: string;
-  intro?: string;
-  body?: PortableTextBlock[];
-  extra?: string;
-  free?: string;
-  members?: string;
-  silver?: string;
-  gold?: string;
-  premium?: string;
-  gold_plan?: string;
-  silver_plan?: string;
+  content?: PortableTextBlock[];
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;
@@ -85,7 +72,6 @@ export interface Post {
   dek: string;
   author_name?: string;
   content?: PortableTextBlock[];
-  members_content?: PortableTextBlock[];
   featured_image?: { id: string; src?: string; alt?: string; width?: number; height?: number; filename?: string; mimeType?: string; blurhash?: string; dominantColor?: string; focalX?: number; focalY?: number; provider?: string; previewUrl?: string; meta?: Record<string, unknown>; darkVariant?: { id: string; src?: string; alt?: string; width?: number; height?: number; filename?: string; mimeType?: string; blurhash?: string; dominantColor?: string; focalX?: number; focalY?: number; provider?: string; previewUrl?: string; meta?: Record<string, unknown> } };
   createdAt: Date;
   updatedAt: Date;
@@ -102,7 +88,6 @@ export interface Report {
   title: string;
   dek?: string;
   content?: PortableTextBlock[];
-  members_content?: PortableTextBlock[];
   createdAt: Date;
   updatedAt: Date;
   publishedAt: Date | null;

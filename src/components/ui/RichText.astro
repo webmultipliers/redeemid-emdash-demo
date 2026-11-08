@@ -1,14 +1,26 @@
 ---
 import type { ComponentProps } from "astro/types";
+import Content from "@redeemid/emdash/components/Content.astro";
 import { PortableText } from "emdash/ui";
 
-type Props = ComponentProps<typeof PortableText> & { class?: string };
+/**
+ * An entry body. Pass `collection` (and `terms`) to apply RedeemID's
+ * Paywall break and rules; the members part never reaches the page for
+ * readers who can't read it.
+ */
+type Props = ComponentProps<typeof PortableText> & { class?: string; collection?: string; terms?: Record<string, any> };
 
-const { class: className, ...props } = Astro.props;
+const { class: className, collection, terms, ...props } = Astro.props;
 ---
 
 <div class:list={["rich-text", className]}>
-	<PortableText {...props} />
+	{collection ? (
+		<Content value={props.value} collection={collection} terms={terms}>
+			<div slot="locked" class="members-locked"><a class="join" href="/join/">Become a member</a></div>
+		</Content>
+	) : (
+		<PortableText {...props} />
+	)}
 </div>
 
 <style>
