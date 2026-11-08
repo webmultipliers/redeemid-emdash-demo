@@ -187,43 +187,6 @@
 	"defaultLocale": "en",
 	"taxonomies": [
 		{
-			"id": "tax:access",
-			"name": "access",
-			"label": "Access",
-			"labelSingular": "Access",
-			"hierarchical": false,
-			"collections": [
-				"posts"
-			],
-			"terms": [
-				{
-					"id": "term:access:free",
-					"slug": "free",
-					"label": "Free"
-				},
-				{
-					"id": "term:access:members",
-					"slug": "members",
-					"label": "Signed in"
-				},
-				{
-					"id": "term:access:silver",
-					"slug": "silver",
-					"label": "Silver"
-				},
-				{
-					"id": "term:access:gold",
-					"slug": "gold",
-					"label": "Gold"
-				},
-				{
-					"id": "term:access:premium",
-					"slug": "premium",
-					"label": "Gold + Silver"
-				}
-			]
-		},
-		{
 			"id": "tax:category",
 			"name": "category",
 			"label": "Categories",
@@ -1756,9 +1719,6 @@
 				"taxonomies": {
 					"category": [
 						"opinion"
-					],
-					"access": [
-						"free"
 					]
 				}
 			},
@@ -1768,7 +1728,7 @@
 				"status": "published",
 				"data": {
 					"title": "Opinion: A second bridge is the right call, but not on that route",
-					"dek": "The council should keep the money and move the landing away from Lowmarket\u2019s only park.",
+					"dek": "The council should keep the money and move the landing away from Lowmarket’s only park.",
 					"author_name": "The Editorial Board",
 					"content": [
 						{
@@ -1780,7 +1740,7 @@
 								{
 									"_type": "span",
 									"_key": "k4c",
-									"text": "The council should keep the money and move the landing away from Lowmarket\u2019s only park.",
+									"text": "The council should keep the money and move the landing away from Lowmarket’s only park.",
 									"marks": []
 								}
 							]
@@ -1802,7 +1762,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r9",
-							"levels": []
+							"levels": [
+								"signed-in"
+							]
 						},
 						{
 							"_type": "block",
@@ -1865,9 +1827,6 @@
 				"taxonomies": {
 					"category": [
 						"opinion"
-					],
-					"access": [
-						"members"
 					]
 				}
 			},
@@ -1911,7 +1870,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r10",
-							"levels": []
+							"levels": [
+								"silver"
+							]
 						},
 						{
 							"_type": "block",
@@ -1974,9 +1935,6 @@
 				"taxonomies": {
 					"category": [
 						"culture"
-					],
-					"access": [
-						"silver"
 					]
 				}
 			},
@@ -1985,7 +1943,7 @@
 				"slug": "why-harborviews-startup-boom-is-quietly-turning-into-a-bust",
 				"status": "published",
 				"data": {
-					"title": "Why Harborview\u2019s startup boom is quietly turning into a bust",
+					"title": "Why Harborview’s startup boom is quietly turning into a bust",
 					"dek": "Layoff notices, empty offices and a funding drought: an analysis of two years of filings.",
 					"author_name": "Leah Brandt",
 					"content": [
@@ -2020,7 +1978,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r11",
-							"levels": []
+							"levels": [
+								"gold"
+							]
 						},
 						{
 							"_type": "block",
@@ -2083,9 +2043,6 @@
 				"taxonomies": {
 					"category": [
 						"technology"
-					],
-					"access": [
-						"gold"
 					]
 				}
 			},
@@ -2192,9 +2149,6 @@
 				"taxonomies": {
 					"category": [
 						"science"
-					],
-					"access": [
-						"free"
 					]
 				}
 			},
@@ -2238,7 +2192,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r13",
-							"levels": []
+							"levels": [
+								"signed-in"
+							]
 						},
 						{
 							"_type": "block",
@@ -2301,9 +2257,6 @@
 				"taxonomies": {
 					"category": [
 						"city-hall"
-					],
-					"access": [
-						"members"
 					]
 				}
 			},
@@ -2347,7 +2300,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r14",
-							"levels": []
+							"levels": [
+								"premium"
+							]
 						},
 						{
 							"_type": "block",
@@ -2410,9 +2365,6 @@
 				"taxonomies": {
 					"category": [
 						"business"
-					],
-					"access": [
-						"premium"
 					]
 				}
 			},
@@ -2421,7 +2373,7 @@
 				"slug": "we-rode-every-bus-line-for-a-week-to-test-the-citys-new-transit-app",
 				"status": "published",
 				"data": {
-					"title": "We rode every bus line for a week to test the city\u2019s new transit app",
+					"title": "We rode every bus line for a week to test the city’s new transit app",
 					"dek": "Arrival times were right four times out of five. Transfers are where it falls apart.",
 					"author_name": "Leah Brandt",
 					"content": [
@@ -2519,9 +2471,6 @@
 				"taxonomies": {
 					"category": [
 						"technology"
-					],
-					"access": [
-						"free"
 					]
 				}
 			},
@@ -2530,7 +2479,7 @@
 				"slug": "a-small-university-lab-just-won-the-regions-biggest-research-grant-here-is-what-they-are-building",
 				"status": "published",
 				"data": {
-					"title": "A small university lab just won the region\u2019s biggest research grant. Here is what they are building.",
+					"title": "A small university lab just won the region’s biggest research grant. Here is what they are building.",
 					"dek": "Eleven researchers in a converted boathouse are trying to make quantum sensors cheap enough for ships.",
 					"author_name": "Tomasz Wierzbicki",
 					"content": [
@@ -2565,7 +2514,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r16",
-							"levels": []
+							"levels": [
+								"signed-in"
+							]
 						},
 						{
 							"_type": "block",
@@ -2628,9 +2579,6 @@
 				"taxonomies": {
 					"category": [
 						"science"
-					],
-					"access": [
-						"members"
 					]
 				}
 			},
@@ -2738,8 +2686,8 @@
 					"category": [
 						"culture"
 					],
-					"access": [
-						"free"
+					"tag": [
+						"free-to-read"
 					]
 				}
 			},
@@ -2748,7 +2696,7 @@
 				"slug": "inside-tidewater-powers-plan-to-raise-rates-three-times-by-2029",
 				"status": "published",
 				"data": {
-					"title": "Inside Tidewater Power\u2019s plan to raise rates three times by 2029",
+					"title": "Inside Tidewater Power’s plan to raise rates three times by 2029",
 					"dek": "A filing obtained by the Ledger shows the utility wants staged increases to pay for grid hardening along the coast.",
 					"author_name": "Marcus Feld",
 					"content": [
@@ -2783,7 +2731,9 @@
 						{
 							"_type": "redeemid-paywall",
 							"_key": "r18",
-							"levels": []
+							"levels": [
+								"gold"
+							]
 						},
 						{
 							"_type": "block",
@@ -2846,9 +2796,6 @@
 				"taxonomies": {
 					"category": [
 						"business"
-					],
-					"access": [
-						"gold"
 					]
 				}
 			},
@@ -2858,7 +2805,7 @@
 				"status": "published",
 				"data": {
 					"title": "Council clears the way for a second harbor bridge after a nine-hour session",
-					"dek": "The 6\u20133 vote ends a decade of studies. Construction could start in 2028 if the state matches the city\u2019s share.",
+					"dek": "The 6–3 vote ends a decade of studies. Construction could start in 2028 if the state matches the city’s share.",
 					"author_name": "Dana Okafor",
 					"content": [
 						{
@@ -2870,7 +2817,7 @@
 								{
 									"_type": "span",
 									"_key": "k10",
-									"text": "The 6\u20133 vote ends a decade of studies. Construction could start in 2028 if the state matches the city\u2019s share.",
+									"text": "The 6–3 vote ends a decade of studies. Construction could start in 2028 if the state matches the city’s share.",
 									"marks": []
 								}
 							]
@@ -2956,9 +2903,6 @@
 					"category": [
 						"city-hall"
 					],
-					"access": [
-						"free"
-					],
 					"topic": [
 						"elections-2026"
 					]
@@ -2969,7 +2913,7 @@
 				"slug": "the-arts-councils-grant-audit-and-the-galleries-it-never-visited",
 				"status": "published",
 				"data": {
-					"title": "The arts council\u2019s grant audit, and the galleries it never visited",
+					"title": "The arts council’s grant audit, and the galleries it never visited",
 					"dek": "An investigation for our culture desk: half the audited venues were empty storefronts.",
 					"author_name": "Priya Raman",
 					"content": [
@@ -3068,9 +3012,6 @@
 					"category": [
 						"investigations",
 						"culture"
-					],
-					"access": [
-						"premium"
 					]
 				}
 			},
@@ -3177,9 +3118,6 @@
 				"taxonomies": {
 					"category": [
 						"investigations"
-					],
-					"access": [
-						"free"
 					],
 					"tag": [
 						"free-to-read"
@@ -3289,9 +3227,6 @@
 				"taxonomies": {
 					"category": [
 						"investigations"
-					],
-					"access": [
-						"gold"
 					]
 				}
 			}
