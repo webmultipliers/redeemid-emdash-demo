@@ -12,10 +12,28 @@ const emdashPreviewUrl = process.env.EMDASH_PREVIEW_URL
 // The store comes from the REDEEMID_SHOPIFY_STORE_DOMAIN secret.
 const redeemidConfig = {
 	levels: [
-		{ slug: "silver", name: "Silver", tags: ["silver-member"] },
-		{ slug: "gold", name: "Gold", tags: ["gold-member"] },
-		{ slug: "premium", name: "Gold + Silver", tags: ["gold-member", "silver-member"], match: "all" },
+		{
+			slug: "silver",
+			name: "Silver",
+			tags: ["silver-member"],
+			wall: "This is a Silver story. Silver members read our culture desk, features and neighborhood guides.",
+		},
+		{
+			slug: "gold",
+			name: "Gold",
+			tags: ["gold-member"],
+			wall: "This is a Gold story. Gold members read every investigation and Ledger Report in full.",
+		},
+		{
+			slug: "premium",
+			name: "Gold + Silver",
+			tags: ["gold-member", "silver-member"],
+			match: "all",
+			wall: "This story is for members with both Gold and Silver: everything the Ledger publishes.",
+		},
 	],
+	// The wall's join link.
+	join: { href: "/join/", label: "Become a member" },
 	// Content rules, as on the WordPress demo. A story's own Paywall break can
 	// pick its levels; a break with none picked follows these rules.
 	rules: [

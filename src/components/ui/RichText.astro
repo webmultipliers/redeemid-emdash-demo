@@ -16,7 +16,7 @@ const { class: className, collection, terms, ...props } = Astro.props;
 <div class:list={["rich-text", className]}>
 	{collection ? (
 		<Content value={props.value} collection={collection} terms={terms}>
-			<div slot="locked" class="members-locked"><a class="join" href="/join/">Become a member</a></div>
+			<p slot="locked" class="redeemid-locked__title">Keep reading with a membership</p>
 		</Content>
 	) : (
 		<PortableText {...props} />
