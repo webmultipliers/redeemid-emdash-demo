@@ -1,0 +1,8 @@
+---
+import SiteLayout from '../../layouts/SiteLayout.astro';
+import Product from '@redeemid/emdash/components/Product.astro';
+
+const { handle = '' } = Astro.params;
+if (!/^[a-z0-9][a-z0-9-]*$/i.test(handle)) return Astro.redirect('/404');
+---
+<SiteLayout title="Shop"><div class="article simple shop-product"><a class="text-link" href="/shop/">← All goods</a><Product handle={handle} heading="h1"><h1>Not in the shop</h1><p>That product isn't for sale right now. <a href="/shop/">See what is →</a></p></Product></div></SiteLayout>

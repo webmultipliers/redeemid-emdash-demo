@@ -1,0 +1,5 @@
+---
+import SiteLayout from '../layouts/SiteLayout.astro';
+import CartView from '@redeemid/emdash/components/CartView.astro';
+---
+<SiteLayout title="Cart"><div class="article simple"><h1>Your cart</h1><CartView productHref="/products/{handle}/" empty="Your cart is empty. Find something in the shop." /><a class="text-link" href="/shop/">Keep shopping →</a></div></SiteLayout>
