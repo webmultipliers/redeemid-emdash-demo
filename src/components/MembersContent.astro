@@ -1,0 +1,5 @@
+---
+import RichText from './ui/RichText.astro';
+const {value,dek}=Astro.props;
+---
+<div class="members-content" data-members-content data-teaser={dek}>{value && <RichText value={value}/>}</div>
