@@ -1,0 +1,3204 @@
+{
+	"$schema": "https://emdashcms.com/seed.schema.json",
+	"version": "1",
+	"meta": {
+		"name": "The Harborview Ledger",
+		"description": "RedeemID demo: a fictional local news site with free and member stories"
+	},
+	"settings": {
+		"tagline": "Independent reporting for a city by the water",
+		"title": "The Harborview Ledger"
+	},
+	"blockTypes": [],
+	"collections": [
+		{
+			"slug": "briefings",
+			"label": "Briefings",
+			"supports": [
+				"drafts",
+				"revisions"
+			],
+			"urlPattern": "/briefings/{slug}",
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "dek",
+					"label": "Dek",
+					"type": "text"
+				},
+				{
+					"slug": "content",
+					"label": "Public opening",
+					"type": "portableText"
+				},
+				{
+					"slug": "members_content",
+					"label": "Members content",
+					"type": "portableText"
+				}
+			]
+		},
+		{
+			"slug": "corrections",
+			"label": "Corrections",
+			"supports": [
+				"drafts",
+				"revisions"
+			],
+			"urlPattern": "/corrections/{slug}",
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "dek",
+					"label": "Dek",
+					"type": "text"
+				},
+				{
+					"slug": "content",
+					"label": "Public opening",
+					"type": "portableText"
+				},
+				{
+					"slug": "members_content",
+					"label": "Members content",
+					"type": "portableText"
+				}
+			]
+		},
+		{
+			"slug": "guides",
+			"label": "City guides",
+			"supports": [
+				"drafts",
+				"revisions"
+			],
+			"urlPattern": "/guides/{slug}",
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "dek",
+					"label": "Dek",
+					"type": "text"
+				},
+				{
+					"slug": "content",
+					"label": "Public opening",
+					"type": "portableText"
+				},
+				{
+					"slug": "members_content",
+					"label": "Members content",
+					"type": "portableText"
+				}
+			]
+		},
+		{
+			"slug": "pages",
+			"label": "Page copy",
+			"supports": [
+				"drafts",
+				"revisions"
+			],
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "heading",
+					"label": "Heading",
+					"type": "string"
+				},
+				{
+					"slug": "intro",
+					"label": "Introduction",
+					"type": "text"
+				},
+				{
+					"slug": "body",
+					"label": "Body",
+					"type": "portableText"
+				},
+				{
+					"slug": "extra",
+					"label": "Additional copy",
+					"type": "text"
+				},
+				{
+					"slug": "free",
+					"label": "Free tier",
+					"type": "text"
+				},
+				{
+					"slug": "members",
+					"label": "Signed in tier",
+					"type": "text"
+				},
+				{
+					"slug": "silver",
+					"label": "Silver tier",
+					"type": "text"
+				},
+				{
+					"slug": "gold",
+					"label": "Gold tier",
+					"type": "text"
+				},
+				{
+					"slug": "premium",
+					"label": "Gold + Silver tier",
+					"type": "text"
+				},
+				{
+					"slug": "gold_plan",
+					"label": "Gold plan copy",
+					"type": "text"
+				},
+				{
+					"slug": "silver_plan",
+					"label": "Silver plan copy",
+					"type": "text"
+				}
+			]
+		},
+		{
+			"slug": "posts",
+			"label": "Stories",
+			"supports": [
+				"drafts",
+				"revisions",
+				"preview",
+				"search",
+				"seo"
+			],
+			"urlPattern": "/stories/{slug}",
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true,
+					"searchable": true
+				},
+				{
+					"slug": "dek",
+					"label": "Dek",
+					"type": "text",
+					"required": true,
+					"searchable": true
+				},
+				{
+					"slug": "author_name",
+					"label": "Byline",
+					"type": "string"
+				},
+				{
+					"slug": "content",
+					"label": "Public opening",
+					"type": "portableText"
+				},
+				{
+					"slug": "members_content",
+					"label": "Members content",
+					"type": "portableText"
+				},
+				{
+					"slug": "featured_image",
+					"label": "Featured image",
+					"type": "image"
+				}
+			]
+		},
+		{
+			"slug": "reports",
+			"label": "Reports",
+			"supports": [
+				"drafts",
+				"revisions"
+			],
+			"urlPattern": "/reports/{slug}",
+			"fields": [
+				{
+					"slug": "title",
+					"label": "Title",
+					"type": "string",
+					"required": true
+				},
+				{
+					"slug": "dek",
+					"label": "Dek",
+					"type": "text"
+				},
+				{
+					"slug": "content",
+					"label": "Public opening",
+					"type": "portableText"
+				},
+				{
+					"slug": "members_content",
+					"label": "Members content",
+					"type": "portableText"
+				}
+			]
+		}
+	],
+	"defaultLocale": "en",
+	"taxonomies": [
+		{
+			"id": "tax:access",
+			"name": "access",
+			"label": "Access",
+			"labelSingular": "Access",
+			"hierarchical": false,
+			"collections": [
+				"posts"
+			],
+			"terms": [
+				{
+					"id": "term:access:free",
+					"slug": "free",
+					"label": "Free"
+				},
+				{
+					"id": "term:access:members",
+					"slug": "members",
+					"label": "Signed in"
+				},
+				{
+					"id": "term:access:silver",
+					"slug": "silver",
+					"label": "Silver"
+				},
+				{
+					"id": "term:access:gold",
+					"slug": "gold",
+					"label": "Gold"
+				},
+				{
+					"id": "term:access:premium",
+					"slug": "premium",
+					"label": "Gold + Silver"
+				}
+			]
+		},
+		{
+			"id": "tax:category",
+			"name": "category",
+			"label": "Categories",
+			"labelSingular": "Category",
+			"hierarchical": true,
+			"collections": [
+				"posts"
+			],
+			"terms": [
+				{
+					"id": "term:category:investigations",
+					"slug": "investigations",
+					"label": "Investigations"
+				},
+				{
+					"id": "term:category:city-hall",
+					"slug": "city-hall",
+					"label": "City Hall"
+				},
+				{
+					"id": "term:category:business",
+					"slug": "business",
+					"label": "Business"
+				},
+				{
+					"id": "term:category:technology",
+					"slug": "technology",
+					"label": "Technology"
+				},
+				{
+					"id": "term:category:science",
+					"slug": "science",
+					"label": "Science"
+				},
+				{
+					"id": "term:category:culture",
+					"slug": "culture",
+					"label": "Culture"
+				},
+				{
+					"id": "term:category:opinion",
+					"slug": "opinion",
+					"label": "Opinion"
+				}
+			]
+		},
+		{
+			"id": "tax:edition",
+			"name": "edition",
+			"label": "Editions",
+			"labelSingular": "Editions",
+			"hierarchical": false,
+			"collections": [
+				"briefings"
+			],
+			"terms": [
+				{
+					"id": "term:edition:weekday",
+					"slug": "weekday",
+					"label": "Weekday"
+				},
+				{
+					"id": "term:edition:weekend",
+					"slug": "weekend",
+					"label": "Weekend"
+				}
+			]
+		},
+		{
+			"id": "tax:neighborhood",
+			"name": "neighborhood",
+			"label": "Neighborhoods",
+			"labelSingular": "Neighborhoods",
+			"hierarchical": false,
+			"collections": [
+				"guides"
+			],
+			"terms": [
+				{
+					"id": "term:neighborhood:lowmarket",
+					"slug": "lowmarket",
+					"label": "Lowmarket"
+				},
+				{
+					"id": "term:neighborhood:fennel-hill",
+					"slug": "fennel-hill",
+					"label": "Fennel Hill"
+				},
+				{
+					"id": "term:neighborhood:old-quay",
+					"slug": "old-quay",
+					"label": "Old Quay"
+				}
+			]
+		},
+		{
+			"id": "tax:series",
+			"name": "series",
+			"label": "Series",
+			"labelSingular": "Series",
+			"hierarchical": true,
+			"collections": [
+				"reports"
+			],
+			"terms": [
+				{
+					"id": "term:series:harbor-money",
+					"slug": "harbor-money",
+					"label": "Harbor Money"
+				},
+				{
+					"id": "term:series:port-budgets",
+					"slug": "port-budgets",
+					"label": "Port budgets",
+					"parent": "harbor-money"
+				},
+				{
+					"id": "term:series:pensions",
+					"slug": "pensions",
+					"label": "Pensions",
+					"parent": "harbor-money"
+				}
+			]
+		},
+		{
+			"id": "tax:tag",
+			"name": "tag",
+			"label": "Tags",
+			"labelSingular": "Tag",
+			"hierarchical": false,
+			"collections": [
+				"posts"
+			],
+			"terms": [
+				{
+					"id": "term:tag:free-to-read",
+					"slug": "free-to-read",
+					"label": "Free to read"
+				}
+			]
+		},
+		{
+			"id": "tax:topic",
+			"name": "topic",
+			"label": "Topics",
+			"labelSingular": "Topics",
+			"hierarchical": false,
+			"collections": [
+				"posts",
+				"briefings",
+				"reports",
+				"guides",
+				"corrections"
+			],
+			"terms": [
+				{
+					"id": "term:topic:elections-2026",
+					"slug": "elections-2026",
+					"label": "Elections 2026"
+				}
+			]
+		}
+	],
+	"menus": [
+		{
+			"id": "menu:primary",
+			"name": "primary",
+			"label": "Sections",
+			"items": [
+				{
+					"type": "custom",
+					"label": "Investigations",
+					"url": "/category/investigations/"
+				},
+				{
+					"type": "custom",
+					"label": "City Hall",
+					"url": "/category/city-hall/"
+				},
+				{
+					"type": "custom",
+					"label": "Business",
+					"url": "/category/business/"
+				},
+				{
+					"type": "custom",
+					"label": "Technology",
+					"url": "/category/technology/"
+				},
+				{
+					"type": "custom",
+					"label": "Science",
+					"url": "/category/science/"
+				},
+				{
+					"type": "custom",
+					"label": "Culture",
+					"url": "/category/culture/"
+				},
+				{
+					"type": "custom",
+					"label": "Opinion",
+					"url": "/category/opinion/"
+				}
+			]
+		}
+	],
+	"widgetAreas": [],
+	"content": {
+		"briefings": [
+			{
+				"id": "briefings:the-weekday-briefing-election-questions",
+				"slug": "the-weekday-briefing-election-questions",
+				"status": "published",
+				"data": {
+					"title": "The weekday briefing: Election questions",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k5l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5k",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5m",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k5p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5o",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5q",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5s",
+									"text": "LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-ELECTION-QUESTIONS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"topic": [
+						"elections-2026"
+					],
+					"edition": [
+						"weekday"
+					]
+				}
+			},
+			{
+				"id": "briefings:the-weekend-briefing-around-the-harbor",
+				"slug": "the-weekend-briefing-around-the-harbor",
+				"status": "published",
+				"data": {
+					"title": "The weekend briefing: Around the harbor",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k5b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5a",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5c",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k5f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5e",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5g",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5i",
+									"text": "LEDGER-SECRET-CPT-THE-WEEKEND-BRIEFING-AROUND-THE-HARBOR",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekend"
+					]
+				}
+			},
+			{
+				"id": "briefings:the-weekday-briefing-what-to-watch-at-city-hall",
+				"slug": "the-weekday-briefing-what-to-watch-at-city-hall",
+				"status": "published",
+				"data": {
+					"title": "The weekday briefing: What to watch at City Hall",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k51",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k50",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k53",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k52",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k55",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k54",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k57",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k56",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k59",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k58",
+									"text": "LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-WHAT-TO-WATCH-AT-CITY-HALL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekday"
+					]
+				}
+			}
+		],
+		"corrections": [
+			{
+				"id": "corrections:correction-a-waterfront-figure",
+				"slug": "correction-a-waterfront-figure",
+				"status": "published",
+				"data": {
+					"title": "Correction: A waterfront figure",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k7t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7s",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7u",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k7x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7w",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7y",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k81",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k80",
+									"text": "LEDGER-OPEN-CPT-CORRECTION-A-WATERFRONT-FIGURE",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "corrections:correction-harbor-meeting-date",
+				"slug": "correction-harbor-meeting-date",
+				"status": "published",
+				"data": {
+					"title": "Correction: Harbor meeting date",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k7j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7i",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7k",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k7n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7m",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7o",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7q",
+									"text": "LEDGER-OPEN-CPT-CORRECTION-HARBOR-MEETING-DATE",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			}
+		],
+		"guides": [
+			{
+				"id": "guides:finding-your-way-around-old-quay",
+				"slug": "finding-your-way-around-old-quay",
+				"status": "published",
+				"data": {
+					"title": "Finding your way around Old Quay",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k79",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k78",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7a",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k7d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7c",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7e",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k7g",
+									"text": "LEDGER-SECRET-CPT-FINDING-YOUR-WAY-AROUND-OLD-QUAY",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"old-quay"
+					]
+				}
+			},
+			{
+				"id": "guides:a-guide-to-fennel-hill",
+				"slug": "a-guide-to-fennel-hill",
+				"status": "published",
+				"data": {
+					"title": "A guide to Fennel Hill",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k6z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6y",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k71",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k70",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k73",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k72",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k75",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k74",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k77",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k76",
+									"text": "LEDGER-SECRET-CPT-A-GUIDE-TO-FENNEL-HILL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"fennel-hill"
+					]
+				}
+			},
+			{
+				"id": "guides:a-walk-through-lowmarket",
+				"slug": "a-walk-through-lowmarket",
+				"status": "published",
+				"data": {
+					"title": "A walk through Lowmarket",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k6p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6o",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6q",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k6t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6s",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6u",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6w",
+									"text": "LEDGER-SECRET-CPT-A-WALK-THROUGH-LOWMARKET",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"lowmarket"
+					]
+				}
+			}
+		],
+		"pages": [
+			{
+				"id": "pages:footer",
+				"slug": "footer",
+				"status": "published",
+				"data": {
+					"title": "Footer",
+					"intro": "Independent reporting for a city by the water.",
+					"extra": "The Ledger is a fictional demo."
+				}
+			},
+			{
+				"id": "pages:support",
+				"slug": "support",
+				"status": "published",
+				"data": {
+					"title": "Support",
+					"heading": "Support the newsroom.",
+					"intro": "Contribute what you wish toward local reporting. A contribution is a way to support the newsroom and is separate from membership access.",
+					"body": [
+						{
+							"_type": "block",
+							"_key": "k5",
+							"style": "h2",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4",
+									"text": "Thank you.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6",
+									"text": "To everyone who supports local journalism: thank you for being part of this community.",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "pages:join",
+				"slug": "join",
+				"status": "published",
+				"data": {
+					"title": "Join",
+					"heading": "Make local reporting possible.",
+					"intro": "Membership supports independent reporting and opens more of the Ledger.",
+					"free": "Free stories are open to everyone.",
+					"members": "Signed-in readers can access selected stories.",
+					"silver": "Silver opens reporting marked for Silver.",
+					"gold": "Gold opens reporting marked for Gold.",
+					"premium": "Gold + Silver stories are available to both membership levels.",
+					"gold_plan": "Price to come",
+					"silver_plan": "Price to come"
+				}
+			},
+			{
+				"id": "pages:about",
+				"slug": "about",
+				"status": "published",
+				"data": {
+					"title": "About",
+					"heading": "Local journalism, for everyone.",
+					"intro": "The Harborview Ledger covers the decisions, people and places shaping our city. Some stories are free to everyone; others are available to signed-in readers or members.",
+					"body": [
+						{
+							"_type": "block",
+							"_key": "k1",
+							"style": "h2",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k0",
+									"text": "Our corrections",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2",
+									"text": "We believe accuracy matters. When we get something wrong, we publish a correction so readers can see what changed.",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "pages:home",
+				"slug": "home",
+				"status": "published",
+				"data": {
+					"title": "Home",
+					"heading": "Local news belongs to all of us.",
+					"intro": "Choose how you read the Ledger, from open stories to deeper reporting for members.",
+					"free": "Open to everyone",
+					"members": "Selected stories for signed-in readers",
+					"silver": "Reporting for Silver members",
+					"gold": "Reporting for Gold members",
+					"premium": "Reporting for Gold and Silver members"
+				}
+			}
+		],
+		"posts": [
+			{
+				"id": "posts:opinion-why-we-are-asking-you-to-become-a-member",
+				"slug": "opinion-why-we-are-asking-you-to-become-a-member",
+				"status": "published",
+				"data": {
+					"title": "Opinion: Why we are asking you to become a member",
+					"dek": "How membership pays for reporting like this, and what stays free.",
+					"author_name": "The Editorial Board",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k4p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4o",
+									"text": "How membership pays for reporting like this, and what stays free.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4q",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k4t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4s",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4u",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4w",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4y",
+									"text": "LEDGER-OPEN-NEWS-OPINION-WHY-WE-ARE-ASKING-YOU-TO-BECOME-A-MEMBER",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"opinion"
+					],
+					"access": [
+						"free"
+					]
+				}
+			},
+			{
+				"id": "posts:opinion-a-second-bridge-is-the-right-call-but-not-on-that-route",
+				"slug": "opinion-a-second-bridge-is-the-right-call-but-not-on-that-route",
+				"status": "published",
+				"data": {
+					"title": "Opinion: A second bridge is the right call, but not on that route",
+					"dek": "The council should keep the money and move the landing away from Lowmarket’s only park.",
+					"author_name": "The Editorial Board",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k4d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4c",
+									"text": "The council should keep the money and move the landing away from Lowmarket’s only park.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4e",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k4h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4g",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4i",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4k",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4m",
+									"text": "LEDGER-SECRET-NEWS-OPINION-A-SECOND-BRIDGE-IS-THE-RIGHT-CALL-BUT-NOT-ON-THAT-ROUTE",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"opinion"
+					],
+					"access": [
+						"members"
+					]
+				}
+			},
+			{
+				"id": "posts:the-maritime-museum-reopens-with-a-hall-built-around-a-whale-skeleton",
+				"slug": "the-maritime-museum-reopens-with-a-hall-built-around-a-whale-skeleton",
+				"status": "published",
+				"data": {
+					"title": "The Maritime Museum reopens with a hall built around a whale skeleton",
+					"dek": "Three years and $60 million later, the renovated museum keeps its oddest exhibit at the center.",
+					"author_name": "Priya Raman",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k41",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k40",
+									"text": "Three years and $60 million later, the renovated museum keeps its oddest exhibit at the center.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k43",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k42",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k45",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k44",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k47",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k46",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k49",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k48",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k4b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4a",
+									"text": "LEDGER-SECRET-NEWS-THE-MARITIME-MUSEUM-REOPENS-WITH-A-HALL-BUILT-AROUND-A-WHALE-SKELETON",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"culture"
+					],
+					"access": [
+						"silver"
+					]
+				}
+			},
+			{
+				"id": "posts:why-harborviews-startup-boom-is-quietly-turning-into-a-bust",
+				"slug": "why-harborviews-startup-boom-is-quietly-turning-into-a-bust",
+				"status": "published",
+				"data": {
+					"title": "Why Harborview’s startup boom is quietly turning into a bust",
+					"dek": "Layoff notices, empty offices and a funding drought: an analysis of two years of filings.",
+					"author_name": "Leah Brandt",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k3p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3o",
+									"text": "Layoff notices, empty offices and a funding drought: an analysis of two years of filings.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3q",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k3t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3s",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3u",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3w",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3y",
+									"text": "LEDGER-SECRET-NEWS-WHY-HARBORVIEWS-STARTUP-BOOM-IS-QUIETLY-TURNING-INTO-A-BUST",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"technology"
+					],
+					"access": [
+						"gold"
+					]
+				}
+			},
+			{
+				"id": "posts:volunteers-have-rebuilt-a-mile-of-oyster-reef-the-water-is-already-clearer",
+				"slug": "volunteers-have-rebuilt-a-mile-of-oyster-reef-the-water-is-already-clearer",
+				"status": "published",
+				"data": {
+					"title": "Volunteers have rebuilt a mile of oyster reef. The water is already clearer.",
+					"dek": "Recycled shells from forty restaurants are turning into habitat in the south bay.",
+					"author_name": "Tomasz Wierzbicki",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k3d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3c",
+									"text": "Recycled shells from forty restaurants are turning into habitat in the south bay.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3e",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k3h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3g",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3i",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3k",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3m",
+									"text": "LEDGER-OPEN-NEWS-VOLUNTEERS-HAVE-REBUILT-A-MILE-OF-OYSTER-REEF-THE-WATER-IS-ALREADY-CLEARER",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"science"
+					],
+					"access": [
+						"free"
+					]
+				}
+			},
+			{
+				"id": "posts:ferry-service-to-the-islands-will-drop-to-hourly-this-winter",
+				"slug": "ferry-service-to-the-islands-will-drop-to-hourly-this-winter",
+				"status": "published",
+				"data": {
+					"title": "Ferry service to the islands will drop to hourly this winter",
+					"dek": "Island residents say the cut makes commuting to the mainland nearly impossible.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k31",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k30",
+									"text": "Island residents say the cut makes commuting to the mainland nearly impossible.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k33",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k32",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k35",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k34",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k37",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k36",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k39",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k38",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k3a",
+									"text": "LEDGER-SECRET-NEWS-FERRY-SERVICE-TO-THE-ISLANDS-WILL-DROP-TO-HOURLY-THIS-WINTER",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"city-hall"
+					],
+					"access": [
+						"members"
+					]
+				}
+			},
+			{
+				"id": "posts:port-automation-deal-would-cut-300-jobs-over-five-years-union-says",
+				"slug": "port-automation-deal-would-cut-300-jobs-over-five-years-union-says",
+				"status": "published",
+				"data": {
+					"title": "Port automation deal would cut 300 jobs over five years, union says",
+					"dek": "The terms of the tentative agreement have not been made public. The Ledger has read them.",
+					"author_name": "Marcus Feld",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k2p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2o",
+									"text": "The terms of the tentative agreement have not been made public. The Ledger has read them.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2q",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k2t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2s",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2u",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2w",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2y",
+									"text": "LEDGER-SECRET-NEWS-PORT-AUTOMATION-DEAL-WOULD-CUT-300-JOBS-OVER-FIVE-YEARS-UNION-SAYS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"business"
+					],
+					"access": [
+						"premium"
+					]
+				}
+			},
+			{
+				"id": "posts:we-rode-every-bus-line-for-a-week-to-test-the-citys-new-transit-app",
+				"slug": "we-rode-every-bus-line-for-a-week-to-test-the-citys-new-transit-app",
+				"status": "published",
+				"data": {
+					"title": "We rode every bus line for a week to test the city’s new transit app",
+					"dek": "Arrival times were right four times out of five. Transfers are where it falls apart.",
+					"author_name": "Leah Brandt",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k2d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2c",
+									"text": "Arrival times were right four times out of five. Transfers are where it falls apart.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2e",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k2h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2g",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2i",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2k",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2m",
+									"text": "LEDGER-OPEN-NEWS-WE-RODE-EVERY-BUS-LINE-FOR-A-WEEK-TO-TEST-THE-CITYS-NEW-TRANSIT-APP",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"technology"
+					],
+					"access": [
+						"free"
+					]
+				}
+			},
+			{
+				"id": "posts:a-small-university-lab-just-won-the-regions-biggest-research-grant-here-is-what-they-are-building",
+				"slug": "a-small-university-lab-just-won-the-regions-biggest-research-grant-here-is-what-they-are-building",
+				"status": "published",
+				"data": {
+					"title": "A small university lab just won the region’s biggest research grant. Here is what they are building.",
+					"dek": "Eleven researchers in a converted boathouse are trying to make quantum sensors cheap enough for ships.",
+					"author_name": "Tomasz Wierzbicki",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k21",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k20",
+									"text": "Eleven researchers in a converted boathouse are trying to make quantum sensors cheap enough for ships.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k23",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k22",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k25",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k24",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k27",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k26",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k29",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k28",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k2b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2a",
+									"text": "LEDGER-SECRET-NEWS-A-SMALL-UNIVERSITY-LAB-JUST-WON-THE-REGIONS-BIGGEST-RESEARCH-GRANT-HERE-IS-WHAT-THEY-ARE-BUILDING",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"science"
+					],
+					"access": [
+						"members"
+					]
+				}
+			},
+			{
+				"id": "posts:the-lowmarket-night-market-is-back-and-it-is-bigger-than-ever",
+				"slug": "the-lowmarket-night-market-is-back-and-it-is-bigger-than-ever",
+				"status": "published",
+				"data": {
+					"title": "The Lowmarket night market is back, and it is bigger than ever",
+					"dek": "Sixty stalls, two stages and a rule that every vendor must live within ten miles.",
+					"author_name": "Priya Raman",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k1p",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1o",
+									"text": "Sixty stalls, two stages and a rule that every vendor must live within ten miles.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1r",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1q",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k1t",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1s",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1u",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1w",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1y",
+									"text": "LEDGER-OPEN-NEWS-THE-LOWMARKET-NIGHT-MARKET-IS-BACK-AND-IT-IS-BIGGER-THAN-EVER",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"culture"
+					],
+					"access": [
+						"free"
+					]
+				}
+			},
+			{
+				"id": "posts:inside-tidewater-powers-plan-to-raise-rates-three-times-by-2029",
+				"slug": "inside-tidewater-powers-plan-to-raise-rates-three-times-by-2029",
+				"status": "published",
+				"data": {
+					"title": "Inside Tidewater Power’s plan to raise rates three times by 2029",
+					"dek": "A filing obtained by the Ledger shows the utility wants staged increases to pay for grid hardening along the coast.",
+					"author_name": "Marcus Feld",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k1d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1c",
+									"text": "A filing obtained by the Ledger shows the utility wants staged increases to pay for grid hardening along the coast.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1e",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k1h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1g",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1i",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1k",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1m",
+									"text": "LEDGER-SECRET-NEWS-INSIDE-TIDEWATER-POWERS-PLAN-TO-RAISE-RATES-THREE-TIMES-BY-2029",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"business"
+					],
+					"access": [
+						"gold"
+					]
+				}
+			},
+			{
+				"id": "posts:council-clears-the-way-for-a-second-harbor-bridge-after-a-ninehour-session",
+				"slug": "council-clears-the-way-for-a-second-harbor-bridge-after-a-ninehour-session",
+				"status": "published",
+				"data": {
+					"title": "Council clears the way for a second harbor bridge after a nine-hour session",
+					"dek": "The 6–3 vote ends a decade of studies. Construction could start in 2028 if the state matches the city’s share.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k11",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k10",
+									"text": "The 6–3 vote ends a decade of studies. Construction could start in 2028 if the state matches the city’s share.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k13",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k12",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k15",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k14",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k17",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k16",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k19",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k18",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k1b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k1a",
+									"text": "LEDGER-OPEN-NEWS-COUNCIL-CLEARS-THE-WAY-FOR-A-SECOND-HARBOR-BRIDGE-AFTER-A-NINEHOUR-SESSION",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"city-hall"
+					],
+					"access": [
+						"free"
+					],
+					"topic": [
+						"elections-2026"
+					]
+				}
+			},
+			{
+				"id": "posts:the-arts-councils-grant-audit-and-the-galleries-it-never-visited",
+				"slug": "the-arts-councils-grant-audit-and-the-galleries-it-never-visited",
+				"status": "published",
+				"data": {
+					"title": "The arts council’s grant audit, and the galleries it never visited",
+					"dek": "An investigation for our culture desk: half the audited venues were empty storefronts.",
+					"author_name": "Priya Raman",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "kp",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ko",
+									"text": "An investigation for our culture desk: half the audited venues were empty storefronts.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kr",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "kq",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "kt",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ks",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kv",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ku",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kx",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "kw",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kz",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ky",
+									"text": "LEDGER-SECRET-NEWS-THE-ARTS-COUNCILS-GRANT-AUDIT-AND-THE-GALLERIES-IT-NEVER-VISITED",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"investigations",
+						"culture"
+					],
+					"access": [
+						"premium"
+					]
+				}
+			},
+			{
+				"id": "posts:how-a-ferry-fuel-contract-went-to-a-company-with-no-ships",
+				"slug": "how-a-ferry-fuel-contract-went-to-a-company-with-no-ships",
+				"status": "published",
+				"data": {
+					"title": "How a ferry fuel contract went to a company with no ships",
+					"dek": "Free to read this month: our investigation into the city's largest no-bid deal.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "kd",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "kc",
+									"text": "Free to read this month: our investigation into the city's largest no-bid deal.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kf",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ke",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "kh",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "kg",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kj",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ki",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kl",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "kk",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kn",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "km",
+									"text": "LEDGER-OPEN-NEWS-HOW-A-FERRY-FUEL-CONTRACT-WENT-TO-A-COMPANY-WITH-NO-SHIPS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"investigations"
+					],
+					"access": [
+						"free"
+					],
+					"tag": [
+						"free-to-read"
+					]
+				}
+			},
+			{
+				"id": "posts:harbor-pilots-billed-14000-overtime-hours-last-year-the-port-never-checked",
+				"slug": "harbor-pilots-billed-14000-overtime-hours-last-year-the-port-never-checked",
+				"status": "published",
+				"data": {
+					"title": "Harbor pilots billed 14,000 overtime hours last year. The port never checked.",
+					"dek": "Timesheets obtained through a records request show the same shifts claimed twice.",
+					"author_name": "Marcus Feld",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k0",
+									"text": "Timesheets obtained through a records request show the same shifts claimed twice.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k3",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k2",
+									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k5",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k4",
+									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k7",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6",
+									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k9",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k8",
+									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "kb",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "ka",
+									"text": "LEDGER-SECRET-NEWS-HARBOR-PILOTS-BILLED-14000-OVERTIME-HOURS-LAST-YEAR-THE-PORT-NEVER-CHECKED",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"investigations"
+					],
+					"access": [
+						"gold"
+					]
+				}
+			}
+		],
+		"reports": [
+			{
+				"id": "reports:pensions-the-promises-behind-the-numbers",
+				"slug": "pensions-the-promises-behind-the-numbers",
+				"status": "published",
+				"data": {
+					"title": "Pensions: The promises behind the numbers",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k6f",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6e",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6h",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6g",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k6j",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6i",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6l",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6k",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6n",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6m",
+									"text": "LEDGER-SECRET-CPT-PENSIONS-THE-PROMISES-BEHIND-THE-NUMBERS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"series": [
+						"pensions"
+					]
+				}
+			},
+			{
+				"id": "reports:port-budgets-where-the-money-goes",
+				"slug": "port-budgets-where-the-money-goes",
+				"status": "published",
+				"data": {
+					"title": "Port budgets: Where the money goes",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k65",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k64",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k67",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k66",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k69",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k68",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6b",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6a",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k6d",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k6c",
+									"text": "LEDGER-SECRET-CPT-PORT-BUDGETS-WHERE-THE-MONEY-GOES",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"series": [
+						"port-budgets"
+					]
+				}
+			},
+			{
+				"id": "reports:harbor-money-following-the-waterfront-budget",
+				"slug": "harbor-money-following-the-waterfront-budget",
+				"status": "published",
+				"data": {
+					"title": "Harbor Money: Following the waterfront budget",
+					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "k5v",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5u",
+									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k5x",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5w",
+									"text": "Here is what readers should know.",
+									"marks": []
+								}
+							]
+						}
+					],
+					"members_content": [
+						{
+							"_type": "block",
+							"_key": "k5z",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k5y",
+									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k61",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k60",
+									"text": "We welcome readers who help us understand the city better.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "k63",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "k62",
+									"text": "LEDGER-SECRET-CPT-HARBOR-MONEY-FOLLOWING-THE-WATERFRONT-BUDGET",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"series": [
+						"harbor-money"
+					]
+				}
+			}
+		]
+	}
+}
