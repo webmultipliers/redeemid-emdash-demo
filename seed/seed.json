@@ -1160,6 +1160,14 @@
 							]
 						},
 						{
+							"_type": "redeemid-contribution",
+							"_key": "g1",
+							"handle": "contribution",
+							"title": "Give what you like",
+							"amounts": "5, 10, 25",
+							"label": "Give"
+						},
+						{
 							"_type": "block",
 							"_key": "k5",
 							"style": "h2",
@@ -1379,7 +1387,9 @@
 							"handle": "gold-membership",
 							"title": "Gold",
 							"label": "Become a member",
-							"levels": ["gold"]
+							"levels": [
+								"gold"
+							]
 						},
 						{
 							"_type": "redeemid-plan",
@@ -1387,7 +1397,9 @@
 							"handle": "silver-membership",
 							"title": "Silver",
 							"label": "Become a member",
-							"levels": ["silver"]
+							"levels": [
+								"silver"
+							]
 						}
 					]
 				}
@@ -1784,7 +1796,9 @@
 							"handle": "silver-membership",
 							"title": "",
 							"label": "Add Silver",
-							"levels": ["silver"]
+							"levels": [
+								"silver"
+							]
 						},
 						{
 							"_type": "block",
@@ -1968,6 +1982,85 @@
 									"_type": "span",
 									"_key": "t51",
 									"text": "Everyone reads this line. LEDGER-OPEN-MEMBERS-AREA",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"status": "published",
+				"id": "page-shop",
+				"slug": "shop",
+				"data": {
+					"title": "Shop",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "s1",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "s1s",
+									"text": "Ledger goods, sold by the same Shopify store as the memberships. Add something to the cart, change the quantity or try a discount code on the cart page, then look at checkout and close it without paying.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-collection",
+							"_key": "s2",
+							"handle": "frontpage",
+							"limit": "6",
+							"link": "/products/{handle}/"
+						},
+						{
+							"_type": "block",
+							"_key": "s3",
+							"style": "h2",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "s3s",
+									"text": "Memberships",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "s6",
+							"style": "normal",
+							"markDefs": [
+								{
+									"_type": "link",
+									"_key": "s6l",
+									"href": "/join/"
+								}
+							],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "s6a",
+									"text": "Memberships are sold on the plan cards, which go straight to checkout. See ",
+									"marks": []
+								},
+								{
+									"_type": "span",
+									"_key": "s6b",
+									"text": "Become a member",
+									"marks": [
+										"s6l"
+									]
+								},
+								{
+									"_type": "span",
+									"_key": "s6c",
+									"text": ".",
 									"marks": []
 								}
 							]
