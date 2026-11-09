@@ -38,6 +38,11 @@ const redeemidConfig = {
 		{ slug: "early-briefing", name: "Early briefing", levels: ["silver", "gold"] },
 		{ slug: "supporter", name: "Supporter", tags: ["supporter"] },
 	],
+	// Member preferences: customer fields defined in Shopify (Settings → Custom
+	// data → Customers). Fields not defined there are left out.
+	preferences: [{ key: "ledger.topics" }, { key: "ledger.newsletter" }],
+	// Files in this media folder reach Gold members and staff only.
+	files: [{ folder: "Gold downloads", levels: ["gold"] }],
 	// The wall's join link.
 	join: { href: "/join/", label: "Become a member" },
 	// Signed-in readers without access open 2 locked stories a month free.
@@ -110,7 +115,8 @@ export default defineConfig({
 			// RedeemID: sign in with the store's customer account; access from Shopify tags.
 			// Secrets: REDEEMID_SHOPIFY_STORE_DOMAIN, REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_ID,
 			// REDEEMID_SHOPIFY_CUSTOMER_ACCOUNT_CLIENT_SECRET (confidential clients only),
-			// REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_SECRET (webhooks),
+			// REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_SECRET (webhooks), REDEEMID_SHOPIFY_ADMIN_APP_CLIENT_ID
+			// (staff tools and preferences),
 			// REDEEMID_SHOPIFY_STOREFRONT_PRIVATE_TOKEN (Join page plans and checkout).
 			authProviders: [redeemid(redeemidConfig)],
 			// RedeemID in the admin (Members, Status) and its editor blocks: Paywall break, Plan.
