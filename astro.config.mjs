@@ -122,7 +122,7 @@ export default defineConfig({
 			// RedeemID in the admin (Members, Status) and its editor blocks: Paywall break, Plan.
 			plugins: [redeemidPlugin(redeemidConfig)],
 		}),
-		redeemidGuard(),
+		redeemidGuard({ rateLimit: true }),
 	],
 	devToolbar: { enabled: false },
 });
