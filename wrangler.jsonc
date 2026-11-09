@@ -3,6 +3,9 @@
   "name": "redeemid-emdash-demo",
   "main": "./src/worker.ts",
   "compatibility_date": "2026-02-24",
+  // Keep variables set in the Cloudflare dashboard when a build deploys.
+  // Without this, every deploy removes plain-text dashboard variables.
+  "keep_vars": true,
   "compatibility_flags": [
     "nodejs_compat"
   ],
