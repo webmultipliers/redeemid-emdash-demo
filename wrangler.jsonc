@@ -6,6 +6,9 @@
   // Keep variables set in the Cloudflare dashboard when a build deploys.
   // Without this, every deploy removes plain-text dashboard variables.
   "keep_vars": true,
+  // EmDash's scheduler: scheduled publishing and plugin tasks, such as
+  // RedeemID's daily health check. Every minute, as `emdash doctor` advises.
+  "triggers": { "crons": ["* * * * *"] },
   "compatibility_flags": [
     "nodejs_compat"
   ],
