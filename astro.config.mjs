@@ -32,6 +32,12 @@ const redeemidConfig = {
 			wall: "This story is for members with both Gold and Silver: everything the Ledger publishes.",
 		},
 	],
+	// Features, as on the WordPress demo. The member card lists them; Support thanks supporters.
+	features: [
+		{ slug: "ad-free", name: "Ad-free reading", levels: ["gold"], tags: ["ad-free-addon"] },
+		{ slug: "early-briefing", name: "Early briefing", levels: ["silver", "gold"] },
+		{ slug: "supporter", name: "Supporter", tags: ["supporter"] },
+	],
 	// The wall's join link.
 	join: { href: "/join/", label: "Become a member" },
 	// Signed-in readers without access open 2 locked stories a month free.
