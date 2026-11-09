@@ -15,6 +15,14 @@
       "database_name": "emdash-site"
     }
   ],
+  // Per-visitor limits on Sign in, Buy and cart changes (RedeemID).
+  "ratelimits": [
+    {
+      "name": "REDEEMID_RATE_LIMIT",
+      "namespace_id": "1001",
+      "simple": { "limit": 20, "period": 60 }
+    }
+  ],
   "r2_buckets": [
     {
       "binding": "MEDIA",
