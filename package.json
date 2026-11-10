@@ -20,7 +20,7 @@
 		"react": "19.2.4",
 		"react-dom": "19.2.4",
 		"tailwindcss": "^4.3.3",
-		"@redeemid/emdash": "https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.17/redeemid-emdash-0.0.17.tgz",
+		"@redeemid/emdash": "https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.18/redeemid-emdash-0.0.18.tgz",
 		"@emdash-cms/auth": "1.1.0"
 	},
 	"devDependencies": {
