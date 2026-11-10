@@ -10,71 +10,13 @@ const emdashPreviewUrl = process.env.EMDASH_PREVIEW_URL
 	? new URL(process.env.EMDASH_PREVIEW_URL)
 	: undefined;
 // The store comes from the REDEEMID_SHOPIFY_STORE_DOMAIN secret.
+// Levels, features, rules, the meter, the join link and protected folders are
+// set in the admin (Plugins → RedeemID → Access), not here, so staff can
+// change them without a deploy.
 const redeemidConfig = {
-	levels: [
-		{
-			slug: "silver",
-			name: "Silver",
-			tags: ["silver-member"],
-			wall: "This is a Silver story. Silver members read our culture desk, features and neighborhood guides.",
-		},
-		{
-			slug: "gold",
-			name: "Gold",
-			tags: ["gold-member"],
-			wall: "This is a Gold story. Gold members read every investigation and Ledger Report in full.",
-		},
-		{
-			slug: "premium",
-			name: "Gold + Silver",
-			tags: ["gold-member", "silver-member"],
-			match: "all",
-			wall: "This story is for members with both Gold and Silver: everything the Ledger publishes.",
-		},
-	],
-	// Features, as on the WordPress demo. The member card lists them; Support thanks supporters.
-	features: [
-		{ slug: "ad-free", name: "Ad-free reading", levels: ["gold"], tags: ["ad-free-addon"] },
-		{ slug: "early-briefing", name: "Early briefing", levels: ["silver", "gold"] },
-		{ slug: "supporter", name: "Supporter", tags: ["supporter"] },
-	],
 	// Member preferences: customer fields defined in Shopify (Settings → Custom
 	// data → Customers). Fields not defined there are left out.
 	preferences: [{ key: "ledger.topics" }, { key: "ledger.newsletter" }],
-	// Files in this media folder reach Gold members and staff only.
-	files: [{ folder: "Gold downloads", levels: ["gold"] }],
-	// The wall's join link.
-	join: { href: "/join/", label: "Become a member" },
-	// Signed-in readers without access open 2 locked stories a month free.
-	meter: { limit: 2, period: "month" },
-	// Content rules, as on the WordPress demo. A story's own Paywall break can
-	// pick its levels; a break with none picked follows these rules.
-	rules: [
-		// Sections: Investigations needs Gold, Culture needs Silver. A story in
-		// both needs both (rules combine most restrictive).
-		{ collection: "posts", taxonomy: "category", term: "investigations", levels: ["gold"] },
-		{ collection: "posts", taxonomy: "category", term: "culture", levels: ["silver"] },
-		// "Free to read" opens a story whatever its section says.
-		{ collection: "posts", taxonomy: "tag", term: "free-to-read", levels: [], open: true },
-		// Briefings need any signed-in member; the Weekend edition is open.
-		{ collection: "briefings", levels: ["signed-in"] },
-		{ collection: "briefings", taxonomy: "edition", term: "weekend", levels: [], open: true },
-		// Reports need Gold. The Harbor Money series needs Gold + Silver, and its
-		// Port budgets child inherits that; Pensions has its own rule, Silver.
-		{ collection: "reports", levels: ["gold"] },
-		{ collection: "reports", taxonomy: "series", term: "harbor-money", levels: ["premium"] },
-		{ collection: "reports", taxonomy: "series", term: "pensions", levels: ["silver"] },
-		// City guides are open, except Fennel Hill (Silver).
-		{ collection: "guides", taxonomy: "neighborhood", term: "fennel-hill", levels: ["silver"] },
-		// Elections 2026 coverage needs a signed-in reader, in every collection
-		// but Corrections, which are always free.
-		...["posts", "briefings", "reports", "guides"].map((collection) => ({
-			collection,
-			taxonomy: "topic",
-			term: "elections-2026",
-			levels: ["signed-in"],
-		})),
-	],
 };
 
 export default defineConfig({
