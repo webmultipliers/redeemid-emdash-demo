@@ -435,8 +435,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r0",
-							"levels": []
+							"_key": "r0"
 						},
 						{
 							"_type": "block",
@@ -529,8 +528,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r1",
-							"levels": []
+							"_key": "r1"
 						},
 						{
 							"_type": "block",
@@ -620,8 +618,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r2",
-							"levels": []
+							"_key": "r2"
 						},
 						{
 							"_type": "block",
@@ -713,8 +710,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r3",
-							"levels": []
+							"_key": "r3"
 						},
 						{
 							"_type": "block",
@@ -799,8 +795,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r4",
-							"levels": []
+							"_key": "r4"
 						},
 						{
 							"_type": "block",
@@ -887,8 +882,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r5",
-							"levels": []
+							"_key": "r5"
 						},
 						{
 							"_type": "block",
@@ -978,8 +972,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r6",
-							"levels": []
+							"_key": "r6"
 						},
 						{
 							"_type": "block",
@@ -1069,8 +1062,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r7",
-							"levels": []
+							"_key": "r7"
 						},
 						{
 							"_type": "block",
@@ -2109,8 +2101,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r8",
-							"levels": []
+							"_key": "r8"
 						},
 						{
 							"_type": "block",
@@ -2215,10 +2206,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r9",
-							"levels": [
-								"signed-in"
-							]
+							"_key": "r9"
 						},
 						{
 							"_type": "block",
@@ -2323,10 +2311,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r10",
-							"levels": [
-								"silver"
-							]
+							"_key": "r10"
 						},
 						{
 							"_type": "block",
@@ -2431,10 +2416,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r11",
-							"levels": [
-								"gold"
-							]
+							"_key": "r11"
 						},
 						{
 							"_type": "block",
@@ -2539,8 +2521,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r12",
-							"levels": []
+							"_key": "r12"
 						},
 						{
 							"_type": "block",
@@ -2645,10 +2626,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r13",
-							"levels": [
-								"signed-in"
-							]
+							"_key": "r13"
 						},
 						{
 							"_type": "block",
@@ -2753,10 +2731,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r14",
-							"levels": [
-								"premium"
-							]
+							"_key": "r14"
 						},
 						{
 							"_type": "block",
@@ -2861,8 +2836,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r15",
-							"levels": []
+							"_key": "r15"
 						},
 						{
 							"_type": "block",
@@ -2967,10 +2941,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r16",
-							"levels": [
-								"signed-in"
-							]
+							"_key": "r16"
 						},
 						{
 							"_type": "block",
@@ -3075,8 +3046,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r17",
-							"levels": []
+							"_key": "r17"
 						},
 						{
 							"_type": "block",
@@ -3184,10 +3154,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r18",
-							"levels": [
-								"gold"
-							]
+							"_key": "r18"
 						},
 						{
 							"_type": "block",
@@ -3292,8 +3259,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r19",
-							"levels": []
+							"_key": "r19"
 						},
 						{
 							"_type": "block",
@@ -3401,8 +3367,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r20",
-							"levels": []
+							"_key": "r20"
 						},
 						{
 							"_type": "block",
@@ -3508,8 +3473,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r21",
-							"levels": []
+							"_key": "r21"
 						},
 						{
 							"_type": "block",
@@ -3617,8 +3581,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r22",
-							"levels": []
+							"_key": "r22"
 						},
 						{
 							"_type": "block",
@@ -3709,10 +3672,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "t54",
-							"levels": [
-								"signed-in"
-							]
+							"_key": "t54"
 						},
 						{
 							"_type": "block",
@@ -3776,8 +3736,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r23",
-							"levels": []
+							"_key": "r23"
 						},
 						{
 							"_type": "block",
@@ -3867,8 +3826,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r24",
-							"levels": []
+							"_key": "r24"
 						},
 						{
 							"_type": "block",
@@ -3958,8 +3916,7 @@
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r25",
-							"levels": []
+							"_key": "r25"
 						},
 						{
 							"_type": "block",
