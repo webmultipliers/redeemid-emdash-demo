@@ -1,15 +1,54 @@
 ---
-import {getEmDashEntry,getEmDashCollection} from 'emdash';
+import { getEmDashEntry, getEmDashCollection } from 'emdash';
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import RichText from '../../components/ui/RichText.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
-const {section,slug}=Astro.params;
-if(!section||!slug)return Astro.redirect('/404');
-if(['category','tag','topic','series'].includes(section)) { return Astro.rewrite(new Request(new URL('/archive-view?kind='+section+'&slug='+slug,Astro.url))); }
-const map={stories:'posts',briefings:'briefings',reports:'reports',guides:'guides',corrections:'corrections'} as const;
-const collection=map[section as keyof typeof map]; if(!collection)return Astro.redirect('/404');
-const {entry,cacheHint}=await getEmDashEntry(collection,slug); if(!entry)return Astro.redirect('/404'); Astro.cache.set(cacheHint);
-const data=entry.data; const author='author_name' in data ? data.author_name : undefined;
+import { NEWEST, isoDate, kicker, published, termLabels } from '../../lib/ledger';
+
+const { section, slug } = Astro.params;
+if (!section || !slug) return Astro.redirect('/404');
+if (['category', 'tag', 'topic', 'series'].includes(section)) {
+	return Astro.rewrite(new Request(new URL('/archive-view?kind=' + section + '&slug=' + slug, Astro.url)));
+}
+const map = { stories: 'posts', briefings: 'briefings', reports: 'reports', guides: 'guides', corrections: 'corrections' } as const;
+const collection = map[section as keyof typeof map];
+if (!collection) return Astro.redirect('/404');
+const { entry, cacheHint } = await getEmDashEntry(collection, slug);
+if (!entry) return Astro.redirect('/404');
+Astro.cache.set(cacheHint);
+const data = entry.data;
+const author = 'author_name' in data ? data.author_name : undefined;
+const top = kicker(collection, entry);
+const date = published(entry);
+
+// More to read: the newest from the same section (stories) or collection.
+const listed = await getEmDashCollection(collection, { limit: 100, ...NEWEST });
+Astro.cache.set(listed.cacheHint);
+const category = data.terms?.category?.[0]?.slug;
+const others = listed.entries.filter((e) => e.id !== entry.id && e.id !== 'members-only-article');
+const same = category ? others.filter((e) => e.data.terms?.category?.some((t: { slug?: string }) => t.slug === category)) : [];
+const more = [...same, ...others.filter((e) => !same.includes(e))].slice(0, 4);
+const moreTitle = category ? `More from ${top.label}` : `More ${{ briefings: 'briefings', reports: 'Ledger Reports', guides: 'city guides', corrections: 'corrections' }[collection as string] ?? 'from the Ledger'}`;
+const topic = termLabels(entry, 'topic');
 ---
-<SiteLayout title={data.title} description={data.dek} content={{collection,id:data.id,slug:entry.id}}><article class="article"><div class="card-section">{section}</div><h1 {...entry.edit.title}>{data.title}</h1><p class="dek" {...entry.edit.dek}>{data.dek}</p><div class="byline">{author} <AccessBadge collection={collection} terms={data.terms} content={data.content} class="badge"/></div><hr style="border:0;border-top:1px solid #e3e0d8;margin:28px 0"/><div class="article-body"><RichText value={data.content} collection={collection} terms={data.terms} id={data.id}/></div></article></SiteLayout>
+<SiteLayout title={data.title} description={data.dek} content={{ collection, id: data.id, slug: entry.id }}>
+	<article class="article">
+		<div class="card-section">{top.href ? <a href={top.href}>{top.label}</a> : top.label}{topic && <> · {topic}</>}</div>
+		<h1 {...entry.edit.title}>{data.title}</h1>
+		<p class="dek" {...entry.edit.dek}>{data.dek}</p>
+		<div class="byline">
+			<AccessBadge collection={collection} terms={data.terms} content={data.content} id={entry.id} class="badge" />
+			{author && <span class="byline-author">By {author}</span>}
+			{date && <time datetime={isoDate(entry)}>{date}</time>}
+		</div>
+		<hr class="article-rule" />
+		<div class="article-body"><RichText value={data.content} collection={collection} terms={data.terms} id={data.id} /></div>
+	</article>
+	{more.length > 0 && (
+		<section class="wrap section more">
+			<div class="section-head"><h2>{moreTitle}</h2>{top.href ? <a href={top.href}>View section →</a> : <a href={`/${section}/`}>View all →</a>}</div>
+			<div class="story-grid scroll">{more.map((e) => <StoryCard entry={e} collection={collection} />)}</div>
+		</section>
+	)}
+</SiteLayout>

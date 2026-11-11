@@ -11,6 +11,53 @@ import '../styles/global.css';
 const {title,description,content}=Astro.props;
 const settings=await getSiteSettings(); const menu=await getMenu('primary');
 const siteTitle=settings.title || 'The Harborview Ledger'; const documentTitle=title ? `${title} — ${siteTitle}`:siteTitle;
+const today=new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(new Date());
+const here=Astro.url.pathname;
+const more=[{label:'Briefings',url:'/briefings/'},{label:'Reports',url:'/reports/'},{label:'Guides',url:'/guides/'},{label:'Shop',url:'/shop/'},{label:'Search',url:'/search/'}];
 const ctx=createPublicPageContext({Astro,kind:content?'content':'custom',pageType:'website',title:documentTitle,pageTitle:title||siteTitle,description,content});
 ---
-<!doctype html><html lang="en"><head><meta charset="utf-8"/><meta name="viewport" content="width=device-width"/><title>{documentTitle}</title><EmDashHead page={ctx}/></head><body><EmDashBodyStart page={ctx}/><a class="skip" href="#main-content">Skip to content</a><header><div class="top wrap"><span>{new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(new Date())}</span><div class="topbar-actions"><Account/> <a href="/cart/" class="top-cart">View cart</a> <Cart label="Cart" drawer/></div></div><div class="mast wrap"><div class="mast-side">INDEPENDENT LOCAL JOURNALISM<br/>HARBORVIEW, EST. TODAY</div><a href="/" class="logo">{siteTitle}</a><a class="join" href="/join/">Become a member</a></div><nav class="nav" aria-label="Sections"><div class="wrap navinner">{menu?.items?.map(item=><a href={item.url}>{item.label}</a>)}<a href="/briefings/">Briefings</a><a href="/reports/">Reports</a><a href="/shop/">Shop</a><a href="/search/">Search ⌕</a></div></nav></header><main id="main-content"><div class="wrap"><Notices/></div><slot/></main><footer><div class="wrap foot"><div><a class="footlogo" href="/">{siteTitle}</a><p>{settings.tagline}</p></div><div class="footlinks"><a href="/about/">About</a><a href="/join/">Join</a><a href="/support/">Support</a><a href="/corrections/">Corrections</a></div></div><div class="wrap footnote"><span>The Ledger is a fictional demo.</span> <span>© The Harborview Ledger</span></div></footer><CartDrawer/><RedeemIDClient/><EmDashBodyEnd page={ctx}/></body></html>
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8" /><meta name="viewport" content="width=device-width" /><title>{documentTitle}</title><EmDashHead page={ctx} /></head>
+<body>
+<EmDashBodyStart page={ctx} />
+<a class="skip" href="#main-content">Skip to content</a>
+<header>
+	<div class="top wrap">
+		<span>{today}</span>
+		<div class="topbar-actions"><Account /> <Cart label="Cart" href="/cart/" drawer /></div>
+	</div>
+	<div class="mast wrap">
+		<div class="mast-side">INDEPENDENT LOCAL JOURNALISM<br />HARBORVIEW, EST. TODAY</div>
+		<a href="/" class="logo">{siteTitle}</a>
+		<a class="join" href="/join/">Become a member</a>
+	</div>
+	<nav class="nav" aria-label="Sections">
+		<div class="wrap navinner">
+			{menu?.items?.map((item) => <a href={item.url} aria-current={here.startsWith(item.url) ? 'page' : undefined}>{item.label}</a>)}
+			{more.map((item) => <a href={item.url} aria-current={here.startsWith(item.url) ? 'page' : undefined}>{item.label}</a>)}
+		</div>
+	</nav>
+</header>
+<main id="main-content"><div class="wrap"><Notices /></div><slot /></main>
+<footer>
+	<div class="wrap foot">
+		<div class="foot-brand">
+			<a class="footlogo" href="/">{siteTitle}</a>
+			<p>{settings.tagline}. Most of what we publish is free. Members pay for the reporting that takes months.</p>
+			<a class="join" href="/join/">Become a member</a>
+		</div>
+		<nav class="footcols" aria-label="Footer">
+			<div><h2>Sections</h2>{menu?.items?.map((item) => <a href={item.url}>{item.label}</a>)}</div>
+			<div><h2>More from the Ledger</h2><a href="/briefings/">Briefings</a><a href="/reports/">Ledger Reports</a><a href="/guides/">City guides</a><a href="/corrections/">Corrections</a><a href="/about/">About the Ledger</a><a href="/search/">Search</a></div>
+			<div><h2>Membership</h2><a href="/join/">Plans</a><a href="/account/">Your account</a><a href="/support/">Support the newsroom</a><a href="/shop/">Shop</a></div>
+		</nav>
+	</div>
+	<div class="wrap footnote">
+		<span>The Harborview Ledger is fictional. Every story, person and place exists to show the RedeemID plugin.</span>
+		<span>For testers: <a href="/tag-gates/">Tag gates</a> · <a href="/members-area/">Members area</a> · <a href="/stories/members-only-article/">Members-only test story</a></span>
+	</div>
+</footer>
+<CartDrawer /><RedeemIDClient /><EmDashBodyEnd page={ctx} />
+</body>
+</html>

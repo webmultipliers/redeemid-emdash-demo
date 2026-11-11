@@ -1,17 +1,95 @@
 ---
 import SiteLayout from '../layouts/SiteLayout.astro';
 import RichText from '../components/ui/RichText.astro';
-import {getEmDashCollection,getEmDashEntry} from 'emdash';
+import StoryCard from '../components/StoryCard.astro';
+import { getEmDashCollection, getEmDashEntry } from 'emdash';
 import MemberCard from '@redeemid/emdash/components/MemberCard.astro';
 import Preferences from '@redeemid/emdash/components/Preferences.astro';
 import YourData from '@redeemid/emdash/components/YourData.astro';
-import {viewer} from '@redeemid/emdash/access';
-import {hasFeature} from '@redeemid/emdash/features';
-const {page}=Astro.params; if(!page||!['about','join','support','shop','search','account','briefings','reports','guides','corrections','tag-gates','members-area'].includes(page))return Astro.redirect('/404'); const title=page==='guides'?'City guides':page.charAt(0).toUpperCase()+page.slice(1);
-const collectionMap={briefings:'briefings',reports:'reports',guides:'guides',corrections:'corrections'} as const;
-const collection=collectionMap[page as keyof typeof collectionMap]; const result=collection ? await getEmDashCollection(collection,{limit:100}) : null; if(result) Astro.cache.set(result.cacheHint);
-const copyResult=['about','join','support','shop','tag-gates','members-area'].includes(page) ? await getEmDashEntry('pages',page) : null; if(copyResult) Astro.cache.set(copyResult.cacheHint); const copy=copyResult?.entry;
-const member=page==='join' ? (await viewer(Astro)).levels.length>0 : false;
-const supporter=page==='support' ? await hasFeature(Astro,'supporter') : false;
+import { viewer } from '@redeemid/emdash/access';
+import { hasFeature } from '@redeemid/emdash/features';
+import { NEWEST } from '../lib/ledger';
+
+const { page } = Astro.params;
+const pages = ['about', 'join', 'support', 'shop', 'search', 'account', 'briefings', 'reports', 'guides', 'corrections', 'tag-gates', 'members-area'];
+if (!page || !pages.includes(page)) return Astro.redirect('/404');
+const titles: Record<string, string> = { guides: 'City guides', reports: 'Ledger Reports', account: 'Your account', search: 'Search the Ledger' };
+const title = titles[page] ?? page.charAt(0).toUpperCase() + page.slice(1);
+const intros: Record<string, string> = {
+	briefings: 'The day in five minutes: what happened, what to watch and what to do this weekend.',
+	reports: 'Data investigations into where Harborview’s money goes. Each one takes months.',
+	guides: 'Where to eat, walk and wait for the ferry, neighborhood by neighborhood.',
+	corrections: 'When we get something wrong, we fix it and say so here.',
+};
+const collectionMap = { briefings: 'briefings', reports: 'reports', guides: 'guides', corrections: 'corrections' } as const;
+const collection = collectionMap[page as keyof typeof collectionMap];
+const result = collection ? await getEmDashCollection(collection, { limit: 100, ...NEWEST }) : null;
+if (result) Astro.cache.set(result.cacheHint);
+const copyResult = ['about', 'join', 'support', 'shop', 'tag-gates', 'members-area'].includes(page) ? await getEmDashEntry('pages', page) : null;
+if (copyResult) Astro.cache.set(copyResult.cacheHint);
+const copy = copyResult?.entry;
+const member = page === 'join' ? (await viewer(Astro)).levels.length > 0 : false;
+const supporter = page === 'support' ? await hasFeature(Astro, 'supporter') : false;
+
+// Search: titles, deks and bylines, which every list shows anyway. Bodies
+// are left out, so a search never reveals what a locked entry says.
+const query = page === 'search' ? (Astro.url.searchParams.get('q') ?? '').trim().slice(0, 100) : '';
+const words = query.toLowerCase().match(/[\p{L}\p{N}]+/gu) ?? [];
+let found: { collection: string; entry: any }[] = [];
+if (words.length) {
+	for (const c of ['posts', 'reports', 'briefings', 'guides', 'corrections']) {
+		const { entries } = await getEmDashCollection(c, { limit: 100, ...NEWEST });
+		for (const entry of entries) {
+			const hay = [entry.data.title, entry.data.dek, entry.data.author_name].filter(Boolean).join(' ').toLowerCase();
+			if (entry.id !== 'members-only-article' && words.every((w) => hay.includes(w))) found.push({ collection: c, entry });
+		}
+	}
+}
 ---
-<SiteLayout title={title}>{result ? <div class="wrap archive"><div class="eyebrow">THE HARBORVIEW LEDGER</div><h1>{title}</h1>{page==='reports' && <nav aria-label="Report series"><a href="/series/harbor-money/">Harbor Money</a> · <a href="/series/port-budgets/">Port budgets</a> · <a href="/series/pensions/">Pensions</a></nav>}<div class="archive-list">{result.entries.map(e=><article><h3><a href={'/'+page+'/'+e.id+'/'}>{e.data.title}</a></h3><p>{e.data.dek}</p></article>)}</div></div> : <div class="article simple">{copy && <><h1 {...copy.edit.title}>{copy.data.title}</h1>{member && <p class="join-thanks" role="status">Thanks for being a member. Your plan is marked below; <a href="/account/">see your membership</a>.</p>}{supporter && <p class="join-thanks" role="status">You're a Ledger supporter. Thank you. Give again any time.</p>}{copy.data.content && <div {...copy.edit.content}><RichText value={copy.data.content} collection="pages"/></div>}{page==='about' && <a class="text-link" href="/corrections/">Read corrections →</a>}</>}{page==='account' && <><MemberCard title="Your Ledger membership"/><Preferences title="Your Ledger preferences"/><YourData/></>}{page==='search' && <><h1>Search the Ledger</h1><form action="/search/" method="get"><label for="q">Search stories and more</label><input id="q" name="q" type="search" value={Astro.url.searchParams.get('q') || ''} style="border:1px solid #5c6670;padding:10px;margin:10px"/><button type="submit">Search →</button></form><p>Search is not yet available across all collections.</p></>}</div>}</SiteLayout>
+<SiteLayout title={title}>
+	{result ? (
+		<div class="wrap archive">
+			<div class="eyebrow">The Harborview Ledger</div>
+			<h1>{title}</h1>
+			{intros[page] && <p class="archive-note">{intros[page]}</p>}
+			{page === 'reports' && (
+				<nav class="chips" aria-label="Report series"><a href="/series/harbor-money/">Harbor Money</a><a href="/series/port-budgets/">Port budgets</a><a href="/series/pensions/">Pensions</a></nav>
+			)}
+			<div class="archive-list">{result.entries.map((e) => <StoryCard entry={e} collection={collection} />)}</div>
+		</div>
+	) : page === 'search' ? (
+		<div class="wrap archive">
+			<div class="eyebrow">The Harborview Ledger</div>
+			<h1>{title}</h1>
+			<form class="search-form" action="/search/" method="get" role="search">
+				<label for="q">Search stories, reports, briefings and guides</label>
+				<div><input id="q" name="q" type="search" value={query} placeholder="ferry, bridge, pensions…" /><button type="submit">Search</button></div>
+			</form>
+			{query && <p class="archive-note" role="status">{found.length ? `${found.length} result${found.length === 1 ? '' : 's'} for “${query}”` : `Nothing matches “${query}”. Try fewer words.`}</p>}
+			{found.length > 0 && <div class="archive-list">{found.map((f) => <StoryCard entry={f.entry} collection={f.collection} />)}</div>}
+			{!query && <p class="archive-note">Try <a href="/search/?q=ferry">ferry</a>, <a href="/search/?q=bridge">bridge</a> or <a href="/search/?q=port">port</a>. Looking for something to buy? <a href="/shop/search/">Search the shop</a>.</p>}
+		</div>
+	) : (
+		<div class="article simple">
+			{copy && (
+				<>
+					<h1 {...copy.edit.title}>{copy.data.title}</h1>
+					{member && <p class="join-thanks" role="status">Thanks for being a member. Your plan is marked below; <a href="/account/">see your membership</a>.</p>}
+					{supporter && <p class="join-thanks" role="status">You're a Ledger supporter. Thank you. Give again any time.</p>}
+					{copy.data.content && <div {...copy.edit.content}><RichText value={copy.data.content} collection="pages" /></div>}
+					{page === 'about' && <a class="text-link" href="/corrections/">Read corrections →</a>}
+				</>
+			)}
+			{page === 'account' && (
+				<>
+					<h1>{title}</h1>
+					<p class="archive-note">Your membership, your reading preferences and the data we hold about you.</p>
+					<MemberCard title="Your Ledger membership" />
+					<Preferences title="Your Ledger preferences" />
+					<YourData />
+					<p class="account-links"><a class="text-link" href="/join/">See membership plans →</a> <a class="text-link" href="/support/">Support the newsroom →</a></p>
+				</>
+			)}
+		</div>
+	)}
+</SiteLayout>

@@ -279,6 +279,11 @@
 					"id": "term:neighborhood:old-quay",
 					"slug": "old-quay",
 					"label": "Old Quay"
+				},
+				{
+					"id": "term:neighborhood:gull-island",
+					"slug": "gull-island",
+					"label": "Gull Island"
 				}
 			]
 		},
@@ -403,78 +408,92 @@
 				"status": "published",
 				"data": {
 					"title": "The weekday briefing: Election questions",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "Five questions every council candidate should answer before November, and where to hear them.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k5l",
+							"_key": "f198",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5k",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f199",
+									"text": "Good morning. With three weeks to go, nine candidates are running for four council seats. Here is what to ask them.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5n",
+							"_key": "f200",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5m",
-									"text": "Here is what readers should know.",
+									"_key": "f201",
+									"text": "First: will they keep the island ferries running every 40 minutes, and how will they pay for it?",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r0"
+							"_key": "f202"
 						},
 						{
 							"_type": "block",
-							"_key": "k5p",
+							"_key": "f203",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5o",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f204",
+									"text": "Second: where should the second harbor bridge land? Third: will they renew the startup tax break? Fourth: what would they do about the arts council's grants? Fifth: will they publish their calendars?",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5r",
+							"_key": "f205",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5q",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f206",
+									"text": "Candidate forums are on Tuesday at the Lowmarket library and Thursday at Fennel Hill High School. Both start at 7 p.m.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5t",
+							"_key": "f207",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5s",
-									"text": "LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-ELECTION-QUESTIONS",
+									"_key": "f208",
+									"text": "Our full voter guide goes out to signed-in readers on Friday.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f209",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f210",
+									"text": "Leak marker: LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-ELECTION-QUESTIONS",
 									"marks": []
 								}
 							]
@@ -496,78 +515,92 @@
 				"status": "published",
 				"data": {
 					"title": "The weekend briefing: Around the harbor",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "Night market, a museum free day and the best low-tide walk of the month.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k5b",
+							"_key": "f211",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5a",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f212",
+									"text": "Happy Saturday. The weather looks dry until Sunday evening, so here is how to spend it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5d",
+							"_key": "f213",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5c",
-									"text": "Here is what readers should know.",
+									"_key": "f214",
+									"text": "The Lowmarket night market runs both nights from 5 p.m. Go early on Saturday; the dumpling stalls sell out by eight.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r1"
+							"_key": "f215"
 						},
 						{
 							"_type": "block",
-							"_key": "k5f",
+							"_key": "f216",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5e",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f217",
+									"text": "Sunday is the first of the month, so the Maritime Museum is free for residents. Bring proof of address.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5h",
+							"_key": "f218",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5g",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f219",
+									"text": "Low tide is at 10:40 a.m. on Sunday. The walk from Old Quay to the lighthouse is open for about two hours either side.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5j",
+							"_key": "f220",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5i",
-									"text": "LEDGER-SECRET-CPT-THE-WEEKEND-BRIEFING-AROUND-THE-HARBOR",
+									"_key": "f221",
+									"text": "Ferries run on the weekend schedule. The last boat back from Gull Island leaves at 9:15 p.m.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f222",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f223",
+									"text": "Leak marker: LEDGER-SECRET-CPT-THE-WEEKEND-BRIEFING-AROUND-THE-HARBOR",
 									"marks": []
 								}
 							]
@@ -586,78 +619,508 @@
 				"status": "published",
 				"data": {
 					"title": "The weekday briefing: What to watch at City Hall",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "The council's week: the ferry budget, a parking vote and the audit no one wants to talk about.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k51",
+							"_key": "f224",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k50",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f225",
+									"text": "Good morning. A busy week at City Hall starts Tuesday with the transportation committee and ends Thursday with a full council vote.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k53",
+							"_key": "f226",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k52",
-									"text": "Here is what readers should know.",
+									"_key": "f227",
+									"text": "Tuesday: the ferry division explains how it will staff the island routes this winter.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r2"
+							"_key": "f228"
 						},
 						{
 							"_type": "block",
-							"_key": "k55",
+							"_key": "f229",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k54",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f230",
+									"text": "Wednesday: the budget committee takes up a plan to raise parking meter rates downtown by 50 cents an hour.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k57",
+							"_key": "f231",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k56",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f232",
+									"text": "Thursday: the full council votes on whether to release the arts council's audit to the public.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k59",
+							"_key": "f233",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k58",
-									"text": "LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-WHAT-TO-WATCH-AT-CITY-HALL",
+									"_key": "f234",
+									"text": "Meetings are streamed on the city's website and start at 6 p.m.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f235",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f236",
+									"text": "Leak marker: LEDGER-SECRET-CPT-THE-WEEKDAY-BRIEFING-WHAT-TO-WATCH-AT-CITY-HALL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekday"
+					]
+				}
+			},
+			{
+				"id": "briefings:monday-briefing-the-bridge-vote-a-ferry-warning-and-a-record-oyster-count",
+				"slug": "monday-briefing-the-bridge-vote-a-ferry-warning-and-a-record-oyster-count",
+				"status": "published",
+				"data": {
+					"title": "Monday briefing: the bridge vote, a ferry warning and a record oyster count",
+					"dek": "Everything you need for the week ahead in five minutes.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f567",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f568",
+									"text": "Good morning. The council's bridge vote is the talk of the city. Here is what it means and what comes next.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f569",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f570",
+									"text": "The route now goes to the state, which will decide on funding by June.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f571"
+						},
+						{
+							"_type": "block",
+							"_key": "f572",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f573",
+									"text": "Ferries: the island schedule changes to hourly on December 1. Check the new timetable before you travel.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f574",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f575",
+									"text": "Oysters: volunteers counted 1.4 million live oysters on the south bay reef, a record.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f576",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f577",
+									"text": "Weather: dry until Thursday, then a storm with gusts up to 50 miles an hour.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f578",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f579",
+									"text": "Leak marker: LEDGER-SECRET-CPT-MONDAY-BRIEFING-THE-BRIDGE-VOTE-A-FERRY-WARNING-AND-A-RECORD-OYSTER-COUNT",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekday"
+					]
+				}
+			},
+			{
+				"id": "briefings:evening-briefing-the-arts-edition",
+				"slug": "evening-briefing-the-arts-edition",
+				"status": "published",
+				"data": {
+					"title": "Evening briefing: the arts edition",
+					"dek": "Galleries, the museum's whale hall and the jazz festival's big move.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f580",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f581",
+									"text": "Good evening. A big week for culture in Harborview, and not all of it good.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f582",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f583",
+									"text": "The Maritime Museum's whale hall drew 12,000 visitors in its first weekend.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f584"
+						},
+						{
+							"_type": "block",
+							"_key": "f585",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f586",
+									"text": "The jazz festival is moving indoors after forty years on the pier.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f587",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f588",
+									"text": "And the arts council has asked five closed galleries to return their grants, after our investigation.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f589",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f590",
+									"text": "Tonight: a free reading at Okafor & Daughters at 7 p.m.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f591",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f592",
+									"text": "Leak marker: LEDGER-SECRET-CPT-EVENING-BRIEFING-THE-ARTS-EDITION",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekday"
+					]
+				}
+			},
+			{
+				"id": "briefings:weekend-briefing-what-to-do-on-the-harbor-this-weekend",
+				"slug": "weekend-briefing-what-to-do-on-the-harbor-this-weekend",
+				"status": "published",
+				"data": {
+					"title": "Weekend briefing: what to do on the harbor this weekend",
+					"dek": "The night market's last weekend, a seal walk and where to find the best chowder.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f593",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f594",
+									"text": "Happy Saturday. This is the night market's last weekend of the year, so make it count.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f595",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f596",
+									"text": "The market opens at 5 p.m. on Pier Street. Bring cash; half the stalls don't take cards.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f597"
+						},
+						{
+							"_type": "block",
+							"_key": "f598",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f599",
+									"text": "Sunday morning: the seal count walk leaves Old Quay pier at 9 a.m. It is free and takes an hour.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f600",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f601",
+									"text": "Chowder: the Harbor Bar's is still the best. Get there before noon.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f602",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f603",
+									"text": "Ferries run on the weekend schedule.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f604",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f605",
+									"text": "Leak marker: LEDGER-OPEN-CPT-WEEKEND-BRIEFING-WHAT-TO-DO-ON-THE-HARBOR-THIS-WEEKEND",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"edition": [
+						"weekend"
+					]
+				}
+			},
+			{
+				"id": "briefings:storm-briefing-closures-shelters-and-the-ferry-schedule",
+				"slug": "storm-briefing-closures-shelters-and-the-ferry-schedule",
+				"status": "published",
+				"data": {
+					"title": "Storm briefing: closures, shelters and the ferry schedule",
+					"dek": "What's closed, where to go and when the boats will run.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f606",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f607",
+									"text": "Good morning. A storm arrives this afternoon with gusts up to 50 miles an hour and a high tide at 7:40 p.m.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f608",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f609",
+									"text": "Quay Street and the Old Quay garage will close at 4 p.m. because of flooding.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f610"
+						},
+						{
+							"_type": "block",
+							"_key": "f611",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f612",
+									"text": "Shelters open at 3 p.m. at the Lowmarket library and Fennel Hill High School. Pets are welcome.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f613",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f614",
+									"text": "The last ferries leave the islands at 2 p.m. Service resumes at 7 a.m. if the wind drops.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f615",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f616",
+									"text": "Report fallen trees and power lines to 311 or Tidewater Power.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f617",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f618",
+									"text": "Leak marker: LEDGER-SECRET-CPT-STORM-BRIEFING-CLOSURES-SHELTERS-AND-THE-FERRY-SCHEDULE",
 									"marks": []
 								}
 							]
@@ -678,78 +1141,64 @@
 				"status": "published",
 				"data": {
 					"title": "Correction: A waterfront figure",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "An earlier version of our waterfront budget story overstated the port's reserve fund.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k7t",
+							"_key": "f276",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7s",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f277",
+									"text": "An earlier version of \"Harbor Money: Following the waterfront budget\" said the port held $140 million in reserves. The correct figure is $104 million.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7v",
+							"_key": "f278",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7u",
-									"text": "Here is what readers should know.",
+									"_key": "f279",
+									"text": "The error came from a transposed number in our notes. It did not change the story's conclusions.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r3"
+							"_key": "f280"
 						},
 						{
 							"_type": "block",
-							"_key": "k7x",
+							"_key": "f281",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7w",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f282",
+									"text": "We regret the error. Report corrections to corrections@harborviewledger.example.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7z",
+							"_key": "f283",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7y",
-									"text": "We welcome readers who help us understand the city better.",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "k81",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "k80",
-									"text": "LEDGER-OPEN-CPT-CORRECTION-A-WATERFRONT-FIGURE",
+									"_key": "f284",
+									"text": "Leak marker: LEDGER-OPEN-CPT-CORRECTION-A-WATERFRONT-FIGURE",
 									"marks": []
 								}
 							]
@@ -763,78 +1212,206 @@
 				"status": "published",
 				"data": {
 					"title": "Correction: Harbor meeting date",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "The port commission meets on November 18, not November 11.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k7j",
+							"_key": "f285",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7i",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f286",
+									"text": "An earlier version of our harbor pilots story gave the wrong date for the port commission's next meeting. It is November 18.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7l",
+							"_key": "f287",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7k",
-									"text": "Here is what readers should know.",
+									"_key": "f288",
+									"text": "The story has been updated.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r4"
+							"_key": "f289"
 						},
 						{
 							"_type": "block",
-							"_key": "k7n",
+							"_key": "f290",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7m",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f291",
+									"text": "We regret the error. Report corrections to corrections@harborviewledger.example.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7p",
+							"_key": "f292",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7o",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f293",
+									"text": "Leak marker: LEDGER-OPEN-CPT-CORRECTION-HARBOR-MEETING-DATE",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "corrections:correction-the-bridge-vote-count",
+				"slug": "correction-the-bridge-vote-count",
+				"status": "published",
+				"data": {
+					"title": "Correction: The bridge vote count",
+					"dek": "The council approved the bridge route 6 to 3, not 7 to 2.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f671",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f672",
+									"text": "An earlier version of our story on the second harbor bridge said the council voted 7 to 2. The vote was 6 to 3.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7r",
+							"_key": "f673",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7q",
-									"text": "LEDGER-OPEN-CPT-CORRECTION-HARBOR-MEETING-DATE",
+									"_key": "f674",
+									"text": "Council member Rosa Llamas voted no. We regret the error.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f675"
+						},
+						{
+							"_type": "block",
+							"_key": "f676",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f677",
+									"text": "Report corrections to corrections@harborviewledger.example.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f678",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f679",
+									"text": "Leak marker: LEDGER-OPEN-CPT-CORRECTION-THE-BRIDGE-VOTE-COUNT",
+									"marks": []
+								}
+							]
+						}
+					]
+				}
+			},
+			{
+				"id": "corrections:correction-the-transit-app-cost",
+				"slug": "correction-the-transit-app-cost",
+				"status": "published",
+				"data": {
+					"title": "Correction: The transit app's cost",
+					"dek": "The city's transit app cost $2.3 million, not $3.2 million.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f680",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f681",
+									"text": "An earlier version of our transit app review said the app cost $3.2 million. It cost $2.3 million.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f682",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f683",
+									"text": "The story has been updated.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f684"
+						},
+						{
+							"_type": "block",
+							"_key": "f685",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f686",
+									"text": "Report corrections to corrections@harborviewledger.example.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f687",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f688",
+									"text": "Leak marker: LEDGER-OPEN-CPT-CORRECTION-THE-TRANSIT-APP-COST",
 									"marks": []
 								}
 							]
@@ -850,78 +1427,92 @@
 				"status": "published",
 				"data": {
 					"title": "Finding your way around Old Quay",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "The oldest part of the harbor, block by block: where to eat, park and catch the ferry.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k79",
+							"_key": "f237",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k78",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f238",
+									"text": "Old Quay is where Harborview began, and its cobbled streets still confuse visitors. Here is how to find your way.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7b",
+							"_key": "f239",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7a",
-									"text": "Here is what readers should know.",
+									"_key": "f240",
+									"text": "The ferry terminal is at the foot of Quay Street. Everything else is within ten minutes' walk.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r5"
+							"_key": "f241"
 						},
 						{
 							"_type": "block",
-							"_key": "k7d",
+							"_key": "f242",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7c",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f243",
+									"text": "Parking is scarce. Use the garage on Mercer Street, which is free after 6 p.m.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7f",
+							"_key": "f244",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7e",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f245",
+									"text": "For lunch, the fish stalls behind the customs house open at 11 a.m. The Harbor Bar has the best view of the boats.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7h",
+							"_key": "f246",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k7g",
-									"text": "LEDGER-SECRET-CPT-FINDING-YOUR-WAY-AROUND-OLD-QUAY",
+									"_key": "f247",
+									"text": "The lighthouse walk starts at the end of the breakwater and is only open at low tide.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f248",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f249",
+									"text": "Leak marker: LEDGER-SECRET-CPT-FINDING-YOUR-WAY-AROUND-OLD-QUAY",
 									"marks": []
 								}
 							]
@@ -940,78 +1531,92 @@
 				"status": "published",
 				"data": {
 					"title": "A guide to Fennel Hill",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "Stairways, gardens and the lookout most residents have never found.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k6z",
+							"_key": "f250",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6y",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f251",
+									"text": "Fennel Hill is the city's steepest neighborhood, and the best way to see it is on foot, by its public stairways.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k71",
+							"_key": "f252",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k70",
-									"text": "Here is what readers should know.",
+									"_key": "f253",
+									"text": "There are 23 of them. This guide covers the six with the best views.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r6"
+							"_key": "f254"
 						},
 						{
 							"_type": "block",
-							"_key": "k73",
+							"_key": "f255",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k72",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f256",
+									"text": "Start at the Wren Street stairs, 212 steps with a garden at every landing.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k75",
+							"_key": "f257",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k74",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f258",
+									"text": "The Hilltop Lookout, at the end of Crane Lane, has a bench, a telescope and a view of all three islands. It is not signposted.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k77",
+							"_key": "f259",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k76",
-									"text": "LEDGER-SECRET-CPT-A-GUIDE-TO-FENNEL-HILL",
+									"_key": "f260",
+									"text": "Come down by the Juniper stairs to the Fennel Hill Saturday market.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f261",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f262",
+									"text": "Leak marker: LEDGER-SECRET-CPT-A-GUIDE-TO-FENNEL-HILL",
 									"marks": []
 								}
 							]
@@ -1030,78 +1635,92 @@
 				"status": "published",
 				"data": {
 					"title": "A walk through Lowmarket",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "A two-hour loop through the market streets, the old cannery and the park the bridge may take.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k6p",
+							"_key": "f263",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6o",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f264",
+									"text": "Lowmarket grew up around the canneries, and its streets still follow the old rail spurs. This walk takes about two hours at an easy pace.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6r",
+							"_key": "f265",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6q",
-									"text": "Here is what readers should know.",
+									"_key": "f266",
+									"text": "Start at the Pier Street lot, home of the night market on weekends.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r7"
+							"_key": "f267"
 						},
 						{
 							"_type": "block",
-							"_key": "k6t",
+							"_key": "f268",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6s",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f269",
+									"text": "Walk north on Cannery Row past the brick warehouses, now studios and a brewery. The tall chimney at the end belonged to the last cannery, which closed in 1994.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6v",
+							"_key": "f270",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6u",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f271",
+									"text": "Turn west into Cannery Park, the neighborhood's only green space and the proposed landing for the second bridge.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6x",
+							"_key": "f272",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6w",
-									"text": "LEDGER-SECRET-CPT-A-WALK-THROUGH-LOWMARKET",
+									"_key": "f273",
+									"text": "Finish at Okafor's Bakery on Front Street for the best cardamom buns in the city.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f274",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f275",
+									"text": "Leak marker: LEDGER-SECRET-CPT-A-WALK-THROUGH-LOWMARKET",
 									"marks": []
 								}
 							]
@@ -1111,6 +1730,422 @@
 				"taxonomies": {
 					"neighborhood": [
 						"lowmarket"
+					]
+				}
+			},
+			{
+				"id": "guides:where-to-eat-in-lowmarket-a-dumpling-crawl",
+				"slug": "where-to-eat-in-lowmarket-a-dumpling-crawl",
+				"status": "published",
+				"data": {
+					"title": "Where to eat in Lowmarket: a dumpling crawl",
+					"dek": "Six stops, all within ten minutes of the night market.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f619",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f620",
+									"text": "Lowmarket has the city's best dumplings, and you can try six kinds in an afternoon without walking more than ten minutes.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f621",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f622",
+									"text": "Start at Golden Steam on Pier Street for pork and chive, $8 for ten.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f623"
+						},
+						{
+							"_type": "block",
+							"_key": "f624",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f625",
+									"text": "Next: Mama Lin's for soup dumplings, then the Georgian bakery on Fish Street for khinkali.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f626",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f627",
+									"text": "Cross to Front Street for momos at Himal and pierogi at Baba's.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f628",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f629",
+									"text": "Finish with sweet sesame dumplings at the night market, Fridays and Saturdays only.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f630",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f631",
+									"text": "Leak marker: LEDGER-OPEN-CPT-WHERE-TO-EAT-IN-LOWMARKET-A-DUMPLING-CRAWL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"lowmarket"
+					]
+				}
+			},
+			{
+				"id": "guides:three-walks-on-fennel-hill-with-the-best-views-of-the-harbor",
+				"slug": "three-walks-on-fennel-hill-with-the-best-views-of-the-harbor",
+				"status": "published",
+				"data": {
+					"title": "Three walks on Fennel Hill with the best views of the harbor",
+					"dek": "Stairs, gardens and a lookout most residents have never found.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f632",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f633",
+									"text": "Fennel Hill rewards walkers. Here are three routes, from a gentle hour to a steep morning.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f634",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f635",
+									"text": "The easy one: Crane Lane to the Hilltop Lookout and back, 40 minutes.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f636"
+						},
+						{
+							"_type": "block",
+							"_key": "f637",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f638",
+									"text": "The middle one: up the Wren Street stairs, along the ridge to the water tower and down the Juniper stairs, 90 minutes.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f639",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f640",
+									"text": "The hard one: all six major stairways in a loop, 2,400 steps, about three hours.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f641",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f642",
+									"text": "All three pass the Saturday market at the foot of the Juniper stairs.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f643",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f644",
+									"text": "Leak marker: LEDGER-SECRET-CPT-THREE-WALKS-ON-FENNEL-HILL-WITH-THE-BEST-VIEWS-OF-THE-HARBOR",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"fennel-hill"
+					]
+				}
+			},
+			{
+				"id": "guides:the-fennel-hill-saturday-market-stall-by-stall",
+				"slug": "the-fennel-hill-saturday-market-stall-by-stall",
+				"status": "published",
+				"data": {
+					"title": "The Fennel Hill Saturday market, stall by stall",
+					"dek": "What to buy at the 34 stalls, and when to get there before it sells out.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f645",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f646",
+									"text": "The Fennel Hill Saturday market runs year-round at the foot of the Juniper stairs, from 8 a.m. to 1 p.m.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f647",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f648",
+									"text": "It has 34 stalls. These are the ones worth getting up early for.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f649"
+						},
+						{
+							"_type": "block",
+							"_key": "f650",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f651",
+									"text": "Hillside Eggs sells out by nine. The mushroom stall changes every week.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f652",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f653",
+									"text": "The bread at Ninth Street Bakehouse is baked overnight in a wood oven.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f654",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f655",
+									"text": "Bring a bag; the market banned plastic in 2022.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f656",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f657",
+									"text": "Leak marker: LEDGER-OPEN-CPT-THE-FENNEL-HILL-SATURDAY-MARKET-STALL-BY-STALL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"fennel-hill"
+					]
+				}
+			},
+			{
+				"id": "guides:the-insiders-guide-to-gull-island-by-ferry",
+				"slug": "the-insiders-guide-to-gull-island-by-ferry",
+				"status": "published",
+				"data": {
+					"title": "The insider's guide to Gull Island by ferry",
+					"dek": "Which boat to take, where to sit and what to skip.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f658",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f659",
+									"text": "Gull Island is twenty minutes from downtown by ferry, and most visitors see only the landing. Here is how to see the rest.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f660",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f661",
+									"text": "Take the 9:20 boat and sit on the left for the best view of the lighthouse.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f662"
+						},
+						{
+							"_type": "block",
+							"_key": "f663",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f664",
+									"text": "Rent a bike at the landing and ride the loop road clockwise, 7 miles, mostly flat.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f665",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f666",
+									"text": "Lunch at the general store, which makes sandwiches to order.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f667",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f668",
+									"text": "Skip the gift shop by the landing. Catch the 3:40 back before the commuter rush.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f669",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f670",
+									"text": "Leak marker: LEDGER-OPEN-CPT-THE-INSIDERS-GUIDE-TO-GULL-ISLAND-BY-FERRY",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"neighborhood": [
+						"gull-island"
 					]
 				}
 			}
@@ -2073,88 +3108,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k4p",
+							"_key": "f1",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4o",
-									"text": "How membership pays for reporting like this, and what stays free.",
+									"_key": "f2",
+									"text": "Most of what we publish is free and will stay free. City Hall, the night market, the ferry schedule and the weather do not belong behind a wall.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4r",
+							"_key": "f3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4q",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f4",
+									"text": "Membership pays for the reporting that takes months: timesheets, contracts, audits and the records requests that unlock them.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r8"
+							"_key": "f5"
 						},
 						{
 							"_type": "block",
-							"_key": "k4t",
+							"_key": "f6",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4s",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f7",
+									"text": "Our investigation into harbor pilots' overtime took five months and three appeals to get the records. The ferry fuel story took four.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4v",
+							"_key": "f8",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4u",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f9",
+									"text": "Members pay for that work. In return they read everything we publish, get our briefings early and help decide what we look into next.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4x",
+							"_key": "f10",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4w",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f11",
+									"text": "If you read the Ledger and can afford it, please join. If you can't, keep reading. Either way, thank you.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4z",
+							"_key": "f12",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4y",
-									"text": "LEDGER-OPEN-NEWS-OPINION-WHY-WE-ARE-ASKING-YOU-TO-BECOME-A-MEMBER",
+									"_key": "f13",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-OPINION-WHY-WE-ARE-ASKING-YOU-TO-BECOME-A-MEMBER",
 									"marks": []
 								}
 							]
@@ -2178,88 +3213,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k4d",
+							"_key": "f14",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4c",
-									"text": "The council should keep the money and move the landing away from Lowmarket’s only park.",
+									"_key": "f15",
+									"text": "The council was right to approve a second harbor bridge. The city has needed one for thirty years, and the state will not wait forever for us to make up our minds.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4f",
+							"_key": "f16",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4e",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f17",
+									"text": "But the council chose the wrong route, and it should change it before the state does it for us.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r9"
+							"_key": "f18"
 						},
 						{
 							"_type": "block",
-							"_key": "k4h",
+							"_key": "f19",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4g",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f20",
+									"text": "The approved route lands on Cannery Park, Lowmarket's only green space. The council says it will replace the park on the old rail yard. That yard sits next to a freight line and a scrap yard. It is not a park; it is a promise.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4j",
+							"_key": "f21",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4i",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f22",
+									"text": "The northern route costs $60 million more. Spread over the bridge's life, that is less than the city spends on park maintenance in a decade.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4l",
+							"_key": "f23",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4k",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f24",
+									"text": "The council should keep the money and move the landing. Lowmarket has given up enough for the rest of the city's convenience.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4n",
+							"_key": "f25",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4m",
-									"text": "LEDGER-SECRET-NEWS-OPINION-A-SECOND-BRIDGE-IS-THE-RIGHT-CALL-BUT-NOT-ON-THAT-ROUTE",
+									"_key": "f26",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-OPINION-A-SECOND-BRIDGE-IS-THE-RIGHT-CALL-BUT-NOT-ON-THAT-ROUTE",
 									"marks": []
 								}
 							]
@@ -2283,88 +3318,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k41",
+							"_key": "f27",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k40",
-									"text": "Three years and $60 million later, the renovated museum keeps its oddest exhibit at the center.",
+									"_key": "f28",
+									"text": "Three years and $60 million later, the Harborview Maritime Museum has reopened with a new hall built around its oldest exhibit: the 70-foot skeleton of a fin whale that washed up on Gull Island in 1911.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k43",
+							"_key": "f29",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k42",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f30",
+									"text": "The skeleton was taken down in 2023, cleaned bone by bone and rehung so visitors can walk beneath it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r10"
+							"_key": "f31"
 						},
 						{
 							"_type": "block",
-							"_key": "k45",
+							"_key": "f32",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k44",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f33",
+									"text": "The new hall has floor-to-ceiling windows on the harbor side. The museum's director said the goal was to show the whale against the water it came from.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k47",
+							"_key": "f34",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k46",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f35",
+									"text": "Admission is $18 for adults and free for children under 12 and for Harborview residents on the first Sunday of each month.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k49",
+							"_key": "f36",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k48",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f37",
+									"text": "The museum expects 300,000 visitors in its first year, twice as many as before it closed.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k4b",
+							"_key": "f38",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4a",
-									"text": "LEDGER-SECRET-NEWS-THE-MARITIME-MUSEUM-REOPENS-WITH-A-HALL-BUILT-AROUND-A-WHALE-SKELETON",
+									"_key": "f39",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-THE-MARITIME-MUSEUM-REOPENS-WITH-A-HALL-BUILT-AROUND-A-WHALE-SKELETON",
 									"marks": []
 								}
 							]
@@ -2388,88 +3423,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k3p",
+							"_key": "f40",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3o",
-									"text": "Layoff notices, empty offices and a funding drought: an analysis of two years of filings.",
+									"_key": "f41",
+									"text": "Three years ago Harborview had 140 venture-backed startups. Today it has 88. Layoff notices, empty offices along the waterfront and a funding drought tell the story.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3r",
+							"_key": "f42",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3q",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f43",
+									"text": "An analysis of two years of state filings shows more companies closing than opening every quarter since early 2025.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r11"
+							"_key": "f44"
 						},
 						{
 							"_type": "block",
-							"_key": "k3t",
+							"_key": "f45",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3s",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f46",
+									"text": "The startups that remain are smaller. Median headcount has fallen from 34 to 19. The waterfront office park built for them is 40 percent vacant.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3v",
+							"_key": "f47",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3u",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f48",
+									"text": "Founders blame higher interest rates and investors who now want profits sooner. Several said they had moved their engineering teams overseas to cut costs.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3x",
+							"_key": "f49",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3w",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f50",
+									"text": "The city's tax break for startups expires next year. The council has not said whether it will renew it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3z",
+							"_key": "f51",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3y",
-									"text": "LEDGER-SECRET-NEWS-WHY-HARBORVIEWS-STARTUP-BOOM-IS-QUIETLY-TURNING-INTO-A-BUST",
+									"_key": "f52",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-WHY-HARBORVIEWS-STARTUP-BOOM-IS-QUIETLY-TURNING-INTO-A-BUST",
 									"marks": []
 								}
 							]
@@ -2493,88 +3528,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k3d",
+							"_key": "f53",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3c",
-									"text": "Recycled shells from forty restaurants are turning into habitat in the south bay.",
+									"_key": "f54",
+									"text": "Volunteers have laid recycled oyster shells from forty restaurants along a mile of the south bay. Three years later, the reef is alive and the water is measurably clearer.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3f",
+							"_key": "f55",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3e",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f56",
+									"text": "Each adult oyster filters about 50 gallons of water a day.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r12"
+							"_key": "f57"
 						},
 						{
 							"_type": "block",
-							"_key": "k3h",
+							"_key": "f58",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3g",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f59",
+									"text": "Water clarity readings taken by the university show visibility in the south bay has doubled since 2023. Eelgrass, absent for twenty years, has started to grow back.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3j",
+							"_key": "f60",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3i",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f61",
+									"text": "The project costs about $80,000 a year, most of it for a barge to move the shells. It is paid for by a fee restaurants add to oyster orders.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3l",
+							"_key": "f62",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3k",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f63",
+									"text": "The group plans to extend the reef by another half mile next summer and is looking for volunteers.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3n",
+							"_key": "f64",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3m",
-									"text": "LEDGER-OPEN-NEWS-VOLUNTEERS-HAVE-REBUILT-A-MILE-OF-OYSTER-REEF-THE-WATER-IS-ALREADY-CLEARER",
+									"_key": "f65",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-VOLUNTEERS-HAVE-REBUILT-A-MILE-OF-OYSTER-REEF-THE-WATER-IS-ALREADY-CLEARER",
 									"marks": []
 								}
 							]
@@ -2598,88 +3633,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k31",
+							"_key": "f66",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k30",
-									"text": "Island residents say the cut makes commuting to the mainland nearly impossible.",
+									"_key": "f67",
+									"text": "From December 1, ferries to Gull Island and Pine Island will run once an hour instead of every 40 minutes. The city says it cannot staff the old schedule after six deckhands left this year.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k33",
+							"_key": "f68",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k32",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f69",
+									"text": "For about 1,900 island residents who commute to the mainland, the change adds up to 40 minutes to each trip.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r13"
+							"_key": "f70"
 						},
 						{
 							"_type": "block",
-							"_key": "k35",
+							"_key": "f71",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k34",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f72",
+									"text": "The ferry division has advertised the deckhand jobs since June. Its starting wage, $21 an hour, is $6 less than a private ferry operator pays across the bay.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k37",
+							"_key": "f73",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k36",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f74",
+									"text": "Island businesses said the cut will cost them their winter trade. The Gull Island grocer said deliveries would now come on the last boat of the day and miss the morning rush.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k39",
+							"_key": "f75",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k38",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f76",
+									"text": "The council's transportation committee will hear from the ferry division on November 20. Members have asked for a plan to raise wages in next year's budget.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3b",
+							"_key": "f77",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k3a",
-									"text": "LEDGER-SECRET-NEWS-FERRY-SERVICE-TO-THE-ISLANDS-WILL-DROP-TO-HOURLY-THIS-WINTER",
+									"_key": "f78",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-FERRY-SERVICE-TO-THE-ISLANDS-WILL-DROP-TO-HOURLY-THIS-WINTER",
 									"marks": []
 								}
 							]
@@ -2703,88 +3738,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k2p",
+							"_key": "f79",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2o",
-									"text": "The terms of the tentative agreement have not been made public. The Ledger has read them.",
+									"_key": "f80",
+									"text": "A tentative agreement between the port and its largest terminal operator would bring automated cranes to the north terminal and cut 300 longshore jobs over five years, according to the union.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2r",
+							"_key": "f81",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2q",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f82",
+									"text": "The terms have not been made public. The Ledger has read a summary circulated to union members.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r14"
+							"_key": "f83"
 						},
 						{
 							"_type": "block",
-							"_key": "k2t",
+							"_key": "f84",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2s",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f85",
+									"text": "Under the summary, the terminal operator would pay for the new cranes and the port would extend its lease by 25 years. Workers who lose their jobs would get a year's pay and first call on jobs at the south terminal.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2v",
+							"_key": "f86",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2u",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f87",
+									"text": "The union's local president said the deal trades jobs for the operator's profit. The port said automation is the only way to keep shipping lines from moving to deeper harbors to the south.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2x",
+							"_key": "f88",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2w",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f89",
+									"text": "The port commission is expected to vote in December.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2z",
+							"_key": "f90",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2y",
-									"text": "LEDGER-SECRET-NEWS-PORT-AUTOMATION-DEAL-WOULD-CUT-300-JOBS-OVER-FIVE-YEARS-UNION-SAYS",
+									"_key": "f91",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-PORT-AUTOMATION-DEAL-WOULD-CUT-300-JOBS-OVER-FIVE-YEARS-UNION-SAYS",
 									"marks": []
 								}
 							]
@@ -2808,88 +3843,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k2d",
+							"_key": "f92",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2c",
+									"_key": "f93",
+									"text": "The city spent $2.3 million on a transit app that promises arrival times to the minute. We rode all 31 bus lines for a week to see if it works.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f94",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f95",
 									"text": "Arrival times were right four times out of five. Transfers are where it falls apart.",
 									"marks": []
 								}
 							]
 						},
 						{
-							"_type": "block",
-							"_key": "k2f",
-							"style": "normal",
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "k2e",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
-									"marks": []
-								}
-							]
-						},
-						{
 							"_type": "redeemid-paywall",
-							"_key": "r15"
+							"_key": "f96"
 						},
 						{
 							"_type": "block",
-							"_key": "k2h",
+							"_key": "f97",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2g",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f98",
+									"text": "On lines that share a stop, the app often showed a bus as arriving after it had left. On the 14 and 22, which meet at the ferry terminal, it was wrong on nine of twelve transfers we timed.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2j",
+							"_key": "f99",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2i",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f100",
+									"text": "The app's maker said the transfer problem comes from the city's old stop data, which lists some stops twice. The city says a fix is due in January.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2l",
+							"_key": "f101",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2k",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f102",
+									"text": "Until then, the printed timetables at the ferry terminal are more accurate than the app.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2n",
+							"_key": "f103",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2m",
-									"text": "LEDGER-OPEN-NEWS-WE-RODE-EVERY-BUS-LINE-FOR-A-WEEK-TO-TEST-THE-CITYS-NEW-TRANSIT-APP",
+									"_key": "f104",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-WE-RODE-EVERY-BUS-LINE-FOR-A-WEEK-TO-TEST-THE-CITYS-NEW-TRANSIT-APP",
 									"marks": []
 								}
 							]
@@ -2913,88 +3948,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k21",
+							"_key": "f105",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k20",
-									"text": "Eleven researchers in a converted boathouse are trying to make quantum sensors cheap enough for ships.",
+									"_key": "f106",
+									"text": "Eleven researchers in a converted boathouse at Harborview State have won a $28 million federal grant, the largest research award in the region's history. They are trying to make quantum sensors cheap enough to put on ships.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k23",
+							"_key": "f107",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k22",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f108",
+									"text": "The sensors measure tiny changes in magnetic fields. Ships could use them to navigate without GPS.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r16"
+							"_key": "f109"
 						},
 						{
 							"_type": "block",
-							"_key": "k25",
+							"_key": "f110",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k24",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f111",
+									"text": "Today the sensors cost about $200,000 each and fill a small room. The lab's goal is a sensor the size of a shoebox for under $5,000.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k27",
+							"_key": "f112",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k26",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f113",
+									"text": "The lab's director, Dr. Hana Sato, said the grant will pay for 30 new jobs over five years, most of them for graduate students and technicians.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k29",
+							"_key": "f114",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k28",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f115",
+									"text": "Two shipping lines have agreed to test early versions on cargo ships that call at Harborview.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k2b",
+							"_key": "f116",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2a",
-									"text": "LEDGER-SECRET-NEWS-A-SMALL-UNIVERSITY-LAB-JUST-WON-THE-REGIONS-BIGGEST-RESEARCH-GRANT-HERE-IS-WHAT-THEY-ARE-BUILDING",
+									"_key": "f117",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-A-SMALL-UNIVERSITY-LAB-JUST-WON-THE-REGIONS-BIGGEST-RESEARCH-GRANT-HERE-IS-WHAT-THEY-ARE-BUILDING",
 									"marks": []
 								}
 							]
@@ -3018,88 +4053,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k1p",
+							"_key": "f118",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1o",
-									"text": "Sixty stalls, two stages and a rule that every vendor must live within ten miles.",
+									"_key": "f119",
+									"text": "The Lowmarket night market returned on Friday after a two-year break, with sixty stalls, two stages and a rule that every vendor must live within ten miles.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1r",
+							"_key": "f120",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1q",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f121",
+									"text": "Organizers counted 9,000 visitors on the first night.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r17"
+							"_key": "f122"
 						},
 						{
 							"_type": "block",
-							"_key": "k1t",
+							"_key": "f123",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1s",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f124",
+									"text": "The market closed in 2024 when its lot was sold. It now runs on a city-owned lot on Pier Street, rented for $1 a year.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1v",
+							"_key": "f125",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1u",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f126",
+									"text": "Vendors pay $40 a night. Half of them are first-time sellers, many of them home cooks.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1x",
+							"_key": "f127",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1w",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f128",
+									"text": "The market runs every Friday and Saturday until the end of November, from 5 p.m. to midnight.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1z",
+							"_key": "f129",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1y",
-									"text": "LEDGER-OPEN-NEWS-THE-LOWMARKET-NIGHT-MARKET-IS-BACK-AND-IT-IS-BIGGER-THAN-EVER",
+									"_key": "f130",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-LOWMARKET-NIGHT-MARKET-IS-BACK-AND-IT-IS-BIGGER-THAN-EVER",
 									"marks": []
 								}
 							]
@@ -3126,88 +4161,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k1d",
+							"_key": "f131",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1c",
-									"text": "A filing obtained by the Ledger shows the utility wants staged increases to pay for grid hardening along the coast.",
+									"_key": "f132",
+									"text": "Tidewater Power wants to raise residential electricity rates three times by 2029, a total increase of 23 percent. A filing obtained by the Ledger shows the utility plans to spend the money on grid hardening along the coast.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1f",
+							"_key": "f133",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1e",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f134",
+									"text": "The average Harborview household would pay $31 more a month by the end of the period.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r18"
+							"_key": "f135"
 						},
 						{
 							"_type": "block",
-							"_key": "k1h",
+							"_key": "f136",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1g",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f137",
+									"text": "The filing lists 140 miles of coastal line to be buried or raised. Tidewater says storms in the last five years have cost it $90 million in repairs.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1j",
+							"_key": "f138",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1i",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f139",
+									"text": "Consumer advocates say the plan front-loads the increases while the work stretches into the 2030s. They want the state utilities board to tie each increase to finished miles of line.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1l",
+							"_key": "f140",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1k",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f141",
+									"text": "The board will hold public hearings in Harborview in January.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1n",
+							"_key": "f142",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1m",
-									"text": "LEDGER-SECRET-NEWS-INSIDE-TIDEWATER-POWERS-PLAN-TO-RAISE-RATES-THREE-TIMES-BY-2029",
+									"_key": "f143",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-INSIDE-TIDEWATER-POWERS-PLAN-TO-RAISE-RATES-THREE-TIMES-BY-2029",
 									"marks": []
 								}
 							]
@@ -3231,88 +4266,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k11",
+							"_key": "f144",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k10",
-									"text": "The 6–3 vote ends a decade of studies. Construction could start in 2028 if the state matches the city’s share.",
+									"_key": "f145",
+									"text": "After a nine-hour session that ran past two in the morning, the city council voted 6 to 3 to approve the route for a second harbor bridge. The vote ends a decade of studies and sends the project to the state for funding.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k13",
+							"_key": "f146",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k12",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f147",
+									"text": "Construction could start in 2028 if the state matches the city's $410 million share.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r19"
+							"_key": "f148"
 						},
 						{
 							"_type": "block",
-							"_key": "k15",
+							"_key": "f149",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k14",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f150",
+									"text": "The approved route lands on the Lowmarket side at Cannery Park, the neighborhood's only park. Council members who voted no said the city should have chosen the northern route, which would cost $60 million more but leave the park alone.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k17",
+							"_key": "f151",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k16",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f152",
+									"text": "More than 200 people signed up to speak. Most of them were from Lowmarket, and most were against the route, though not the bridge.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k19",
+							"_key": "f153",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k18",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f154",
+									"text": "The mayor, who backed the vote, said the city would replace the park acre for acre on the old rail yard. Opponents said they would ask for a referendum.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k1b",
+							"_key": "f155",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k1a",
-									"text": "LEDGER-OPEN-NEWS-COUNCIL-CLEARS-THE-WAY-FOR-A-SECOND-HARBOR-BRIDGE-AFTER-A-NINEHOUR-SESSION",
+									"_key": "f156",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-COUNCIL-CLEARS-THE-WAY-FOR-A-SECOND-HARBOR-BRIDGE-AFTER-A-NINEHOUR-SESSION",
 									"marks": []
 								}
 							]
@@ -3339,88 +4374,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "kp",
+							"_key": "f157",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ko",
-									"text": "An investigation for our culture desk: half the audited venues were empty storefronts.",
+									"_key": "f158",
+									"text": "The Harborview Arts Council told the city last spring that it had audited every gallery it funds. The Ledger visited all 24. Half of the addresses on the council's list were empty storefronts, and two were apartments.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kr",
+							"_key": "f159",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "kq",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f160",
+									"text": "The council handed out $1.4 million in gallery grants over three years. Its audit, a four-page memo, lists every grantee as \"in good standing.\"",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r20"
+							"_key": "f161"
 						},
 						{
 							"_type": "block",
-							"_key": "kt",
+							"_key": "f162",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ks",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f163",
+									"text": "The memo's author, a part-time contractor, told the Ledger she checked the galleries' websites and tax filings but did not visit them. \"Nobody asked me to go in person,\" she said.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kv",
+							"_key": "f164",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ku",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f165",
+									"text": "At least five of the grantees closed before the grant period ended and kept the money. One gallery on Pier Street received $60,000 for a program of exhibitions; the landlord says the space has been vacant since 2023.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kx",
+							"_key": "f166",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "kw",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f167",
+									"text": "The council's director said the board would ask the closed galleries to return their grants and would hire an outside auditor next year.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kz",
+							"_key": "f168",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ky",
-									"text": "LEDGER-SECRET-NEWS-THE-ARTS-COUNCILS-GRANT-AUDIT-AND-THE-GALLERIES-IT-NEVER-VISITED",
+									"_key": "f169",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-THE-ARTS-COUNCILS-GRANT-AUDIT-AND-THE-GALLERIES-IT-NEVER-VISITED",
 									"marks": []
 								}
 							]
@@ -3445,88 +4480,88 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "kd",
+							"_key": "f170",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "kc",
-									"text": "Free to read this month: our investigation into the city's largest no-bid deal.",
+									"_key": "f171",
+									"text": "In March the city's ferry division signed a five-year, $19 million fuel contract without asking for bids. The supplier, Keel Line Energy, had been incorporated eleven weeks earlier.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kf",
+							"_key": "f172",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ke",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f173",
+									"text": "Keel Line owns no tankers and no storage. It buys fuel from the same distributor the city used before, and resells it to the city at a markup of nine cents a gallon.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r21"
+							"_key": "f174"
 						},
 						{
 							"_type": "block",
-							"_key": "kh",
+							"_key": "f175",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "kg",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f176",
+									"text": "The division's former director, who approved the deal as an emergency purchase, now works for Keel Line as a consultant. The emergency, according to the purchase order, was a two-day delay in one delivery.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kj",
+							"_key": "f177",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ki",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f178",
+									"text": "City rules allow emergency purchases without bids for up to ninety days. The Keel Line contract runs for five years. The city attorney's office said it had not been asked to review it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kl",
+							"_key": "f179",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "kk",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f180",
+									"text": "We are making this investigation free to read for a month because every ferry rider pays for it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kn",
+							"_key": "f181",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "km",
-									"text": "LEDGER-OPEN-NEWS-HOW-A-FERRY-FUEL-CONTRACT-WENT-TO-A-COMPANY-WITH-NO-SHIPS",
+									"_key": "f182",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-HOW-A-FERRY-FUEL-CONTRACT-WENT-TO-A-COMPANY-WITH-NO-SHIPS",
 									"marks": []
 								}
 							]
@@ -3553,88 +4588,102 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k1",
+							"_key": "f183",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k0",
-									"text": "Timesheets obtained through a records request show the same shifts claimed twice.",
+									"_key": "f184",
+									"text": "Harborview's eleven harbor pilots billed the port for 14,000 hours of overtime last year, enough to staff three more full-time pilots. Timesheets obtained by the Ledger through a records request show at least 212 shifts that were claimed twice, once as regular hours and again as overtime.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k3",
+							"_key": "f185",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k2",
-									"text": "The story has drawn attention across Harborview, where residents and officials are weighing what comes next.",
+									"_key": "f186",
+									"text": "The port pays its pilots a base salary of $148,000. With overtime, four of them earned more than $300,000 last year, more than the port's executive director.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r22"
+							"_key": "f187"
 						},
 						{
 							"_type": "block",
-							"_key": "k5",
+							"_key": "f188",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k4",
-									"text": "The details reveal a more complicated picture than the initial announcement suggested. The Ledger reviewed the available record and spoke with people close to the issue.",
+									"_key": "f189",
+									"text": "The duplicate claims follow a pattern. On nights when a container ship arrived late, the pilot on the evening shift logged the arrival as overtime, and the pilot on the morning shift logged the same hours as a call-out. Both were paid.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k7",
+							"_key": "f190",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6",
-									"text": "For those who live and work around the harbor, the consequences will be felt well beyond the waterfront.",
+									"_key": "f191",
+									"text": "The port's finance office approves pilot timesheets in a monthly batch. A finance manager told the Ledger the office checks that each sheet is signed, not that the hours on it match the ship log. \"We were never asked to reconcile them,\" she said.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k9",
+							"_key": "f192",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k8",
-									"text": "The Ledger will continue to follow the story as more information becomes available.",
+									"_key": "f193",
+									"text": "The Harbor Pilots Association said its members worked every hour they claimed and blamed the port's scheduling system for the overlap. The port's executive director, Alma Reyes, said she had asked the city auditor to review three years of timesheets.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "kb",
+							"_key": "f194",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "ka",
-									"text": "LEDGER-SECRET-NEWS-HARBOR-PILOTS-BILLED-14000-OVERTIME-HOURS-LAST-YEAR-THE-PORT-NEVER-CHECKED",
+									"_key": "f195",
+									"text": "The port commission meets on November 18. Two commissioners said they would ask for the overtime budget to be frozen until the audit is done.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f196",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f197",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-HARBOR-PILOTS-BILLED-14000-OVERTIME-HOURS-LAST-YEAR-THE-PORT-NEVER-CHECKED",
 									"marks": []
 								}
 							]
@@ -3695,6 +4744,1905 @@
 						"opinion"
 					]
 				}
+			},
+			{
+				"id": "posts:the-dredging-contract-that-paid-for-sand-twice",
+				"slug": "the-dredging-contract-that-paid-for-sand-twice",
+				"status": "published",
+				"data": {
+					"title": "The dredging contract that paid for the same sand twice",
+					"dek": "The port paid two companies to remove the same 40,000 cubic yards from the north channel.",
+					"author_name": "Marcus Feld",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f333",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f334",
+									"text": "The port paid two dredging companies $3.2 million last year to clear the north channel. Survey records show both were paid for removing the same 40,000 cubic yards of sand.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f335",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f336",
+									"text": "The second contract was signed after the first company had finished the work, according to the port's own survey boat logs.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f337"
+						},
+						{
+							"_type": "block",
+							"_key": "f338",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f339",
+									"text": "The second company, Bayline Marine, is owned by the brother-in-law of a port operations manager. The manager signed both contracts.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f340",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f341",
+									"text": "The port said the second contract covered \"maintenance dredging\" that the first did not. Its survey maps show the same polygon on both.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f342",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f343",
+									"text": "The city auditor has added the contracts to her review of port spending.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f344",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f345",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-THE-DREDGING-CONTRACT-THAT-PAID-FOR-SAND-TWICE",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"investigations"
+					]
+				}
+			},
+			{
+				"id": "posts:inside-the-tow-lots-that-keep-your-car-for-ransom",
+				"slug": "inside-the-tow-lots-that-keep-your-car-for-ransom",
+				"status": "published",
+				"data": {
+					"title": "Inside the tow lots that hold cars until owners pay $1,000",
+					"dek": "Two private tow companies collect $9 million a year from Harborview drivers. The city gets a fraction.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f346",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f347",
+									"text": "Two private companies hold the city's towing contract. Last year they towed 21,000 cars and collected $9 million in fees, according to their reports to the city.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f348",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f349",
+									"text": "Drivers pay $185 to release a car, plus $65 for every day it sits in the lot. After 30 days, the companies can sell it.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f350"
+						},
+						{
+							"_type": "block",
+							"_key": "f351",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f352",
+									"text": "The contract caps storage fees at $45 a day. Receipts collected by the Ledger from 60 drivers show the companies charged $65.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f353",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f354",
+									"text": "The city's parking office, which oversees the contract, said it had not audited the companies since 2019.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f355",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f356",
+									"text": "After our questions, the office said it would review the fees and order refunds where drivers were overcharged.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f357",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f358",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-INSIDE-THE-TOW-LOTS-THAT-KEEP-YOUR-CAR-FOR-RANSOM",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"investigations"
+					]
+				}
+			},
+			{
+				"id": "posts:who-is-running-for-council-in-2026-every-candidate-district-by-district",
+				"slug": "who-is-running-for-council-in-2026-every-candidate-district-by-district",
+				"status": "published",
+				"data": {
+					"title": "Who is running for council in 2026: every candidate, district by district",
+					"dek": "Nine candidates for four seats, with where they stand on the bridge, the ferries and the budget.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f359",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f360",
+									"text": "Nine candidates are running for four council seats on November 24. Here is every one of them, district by district.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f361",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f362",
+									"text": "We asked each candidate the same five questions about the bridge, the ferries, housing, the budget and transparency.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f363"
+						},
+						{
+							"_type": "block",
+							"_key": "f364",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f365",
+									"text": "District 1 (Lowmarket): incumbent Rosa Llamas faces challengers Ben Adeyemi and Corinne Walsh. All three oppose the approved bridge route.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f366",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f367",
+									"text": "District 2 (Fennel Hill): an open seat between Grant Holloway and Mei Tanaka. Holloway backs the bridge as approved; Tanaka wants the northern route.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f368",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f369",
+									"text": "Districts 3 and 4 have two candidates each. Their answers are below, in their own words, lightly edited for length.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f370",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f371",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-WHO-IS-RUNNING-FOR-COUNCIL-IN-2026-EVERY-CANDIDATE-DISTRICT-BY-DISTRICT",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"city-hall"
+					],
+					"topic": [
+						"elections-2026"
+					]
+				}
+			},
+			{
+				"id": "posts:the-library-will-open-on-sundays-again",
+				"slug": "the-library-will-open-on-sundays-again",
+				"status": "published",
+				"data": {
+					"title": "The central library will open on Sundays again from January",
+					"dek": "A budget deal restores Sunday hours cut in 2023, paid for by a parking fee downtown.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f372",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f373",
+									"text": "The central library will open from noon to 5 p.m. on Sundays from January 4, restoring hours that were cut three years ago.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f374",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f375",
+									"text": "The council approved $640,000 a year for the extra hours on Thursday, paid for by a 50-cent increase in downtown parking meters.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f376"
+						},
+						{
+							"_type": "block",
+							"_key": "f377",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f378",
+									"text": "Branch libraries in Lowmarket and Fennel Hill will add Sunday hours in the spring if the parking money comes in as planned.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f379",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f380",
+									"text": "Library staff said Sunday was the busiest day of the week before the cut, especially for families and students.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f381",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f382",
+									"text": "The library's director said she would hire eight part-time staff for the new hours.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f383",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f384",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-LIBRARY-WILL-OPEN-ON-SUNDAYS-AGAIN",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"city-hall"
+					]
+				}
+			},
+			{
+				"id": "posts:city-to-replace-lead-pipes-in-old-quay-first",
+				"slug": "city-to-replace-lead-pipes-in-old-quay-first",
+				"status": "published",
+				"data": {
+					"title": "City will replace lead water pipes in Old Quay first",
+					"dek": "About 1,100 homes in the oldest part of the harbor still get water through lead service lines.",
+					"author_name": "Dana Okafor",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f385",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f386",
+									"text": "The city will start replacing lead water pipes in Old Quay in March, the first neighborhood in a ten-year program to remove every lead line in Harborview.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f387",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f388",
+									"text": "About 1,100 homes in Old Quay are still served by lead pipes, the most of any neighborhood.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f389"
+						},
+						{
+							"_type": "block",
+							"_key": "f390",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f391",
+									"text": "Replacement is free for homeowners. The city will send letters to affected addresses in January.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f392",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f393",
+									"text": "Until then, the water department advises running the tap for two minutes before drinking and using filters certified for lead.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f394",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f395",
+									"text": "Free filters are available at the Old Quay community center on weekdays.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f396",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f397",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-CITY-TO-REPLACE-LEAD-PIPES-IN-OLD-QUAY-FIRST",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"city-hall"
+					]
+				}
+			},
+			{
+				"id": "posts:the-last-cannery-on-the-waterfront-is-for-sale",
+				"slug": "the-last-cannery-on-the-waterfront-is-for-sale",
+				"status": "published",
+				"data": {
+					"title": "The last cannery building on the waterfront is for sale",
+					"dek": "Developers are circling the brick hall on Cannery Row. Neighbors want it kept for makers.",
+					"author_name": "Marcus Feld",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f398",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f399",
+									"text": "The last cannery building on Harborview's waterfront went up for sale this week, with an asking price of $14 million.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f400",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f401",
+									"text": "The brick hall on Cannery Row has housed forty small workshops since the cannery closed in 1994.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f402"
+						},
+						{
+							"_type": "block",
+							"_key": "f403",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f404",
+									"text": "Two developers have toured the building, according to the broker. Both build apartments.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f405",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f406",
+									"text": "Tenants have formed a cooperative and asked the city to help them buy it. The city's housing fund has $6 million available this year.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f407",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f408",
+									"text": "The building is not protected as a landmark. A nomination would take at least a year.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f409",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f410",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-LAST-CANNERY-ON-THE-WATERFRONT-IS-FOR-SALE",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"business"
+					]
+				}
+			},
+			{
+				"id": "posts:waterfront-rents-are-falling-for-the-first-time-in-a-decade",
+				"slug": "waterfront-rents-are-falling-for-the-first-time-in-a-decade",
+				"status": "published",
+				"data": {
+					"title": "Waterfront office rents are falling for the first time in a decade",
+					"dek": "Asking rents near the harbor are down 12 percent as startups leave and landlords cut deals.",
+					"author_name": "Ines Carvalho",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f411",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f412",
+									"text": "Asking rents for offices along the waterfront fell 12 percent this year, the first drop in a decade, according to figures from three brokerages.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f413",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f414",
+									"text": "Landlords are offering six months free on new leases to fill space left by startups that have closed or shrunk.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f415"
+						},
+						{
+							"_type": "block",
+							"_key": "f416",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f417",
+									"text": "Retail rents on the same streets are still rising, as restaurants and shops take ground floors that offices left.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f418",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f419",
+									"text": "The city collects less property tax as office values fall. The budget office expects a $4 million shortfall next year.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f420",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f421",
+									"text": "Brokers expect rents to keep falling through 2027.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f422",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f423",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-WATERFRONT-RENTS-ARE-FALLING-FOR-THE-FIRST-TIME-IN-A-DECADE",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"business"
+					]
+				}
+			},
+			{
+				"id": "posts:a-food-hall-is-coming-to-the-ferry-terminal",
+				"slug": "a-food-hall-is-coming-to-the-ferry-terminal",
+				"status": "published",
+				"data": {
+					"title": "A food hall is coming to the ferry terminal",
+					"dek": "Twelve local vendors will fill the terminal's empty upper floor by spring.",
+					"author_name": "Ines Carvalho",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f424",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f425",
+									"text": "The empty upper floor of the downtown ferry terminal will become a twelve-stall food hall by April, the ferry division said on Monday.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f426",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f427",
+									"text": "Vendors were chosen from 80 applicants. All are based in Harborview, and five come from the Lowmarket night market.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f428"
+						},
+						{
+							"_type": "block",
+							"_key": "f429",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f430",
+									"text": "Rent will be 8 percent of sales, with no minimum, to keep it open to small vendors.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f431",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f432",
+									"text": "The hall will open at 6 a.m. for commuters and close after the last ferry.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f433",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f434",
+									"text": "The ferry division expects $400,000 a year from the hall, which it says will go toward deckhand wages.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f435",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f436",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-A-FOOD-HALL-IS-COMING-TO-THE-FERRY-TERMINAL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"business"
+					],
+					"tag": [
+						"free-to-read"
+					]
+				}
+			},
+			{
+				"id": "posts:the-citys-311-app-now-tells-you-when-your-pothole-is-fixed",
+				"slug": "the-citys-311-app-now-tells-you-when-your-pothole-is-fixed",
+				"status": "published",
+				"data": {
+					"title": "The city's 311 app now tells you when your pothole is fixed",
+					"dek": "A quiet update closes the loop on 40,000 reports a year. We tested it on twelve potholes.",
+					"author_name": "Leah Brandt",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f437",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f438",
+									"text": "Harborview's 311 app now sends a notice when a reported problem is fixed, with a photo from the crew. We reported twelve potholes to see how it works.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f439",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f440",
+									"text": "Nine were fixed within two weeks, and the app told us about all nine.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f441"
+						},
+						{
+							"_type": "block",
+							"_key": "f442",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f443",
+									"text": "The three left unfixed were on streets the city plans to repave next year. The app said so, which is more than it used to.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f444",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f445",
+									"text": "The city receives about 40,000 reports a year. Potholes are the most common, followed by streetlights and graffiti.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f446",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f447",
+									"text": "The update cost $180,000 and was built by the city's own digital team.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f448",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f449",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-CITYS-311-APP-NOW-TELLS-YOU-WHEN-YOUR-POTHOLE-IS-FIXED",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"technology"
+					]
+				}
+			},
+			{
+				"id": "posts:a-data-center-on-the-old-rail-yard-would-use-as-much-water-as-fennel-hill",
+				"slug": "a-data-center-on-the-old-rail-yard-would-use-as-much-water-as-fennel-hill",
+				"status": "published",
+				"data": {
+					"title": "A data center on the old rail yard would use as much water as Fennel Hill",
+					"dek": "The proposal promises 60 jobs. Its cooling would draw 1.2 million gallons a day.",
+					"author_name": "Leah Brandt",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f450",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f451",
+									"text": "A developer wants to build a data center on the old rail yard, the same land the city has promised to turn into a park if the second bridge takes Cannery Park.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f452",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f453",
+									"text": "Its cooling system would draw 1.2 million gallons of water a day, about as much as the whole of Fennel Hill.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f454"
+						},
+						{
+							"_type": "block",
+							"_key": "f455",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f456",
+									"text": "The developer says the center would bring 60 permanent jobs and $3 million a year in property tax.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f457",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f458",
+									"text": "The water department says it can supply the water in wet years, but not in a drought like 2022.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f459",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f460",
+									"text": "The planning commission will hear the proposal in February.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f461",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f462",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-A-DATA-CENTER-ON-THE-OLD-RAIL-YARD-WOULD-USE-AS-MUCH-WATER-AS-FENNEL-HILL",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"technology"
+					]
+				}
+			},
+			{
+				"id": "posts:the-bike-share-is-finally-coming-to-the-islands",
+				"slug": "the-bike-share-is-finally-coming-to-the-islands",
+				"status": "published",
+				"data": {
+					"title": "The bike-share is finally coming to the islands",
+					"dek": "Thirty e-bikes will be docked on Gull and Pine islands from spring, and they can ride the ferry.",
+					"author_name": "Leah Brandt",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f463",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f464",
+									"text": "Harborview's bike-share will put 30 e-bikes on Gull Island and Pine Island in April, the first time it has reached the islands.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f465",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f466",
+									"text": "Riders will be able to take the bikes on the ferry at no extra charge.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f467"
+						},
+						{
+							"_type": "block",
+							"_key": "f468",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f469",
+									"text": "The islands asked for the bikes in 2023 to cut car traffic on their narrow roads.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f470",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f471",
+									"text": "Docks will be at both ferry landings, the Gull Island school and the Pine Island general store.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f472",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f473",
+									"text": "A ride costs $1 to unlock and 15 cents a minute, the same as on the mainland.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f474",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f475",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-BIKE-SHARE-IS-FINALLY-COMING-TO-THE-ISLANDS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"technology"
+					]
+				}
+			},
+			{
+				"id": "posts:harbor-seals-are-back-in-the-inner-harbor",
+				"slug": "harbor-seals-are-back-in-the-inner-harbor",
+				"status": "published",
+				"data": {
+					"title": "Harbor seals are back in the inner harbor",
+					"dek": "Researchers counted 46 seals hauled out on the breakwater, the most in forty years.",
+					"author_name": "Tomasz Wierzbicki",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f476",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f477",
+									"text": "Researchers counted 46 harbor seals hauled out on the inner breakwater last month, the most since counts began in 1985.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f478",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f479",
+									"text": "The seals left the inner harbor in the 1980s, when it was among the most polluted on the coast.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f480"
+						},
+						{
+							"_type": "block",
+							"_key": "f481",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f482",
+									"text": "Cleaner water and more fish brought them back, said Dr. Ruth Ambler, who has led the count for twenty years.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f483",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f484",
+									"text": "The breakwater is now closed to people from November to March, while the seals rest.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f485",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f486",
+									"text": "The best place to see them is the end of Old Quay pier, with binoculars, at low tide.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f487",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f488",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-HARBOR-SEALS-ARE-BACK-IN-THE-INNER-HARBOR",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"science"
+					]
+				}
+			},
+			{
+				"id": "posts:the-tide-gauge-at-old-quay-has-a-150-year-warning",
+				"slug": "the-tide-gauge-at-old-quay-has-a-150-year-warning",
+				"status": "published",
+				"data": {
+					"title": "The tide gauge at Old Quay has a 150-year warning",
+					"dek": "One of the oldest tide records on the coast shows the sea rising faster every decade.",
+					"author_name": "Tomasz Wierzbicki",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f489",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f490",
+									"text": "The tide gauge at Old Quay has measured the sea since 1872, one of the longest records on the coast. It shows the harbor 11 inches higher than when it began.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f491",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f492",
+									"text": "Half of that rise came in the last forty years.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f493"
+						},
+						{
+							"_type": "block",
+							"_key": "f494",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f495",
+									"text": "At the current rate, high tides will flood Quay Street twice a month by 2050, according to an analysis by the university.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f496",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f497",
+									"text": "The city's climate plan assumes half that rate. Its authors say they will update it next year.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f498",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f499",
+									"text": "The gauge's readings are published every six minutes on the federal tides website.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f500",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f501",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-THE-TIDE-GAUGE-AT-OLD-QUAY-HAS-A-150-YEAR-WARNING",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"science"
+					]
+				}
+			},
+			{
+				"id": "posts:students-test-the-bay-every-week-heres-what-they-found",
+				"slug": "students-test-the-bay-every-week-heres-what-they-found",
+				"status": "published",
+				"data": {
+					"title": "Students test the bay every week. Here is what they found.",
+					"dek": "Five years of readings from Harborview High's science club show where the bay is cleanest, and where it isn't.",
+					"author_name": "Tomasz Wierzbicki",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f502",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f503",
+									"text": "Every Wednesday for five years, students in Harborview High's science club have tested the bay at eight sites. Their records are now the city's most complete.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f504",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f505",
+									"text": "The cleanest water is off Gull Island. The dirtiest is at the Lowmarket outfall after rain.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f506"
+						},
+						{
+							"_type": "block",
+							"_key": "f507",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f508",
+									"text": "Bacteria counts at the outfall exceed swimming limits after almost every storm, the students found. The city posts no warning there.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f509",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f510",
+									"text": "The water department said it would add signs after the students presented their results to the council.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f511",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f512",
+									"text": "The club's data is free to download from the school's website.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f513",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f514",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-STUDENTS-TEST-THE-BAY-EVERY-WEEK-HERES-WHAT-THEY-FOUND",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"science"
+					],
+					"tag": [
+						"free-to-read"
+					]
+				}
+			},
+			{
+				"id": "posts:the-harbor-jazz-festival-will-move-indoors-after-forty-years",
+				"slug": "the-harbor-jazz-festival-will-move-indoors-after-forty-years",
+				"status": "published",
+				"data": {
+					"title": "The harbor jazz festival will move indoors after forty years",
+					"dek": "Rising insurance costs push the August festival off the pier and into the old cannery.",
+					"author_name": "Priya Raman",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f515",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f516",
+									"text": "After forty summers on Pier 3, the Harborview Jazz Festival will move indoors next year, into the old cannery hall on Cannery Row.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f517",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f518",
+									"text": "Organizers say insurance for an outdoor pier event has tripled since 2023.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f519"
+						},
+						{
+							"_type": "block",
+							"_key": "f520",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f521",
+									"text": "The hall holds 1,200 people, a third of the pier's crowd. Tickets will rise from $25 to $40.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f522",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f523",
+									"text": "The festival's founder, Lionel Price, said he hoped to return to the pier when costs come down.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f524",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f525",
+									"text": "This year's lineup will be announced in March.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f526",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f527",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-THE-HARBOR-JAZZ-FESTIVAL-WILL-MOVE-INDOORS-AFTER-FORTY-YEARS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"culture"
+					]
+				}
+			},
+			{
+				"id": "posts:a-hundred-years-of-books-on-front-street",
+				"slug": "a-hundred-years-of-books-on-front-street",
+				"status": "published",
+				"data": {
+					"title": "A hundred years of books on Front Street",
+					"dek": "Okafor & Daughters, the city's oldest bookshop, turns 100 this month with the fourth generation at the till.",
+					"author_name": "Priya Raman",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f528",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f529",
+									"text": "Okafor & Daughters opened on Front Street in November 1926, selling sea charts and almanacs to sailors. It turns 100 this month, still in the same building.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f530",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f531",
+									"text": "Adaeze Okafor, 31, runs it now, the fourth generation of her family to do so.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f532"
+						},
+						{
+							"_type": "block",
+							"_key": "f533",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f534",
+									"text": "The shop survived the Depression, a 1961 fire and the arrival of online bookselling. Sales are up 20 percent since 2020.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f535",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f536",
+									"text": "Its centenary party is on November 29, with readings from twelve local writers.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f537",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f538",
+									"text": "The original 1926 cash register is still on the counter. It no longer works.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f539",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f540",
+									"text": "Leak marker: LEDGER-SECRET-NEWS-A-HUNDRED-YEARS-OF-BOOKS-ON-FRONT-STREET",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"culture"
+					]
+				}
+			},
+			{
+				"id": "posts:opinion-fix-the-library-before-the-stadium",
+				"slug": "opinion-fix-the-library-before-the-stadium",
+				"status": "published",
+				"data": {
+					"title": "Opinion: Fix the library before the stadium",
+					"dek": "The council found $640,000 for Sunday hours. It should find the rest before it finds $90 million for a ballpark.",
+					"author_name": "The Editorial Board",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f541",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f542",
+									"text": "The council deserves credit for restoring Sunday hours at the central library. It should not stop there.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f543",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f544",
+									"text": "The library's roof leaks, its branches close at 6 p.m. and its computers are ten years old. Fixing all of it would cost about $11 million.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f545"
+						},
+						{
+							"_type": "block",
+							"_key": "f546",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f547",
+									"text": "Meanwhile the council is weighing $90 million in bonds for a new minor-league ballpark on the waterfront.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f548",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f549",
+									"text": "A ballpark may bring visitors. A library serves the people already here, every day, for free.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f550",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f551",
+									"text": "Fix the library first. Then talk about the stadium.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f552",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f553",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-OPINION-FIX-THE-LIBRARY-BEFORE-THE-STADIUM",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"opinion"
+					]
+				}
+			},
+			{
+				"id": "posts:letters-the-ferry-cuts-hurt-more-than-commuters",
+				"slug": "letters-the-ferry-cuts-hurt-more-than-commuters",
+				"status": "published",
+				"data": {
+					"title": "Letters: The ferry cuts hurt more than commuters",
+					"dek": "Readers on the island schedule, the bridge route and what the Ledger got wrong.",
+					"author_name": "The Editorial Board",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f554",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f555",
+									"text": "Your story on the ferry cuts focused on commuters. But the hourly schedule also strands island children at after-school programs and patients at the mainland clinic. — Joan Kerr, Gull Island",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f556",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f557",
+									"text": "Thank you for the harbor pilots investigation. I have worked at the port for 22 years, and it is the first time anyone has asked. — Name withheld",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f558"
+						},
+						{
+							"_type": "block",
+							"_key": "f559",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f560",
+									"text": "The council approved the right bridge on the wrong route. Your editorial said what many of us in Lowmarket have been saying for years. — Carlos Mendes, Lowmarket",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f561",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f562",
+									"text": "Your transit app review was fair, but you missed the night buses, which the app does not cover at all. — Pat Liu, Fennel Hill",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f563",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f564",
+									"text": "Letters may be edited for length. Write to letters@harborviewledger.example.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f565",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f566",
+									"text": "Leak marker: LEDGER-OPEN-NEWS-LETTERS-THE-FERRY-CUTS-HURT-MORE-THAN-COMMUTERS",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"category": [
+						"opinion"
+					]
+				}
 			}
 		],
 		"reports": [
@@ -3704,78 +6652,92 @@
 				"status": "published",
 				"data": {
 					"title": "Pensions: The promises behind the numbers",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "What the city promised its workers, what it set aside, and who pays the difference.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k6f",
+							"_key": "f294",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6e",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f295",
+									"text": "Harborview promised its workers pensions worth $3.1 billion. It has set aside $1.9 billion. This report explains the gap and who will pay to close it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6h",
+							"_key": "f296",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6g",
-									"text": "Here is what readers should know.",
+									"_key": "f297",
+									"text": "The short answer: taxpayers, through higher contributions every year until 2045.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r23"
+							"_key": "f298"
 						},
 						{
 							"_type": "block",
-							"_key": "k6j",
+							"_key": "f299",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6i",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f300",
+									"text": "The gap opened in two steps: benefit increases in 2002 and investment losses in 2008 and 2022.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6l",
+							"_key": "f301",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6k",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f302",
+									"text": "The city now spends 14 cents of every general fund dollar on pensions, up from 6 cents in 2010.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6n",
+							"_key": "f303",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6m",
-									"text": "LEDGER-SECRET-CPT-PENSIONS-THE-PROMISES-BEHIND-THE-NUMBERS",
+									"_key": "f304",
+									"text": "Pension contributions will keep rising until the fund is 80 percent funded, which actuaries expect in 2034.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f305",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f306",
+									"text": "Leak marker: LEDGER-SECRET-CPT-PENSIONS-THE-PROMISES-BEHIND-THE-NUMBERS",
 									"marks": []
 								}
 							]
@@ -3794,78 +6756,92 @@
 				"status": "published",
 				"data": {
 					"title": "Port budgets: Where the money goes",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "A line-by-line look at five years of port budgets, and the line that keeps shrinking.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k65",
+							"_key": "f307",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k64",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f308",
+									"text": "We read five years of port budgets line by line. One line keeps shrinking: maintenance.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k67",
+							"_key": "f309",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k66",
-									"text": "Here is what readers should know.",
+									"_key": "f310",
+									"text": "In 2021 the port planned to spend $31 million on maintenance. This year it plans $18 million.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r24"
+							"_key": "f311"
 						},
 						{
 							"_type": "block",
-							"_key": "k69",
+							"_key": "f312",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k68",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f313",
+									"text": "The cuts fund raises and new hires in the commercial office, which markets the port to shipping lines.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6b",
+							"_key": "f314",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6a",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f315",
+									"text": "The port says the shift paid off in new business. Cargo volume is up 6 percent since 2021.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k6d",
+							"_key": "f316",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k6c",
-									"text": "LEDGER-SECRET-CPT-PORT-BUDGETS-WHERE-THE-MONEY-GOES",
+									"_key": "f317",
+									"text": "Its engineers say three berths will need emergency repairs within five years if the trend continues.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f318",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f319",
+									"text": "Leak marker: LEDGER-SECRET-CPT-PORT-BUDGETS-WHERE-THE-MONEY-GOES",
 									"marks": []
 								}
 							]
@@ -3884,78 +6860,92 @@
 				"status": "published",
 				"data": {
 					"title": "Harbor Money: Following the waterfront budget",
-					"dek": "A closer look at the people, places and decisions shaping Harborview.",
+					"dek": "Where the port's $380 million a year comes from, and the three places most of it goes.",
 					"content": [
 						{
 							"_type": "block",
-							"_key": "k5v",
+							"_key": "f320",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5u",
-									"text": "Harborview is a city shaped by its waterfront and the people who call it home.",
+									"_key": "f321",
+									"text": "The Port of Harborview is the city's largest public agency by budget, and the least watched. This report follows its $380 million a year from the ships that pay it to the contracts that spend it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k5x",
+							"_key": "f322",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5w",
-									"text": "Here is what readers should know.",
+									"_key": "f323",
+									"text": "Most of the money goes to three places: payroll, debt on the north terminal and maintenance it keeps putting off.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "redeemid-paywall",
-							"_key": "r25"
+							"_key": "f324"
 						},
 						{
 							"_type": "block",
-							"_key": "k5z",
+							"_key": "f325",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k5y",
-									"text": "Our newsroom follows the details and returns to the record as the story develops.",
+									"_key": "f326",
+									"text": "Payroll has grown 31 percent in five years, faster than cargo. Overtime accounts for a fifth of it.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k61",
+							"_key": "f327",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k60",
-									"text": "We welcome readers who help us understand the city better.",
+									"_key": "f328",
+									"text": "The north terminal's bonds cost $42 million a year until 2041.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "k63",
+							"_key": "f329",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "k62",
-									"text": "LEDGER-SECRET-CPT-HARBOR-MONEY-FOLLOWING-THE-WATERFRONT-BUDGET",
+									"_key": "f330",
+									"text": "Maintenance spending has fallen in four of the last five years, even as the port's own engineers warn of failing berths.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f331",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f332",
+									"text": "Leak marker: LEDGER-SECRET-CPT-HARBOR-MONEY-FOLLOWING-THE-WATERFRONT-BUDGET",
 									"marks": []
 								}
 							]
@@ -3965,6 +6955,313 @@
 				"taxonomies": {
 					"series": [
 						"harbor-money"
+					]
+				}
+			},
+			{
+				"id": "reports:the-ports-90-million-maintenance-backlog-berth-by-berth",
+				"slug": "the-ports-90-million-maintenance-backlog-berth-by-berth",
+				"status": "published",
+				"data": {
+					"title": "The port's $90 million maintenance backlog, berth by berth",
+					"dek": "Ten years of inspection reports, mapped. Part of Harbor Money.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f689",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f690",
+									"text": "The port's engineers inspect every berth every two years. We read ten years of their reports. Together they describe a $90 million backlog.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f691",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f692",
+									"text": "Three berths on the north terminal are rated \"poor,\" the lowest grade before closure.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f693"
+						},
+						{
+							"_type": "block",
+							"_key": "f694",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f695",
+									"text": "Berth 7's pilings have lost a third of their steel to corrosion. The engineers recommended replacing them in 2019.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f696",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f697",
+									"text": "The port has deferred the work in every budget since, moving the money to marketing and payroll.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f698",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f699",
+									"text": "The port says it will start on Berth 7 next year if the commission approves new bonds.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f700",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f701",
+									"text": "Leak marker: LEDGER-SECRET-CPT-THE-PORTS-90-MILLION-MAINTENANCE-BACKLOG-BERTH-BY-BERTH",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"series": [
+						"port-budgets"
+					]
+				}
+			},
+			{
+				"id": "reports:harborviews-pension-gap-is-12-billion-here-is-how-it-grew",
+				"slug": "harborviews-pension-gap-is-12-billion-here-is-how-it-grew",
+				"status": "published",
+				"data": {
+					"title": "Harborview's pension gap is $1.2 billion. Here is how it grew.",
+					"dek": "Twenty years of actuarial reports in one chart. Part of Harbor Money.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f702",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f703",
+									"text": "Harborview's pension gap stands at $1.2 billion, the difference between what the city promised its workers and what it has set aside.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f704",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f705",
+									"text": "Twenty years of actuarial reports show how it grew, and the two decisions that grew it fastest.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f706"
+						},
+						{
+							"_type": "block",
+							"_key": "f707",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f708",
+									"text": "The first was a 2002 benefit increase passed when the fund was briefly fully funded.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f709",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f710",
+									"text": "The second was skipping contributions in 2009 and 2010 to balance the budget during the recession.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f711",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f712",
+									"text": "Closing the gap will cost about $70 million a year until 2034.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f713",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f714",
+									"text": "Leak marker: LEDGER-SECRET-CPT-HARBORVIEWS-PENSION-GAP-IS-12-BILLION-HERE-IS-HOW-IT-GREW",
+									"marks": []
+								}
+							]
+						}
+					]
+				},
+				"taxonomies": {
+					"series": [
+						"pensions"
+					]
+				}
+			},
+			{
+				"id": "reports:every-housing-permit-harborview-issued-since-2015",
+				"slug": "every-housing-permit-harborview-issued-since-2015",
+				"status": "published",
+				"data": {
+					"title": "Every housing permit Harborview issued since 2015",
+					"dek": "Where the city built, where it did not, and how long the wait was.",
+					"content": [
+						{
+							"_type": "block",
+							"_key": "f715",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f716",
+									"text": "Harborview issued permits for 14,200 homes between 2015 and 2025. We mapped every one.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f717",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f718",
+									"text": "Two neighborhoods, Lowmarket and the waterfront, got 60 percent of them. Fennel Hill got 3 percent.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "redeemid-paywall",
+							"_key": "f719"
+						},
+						{
+							"_type": "block",
+							"_key": "f720",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f721",
+									"text": "The median wait for a permit grew from 7 months to 16 months over the decade.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f722",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f723",
+									"text": "Small buildings waited longest: projects of fewer than ten homes took twice as long as large ones.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f724",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f725",
+									"text": "The city's new permit office promises a 6-month wait by 2027.",
+									"marks": []
+								}
+							]
+						},
+						{
+							"_type": "block",
+							"_key": "f726",
+							"style": "normal",
+							"markDefs": [],
+							"children": [
+								{
+									"_type": "span",
+									"_key": "f727",
+									"text": "Leak marker: LEDGER-SECRET-CPT-EVERY-HOUSING-PERMIT-HARBORVIEW-ISSUED-SINCE-2015",
+									"marks": []
+								}
+							]
+						}
 					]
 				}
 			}
