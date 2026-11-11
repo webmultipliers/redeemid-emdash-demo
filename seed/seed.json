@@ -35,6 +35,11 @@
 					"slug": "content",
 					"label": "Public opening",
 					"type": "portableText"
+				},
+				{
+					"slug": "featured_image",
+					"label": "Featured image",
+					"type": "image"
 				}
 			]
 		},
@@ -89,6 +94,11 @@
 					"slug": "content",
 					"label": "Public opening",
 					"type": "portableText"
+				},
+				{
+					"slug": "featured_image",
+					"label": "Featured image",
+					"type": "image"
 				}
 			]
 		},
@@ -180,6 +190,11 @@
 					"slug": "content",
 					"label": "Public opening",
 					"type": "portableText"
+				},
+				{
+					"slug": "featured_image",
+					"label": "Featured image",
+					"type": "image"
 				}
 			]
 		}
@@ -498,7 +513,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-weekday-briefing-election-questions.webp",
+							"alt": "A ballot box with a checked ballot.",
+							"filename": "the-weekday-briefing-election-questions.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"topic": [
@@ -605,7 +627,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-weekend-briefing-around-the-harbor.webp",
+							"alt": "The night market's lanterns on a weekend evening.",
+							"filename": "the-weekend-briefing-around-the-harbor.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -709,7 +738,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-weekday-briefing-what-to-watch-at-city-hall.webp",
+							"alt": "City Hall in the morning.",
+							"filename": "the-weekday-briefing-what-to-watch-at-city-hall.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -813,7 +849,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/monday-briefing-the-bridge-vote-a-ferry-warning-and-a-record-oyster-count.webp",
+							"alt": "Morning light over the harbor bridge.",
+							"filename": "monday-briefing-the-bridge-vote-a-ferry-warning-and-a-record-oyster-count.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -917,7 +960,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/evening-briefing-the-arts-edition.webp",
+							"alt": "Gallery frames lit for an evening opening.",
+							"filename": "evening-briefing-the-arts-edition.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -1021,7 +1071,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/weekend-briefing-what-to-do-on-the-harbor-this-weekend.webp",
+							"alt": "Sailboats on the harbor on a weekend morning.",
+							"filename": "weekend-briefing-what-to-do-on-the-harbor-this-weekend.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -1125,7 +1182,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/storm-briefing-closures-shelters-and-the-ferry-schedule.webp",
+							"alt": "A lightning storm over the harbor.",
+							"filename": "storm-briefing-closures-shelters-and-the-ferry-schedule.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"edition": [
@@ -1517,7 +1581,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/finding-your-way-around-old-quay.webp",
+							"alt": "The Old Quay lighthouse at the end of the breakwater.",
+							"filename": "finding-your-way-around-old-quay.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -1621,7 +1692,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-guide-to-fennel-hill.webp",
+							"alt": "Garden stairs on Fennel Hill.",
+							"filename": "a-guide-to-fennel-hill.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -1725,7 +1803,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-walk-through-lowmarket.webp",
+							"alt": "The old cannery chimney above Lowmarket's warehouses.",
+							"filename": "a-walk-through-lowmarket.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -1829,7 +1914,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/where-to-eat-in-lowmarket-a-dumpling-crawl.webp",
+							"alt": "A bamboo steamer full of dumplings.",
+							"filename": "where-to-eat-in-lowmarket-a-dumpling-crawl.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -1933,7 +2025,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/three-walks-on-fennel-hill-with-the-best-views-of-the-harbor.webp",
+							"alt": "Stone stairs climb Fennel Hill above the harbor.",
+							"filename": "three-walks-on-fennel-hill-with-the-best-views-of-the-harbor.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -2037,7 +2136,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-fennel-hill-saturday-market-stall-by-stall.webp",
+							"alt": "Market stalls with striped awnings on a Saturday morning.",
+							"filename": "the-fennel-hill-saturday-market-stall-by-stall.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -2141,7 +2247,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-insiders-guide-to-gull-island-by-ferry.webp",
+							"alt": "A ferry approaches Gull Island and its lighthouse.",
+							"filename": "the-insiders-guide-to-gull-island-by-ferry.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"neighborhood": [
@@ -2506,148 +2619,28 @@
 					"content": [
 						{
 							"_type": "block",
-							"_key": "r59",
+							"_key": "h1",
 							"style": "h2",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "r60",
-									"text": "Local news belongs to all of us.",
+									"_key": "h2",
+									"text": "Most of the Ledger is free. Members pay for the rest.",
 									"marks": []
 								}
 							]
 						},
 						{
 							"_type": "block",
-							"_key": "r61",
+							"_key": "h3",
 							"style": "normal",
 							"markDefs": [],
 							"children": [
 								{
 									"_type": "span",
-									"_key": "r62",
-									"text": "Choose how you read the Ledger, from open stories to deeper reporting for members.",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "r63",
-							"style": "normal",
-							"listItem": "bullet",
-							"level": 1,
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "r64",
-									"text": "Free: ",
-									"marks": [
-										"strong"
-									]
-								},
-								{
-									"_type": "span",
-									"_key": "r65",
-									"text": "Open to everyone",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "r66",
-							"style": "normal",
-							"listItem": "bullet",
-							"level": 1,
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "r67",
-									"text": "Signed in: ",
-									"marks": [
-										"strong"
-									]
-								},
-								{
-									"_type": "span",
-									"_key": "r68",
-									"text": "Selected stories for signed-in readers",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "r69",
-							"style": "normal",
-							"listItem": "bullet",
-							"level": 1,
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "r70",
-									"text": "Silver: ",
-									"marks": [
-										"strong"
-									]
-								},
-								{
-									"_type": "span",
-									"_key": "r71",
-									"text": "Reporting for Silver members",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "r72",
-							"style": "normal",
-							"listItem": "bullet",
-							"level": 1,
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "r73",
-									"text": "Gold: ",
-									"marks": [
-										"strong"
-									]
-								},
-								{
-									"_type": "span",
-									"_key": "r74",
-									"text": "Reporting for Gold members",
-									"marks": []
-								}
-							]
-						},
-						{
-							"_type": "block",
-							"_key": "r75",
-							"style": "normal",
-							"listItem": "bullet",
-							"level": 1,
-							"markDefs": [],
-							"children": [
-								{
-									"_type": "span",
-									"_key": "r76",
-									"text": "Gold + Silver: ",
-									"marks": [
-										"strong"
-									]
-								},
-								{
-									"_type": "span",
-									"_key": "r77",
-									"text": "Reporting for Gold and Silver members",
+									"_key": "h4",
+									"text": "Every story carries a badge that says who can read it. Free means everyone; the rest open with a Ledger account or a membership.",
 									"marks": []
 								}
 							]
@@ -3194,7 +3187,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/opinion-why-we-are-asking-you-to-become-a-member.webp",
+							"alt": "A quotation mark over a stack of newspapers.",
+							"filename": "opinion-why-we-are-asking-you-to-become-a-member.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3299,7 +3299,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/opinion-a-second-bridge-is-the-right-call-but-not-on-that-route.webp",
+							"alt": "A bridge over the harbor with a large quotation mark.",
+							"filename": "opinion-a-second-bridge-is-the-right-call-but-not-on-that-route.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3404,7 +3411,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-maritime-museum-reopens-with-a-hall-built-around-a-whale-skeleton.webp",
+							"alt": "A fin whale skeleton hangs in the museum's glass hall.",
+							"filename": "the-maritime-museum-reopens-with-a-hall-built-around-a-whale-skeleton.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3509,7 +3523,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/why-harborviews-startup-boom-is-quietly-turning-into-a-bust.webp",
+							"alt": "A laptop showing a falling line chart.",
+							"filename": "why-harborviews-startup-boom-is-quietly-turning-into-a-bust.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3614,7 +3635,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/volunteers-have-rebuilt-a-mile-of-oyster-reef-the-water-is-already-clearer.webp",
+							"alt": "Oysters and eelgrass on a rebuilt reef under clear water.",
+							"filename": "volunteers-have-rebuilt-a-mile-of-oyster-reef-the-water-is-already-clearer.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3719,7 +3747,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/ferry-service-to-the-islands-will-drop-to-hourly-this-winter.webp",
+							"alt": "A ferry heads for the islands under a winter sky, beside a clock.",
+							"filename": "ferry-service-to-the-islands-will-drop-to-hourly-this-winter.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3824,7 +3859,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/port-automation-deal-would-cut-300-jobs-over-five-years-union-says.webp",
+							"alt": "Gantry cranes loom over the north terminal.",
+							"filename": "port-automation-deal-would-cut-300-jobs-over-five-years-union-says.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -3929,7 +3971,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/we-rode-every-bus-line-for-a-week-to-test-the-citys-new-transit-app.webp",
+							"alt": "A city bus at a stop, with the transit app on a phone.",
+							"filename": "we-rode-every-bus-line-for-a-week-to-test-the-citys-new-transit-app.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4034,7 +4083,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-small-university-lab-just-won-the-regions-biggest-research-grant-here-is-what-they-are-building.webp",
+							"alt": "A boathouse lab sends out sensor waves across the water.",
+							"filename": "a-small-university-lab-just-won-the-regions-biggest-research-grant-here-is-what-they-are-building.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4139,7 +4195,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-lowmarket-night-market-is-back-and-it-is-bigger-than-ever.webp",
+							"alt": "Lanterns strung over night market stalls.",
+							"filename": "the-lowmarket-night-market-is-back-and-it-is-bigger-than-ever.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4247,7 +4310,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/inside-tidewater-powers-plan-to-raise-rates-three-times-by-2029.webp",
+							"alt": "Power pylons and lines along a stormy coast.",
+							"filename": "inside-tidewater-powers-plan-to-raise-rates-three-times-by-2029.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4352,7 +4422,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/council-clears-the-way-for-a-second-harbor-bridge-after-a-ninehour-session.webp",
+							"alt": "A suspension bridge spans the harbor at sunset.",
+							"filename": "council-clears-the-way-for-a-second-harbor-bridge-after-a-ninehour-session.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4460,7 +4537,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-arts-councils-grant-audit-and-the-galleries-it-never-visited.webp",
+							"alt": "Empty picture frames hang on a bare gallery wall.",
+							"filename": "the-arts-councils-grant-audit-and-the-galleries-it-never-visited.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4566,7 +4650,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/how-a-ferry-fuel-contract-went-to-a-company-with-no-ships.webp",
+							"alt": "A city ferry crosses the harbor beside an empty fuel dock.",
+							"filename": "how-a-ferry-fuel-contract-went-to-a-company-with-no-ships.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4688,7 +4779,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/harbor-pilots-billed-14000-overtime-hours-last-year-the-port-never-checked.webp",
+							"alt": "A pilot boat guides a container ship into the harbor at dusk.",
+							"filename": "harbor-pilots-billed-14000-overtime-hours-last-year-the-port-never-checked.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4737,7 +4835,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/members-only-article.webp",
+							"alt": "A padlock.",
+							"filename": "members-only-article.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4842,7 +4947,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-dredging-contract-that-paid-for-sand-twice.webp",
+							"alt": "A dredging barge works the north channel beside a pile of sand.",
+							"filename": "the-dredging-contract-that-paid-for-sand-twice.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -4947,7 +5059,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/inside-the-tow-lots-that-keep-your-car-for-ransom.webp",
+							"alt": "A tow truck parked outside a fenced lot of impounded cars.",
+							"filename": "inside-the-tow-lots-that-keep-your-car-for-ransom.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5052,7 +5171,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/who-is-running-for-council-in-2026-every-candidate-district-by-district.webp",
+							"alt": "A ballot box in front of City Hall's dome.",
+							"filename": "who-is-running-for-council-in-2026-every-candidate-district-by-district.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5160,7 +5286,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-library-will-open-on-sundays-again.webp",
+							"alt": "The central library with a sign reading Open Sunday.",
+							"filename": "the-library-will-open-on-sundays-again.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5265,7 +5398,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/city-to-replace-lead-pipes-in-old-quay-first.webp",
+							"alt": "Old water pipes under the street with a drop of clean water.",
+							"filename": "city-to-replace-lead-pipes-in-old-quay-first.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5370,7 +5510,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-last-cannery-on-the-waterfront-is-for-sale.webp",
+							"alt": "The brick cannery hall on Cannery Row with a For Sale sign.",
+							"filename": "the-last-cannery-on-the-waterfront-is-for-sale.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5475,7 +5622,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/waterfront-rents-are-falling-for-the-first-time-in-a-decade.webp",
+							"alt": "Waterfront office towers with a sign showing rents down 12 percent.",
+							"filename": "waterfront-rents-are-falling-for-the-first-time-in-a-decade.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5580,7 +5734,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-food-hall-is-coming-to-the-ferry-terminal.webp",
+							"alt": "Steaming bowls lined up on a food hall counter.",
+							"filename": "a-food-hall-is-coming-to-the-ferry-terminal.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5688,7 +5849,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-citys-311-app-now-tells-you-when-your-pothole-is-fixed.webp",
+							"alt": "A phone showing a map pin over a street pothole.",
+							"filename": "the-citys-311-app-now-tells-you-when-your-pothole-is-fixed.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5793,7 +5961,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-data-center-on-the-old-rail-yard-would-use-as-much-water-as-fennel-hill.webp",
+							"alt": "Server racks fed by a blue water pipe.",
+							"filename": "a-data-center-on-the-old-rail-yard-would-use-as-much-water-as-fennel-hill.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -5898,7 +6073,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-bike-share-is-finally-coming-to-the-islands.webp",
+							"alt": "A green bike-share e-bike on the ferry dock.",
+							"filename": "the-bike-share-is-finally-coming-to-the-islands.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6003,7 +6185,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/harbor-seals-are-back-in-the-inner-harbor.webp",
+							"alt": "Harbor seals resting on the rocks of the breakwater.",
+							"filename": "harbor-seals-are-back-in-the-inner-harbor.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6108,7 +6297,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-tide-gauge-at-old-quay-has-a-150-year-warning.webp",
+							"alt": "A tide gauge post standing in rising water.",
+							"filename": "the-tide-gauge-at-old-quay-has-a-150-year-warning.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6213,7 +6409,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/students-test-the-bay-every-week-heres-what-they-found.webp",
+							"alt": "A flask of bay water held up against the shoreline.",
+							"filename": "students-test-the-bay-every-week-heres-what-they-found.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6321,7 +6524,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-harbor-jazz-festival-will-move-indoors-after-forty-years.webp",
+							"alt": "A saxophone on a stage under warm lights.",
+							"filename": "the-harbor-jazz-festival-will-move-indoors-after-forty-years.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6426,7 +6636,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/a-hundred-years-of-books-on-front-street.webp",
+							"alt": "The front of Okafor & Daughters bookshop, founded in 1926.",
+							"filename": "a-hundred-years-of-books-on-front-street.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6531,7 +6748,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/opinion-fix-the-library-before-the-stadium.webp",
+							"alt": "The library with a quotation mark beside it.",
+							"filename": "opinion-fix-the-library-before-the-stadium.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6636,7 +6860,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/letters-the-ferry-cuts-hurt-more-than-commuters.webp",
+							"alt": "Readers' letters scattered on a table.",
+							"filename": "letters-the-ferry-cuts-hurt-more-than-commuters.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"category": [
@@ -6742,7 +6973,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/pensions-the-promises-behind-the-numbers.webp",
+							"alt": "A pension document beside a stack of coins.",
+							"filename": "pensions-the-promises-behind-the-numbers.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"series": [
@@ -6846,7 +7084,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/port-budgets-where-the-money-goes.webp",
+							"alt": "A falling bar chart labelled maintenance.",
+							"filename": "port-budgets-where-the-money-goes.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"series": [
@@ -6950,7 +7195,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/harbor-money-following-the-waterfront-budget.webp",
+							"alt": "Stacks of coins in front of the port's cranes.",
+							"filename": "harbor-money-following-the-waterfront-budget.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"series": [
@@ -7054,7 +7306,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/the-ports-90-million-maintenance-backlog-berth-by-berth.webp",
+							"alt": "A map of the port's berths with inspection marks.",
+							"filename": "the-ports-90-million-maintenance-backlog-berth-by-berth.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"series": [
@@ -7158,7 +7417,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/harborviews-pension-gap-is-12-billion-here-is-how-it-grew.webp",
+							"alt": "A bar chart of the pension gap growing over twenty years.",
+							"filename": "harborviews-pension-gap-is-12-billion-here-is-how-it-grew.webp"
+						}
+					}
 				},
 				"taxonomies": {
 					"series": [
@@ -7262,7 +7528,14 @@
 								}
 							]
 						}
-					]
+					],
+					"featured_image": {
+						"$media": {
+							"url": "https://redeemid-emdash-demo.vinnysgreen.workers.dev/images/ledger/every-housing-permit-harborview-issued-since-2015.webp",
+							"alt": "A city map dotted with housing permits.",
+							"filename": "every-housing-permit-harborview-issued-since-2015.webp"
+						}
+					}
 				}
 			}
 		]

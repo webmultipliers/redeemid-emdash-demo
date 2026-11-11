@@ -9,6 +9,7 @@ import YourData from '@redeemid/emdash/components/YourData.astro';
 import { viewer } from '@redeemid/emdash/access';
 import { hasFeature } from '@redeemid/emdash/features';
 import { NEWEST } from '../lib/ledger';
+import Feature from '@redeemid/emdash/components/Feature.astro';
 
 const { page } = Astro.params;
 const pages = ['about', 'join', 'support', 'shop', 'search', 'account', 'briefings', 'reports', 'guides', 'corrections', 'tag-gates', 'members-area'];
@@ -52,10 +53,18 @@ if (words.length) {
 			<div class="eyebrow">The Harborview Ledger</div>
 			<h1>{title}</h1>
 			{intros[page] && <p class="archive-note">{intros[page]}</p>}
+			{page === 'briefings' && (
+				<div class="early-box">
+					<Feature slug="early-briefing">
+						<p><strong>Early briefing.</strong> As a member you get tomorrow morning’s briefing at 6 p.m. the evening before. It lands here and in your inbox.</p>
+						<p slot="else"><strong>Read tomorrow’s briefing tonight.</strong> Silver and Gold members get the morning briefing at 6 p.m. the evening before. <a href="/join/">See membership</a></p>
+					</Feature>
+				</div>
+			)}
 			{page === 'reports' && (
 				<nav class="chips" aria-label="Report series"><a href="/series/harbor-money/">Harbor Money</a><a href="/series/port-budgets/">Port budgets</a><a href="/series/pensions/">Pensions</a></nav>
 			)}
-			<div class="archive-list">{result.entries.map((e) => <StoryCard entry={e} collection={collection} />)}</div>
+			<div class="archive-list">{result.entries.map((e) => <StoryCard entry={e} collection={collection} image="top" />)}</div>
 		</div>
 	) : page === 'search' ? (
 		<div class="wrap archive">
@@ -66,7 +75,7 @@ if (words.length) {
 				<div><input id="q" name="q" type="search" value={query} placeholder="ferry, bridge, pensions…" /><button type="submit">Search</button></div>
 			</form>
 			{query && <p class="archive-note" role="status">{found.length ? `${found.length} result${found.length === 1 ? '' : 's'} for “${query}”` : `Nothing matches “${query}”. Try fewer words.`}</p>}
-			{found.length > 0 && <div class="archive-list">{found.map((f) => <StoryCard entry={f.entry} collection={f.collection} />)}</div>}
+			{found.length > 0 && <div class="archive-list">{found.map((f) => <StoryCard entry={f.entry} collection={f.collection} image="thumb" />)}</div>}
 			{!query && <p class="archive-note">Try <a href="/search/?q=ferry">ferry</a>, <a href="/search/?q=bridge">bridge</a> or <a href="/search/?q=port">port</a>. Looking for something to buy? <a href="/shop/search/">Search the shop</a>.</p>}
 		</div>
 	) : (

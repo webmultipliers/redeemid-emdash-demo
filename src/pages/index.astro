@@ -4,7 +4,9 @@ import SiteLayout from '../layouts/SiteLayout.astro';
 import StoryCard from '../components/StoryCard.astro';
 import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
 import RichText from '../components/ui/RichText.astro';
-import { NEWEST, SECTIONS, href, isoDate, kicker, published } from '../lib/ledger';
+import Sponsor from '../components/Sponsor.astro';
+import { Image } from 'emdash/ui';
+import { NEWEST, SECTIONS, href, isoDate, kicker, published, tone } from '../lib/ledger';
 
 const { entries: posts, cacheHint } = await getEmDashCollection('posts', { limit: 100, ...NEWEST });
 Astro.cache.set(cacheHint);
@@ -22,6 +24,13 @@ const rest = posts.filter((p) => p.id !== lead?.id && p.id !== 'members-only-art
 const side = rest.slice(0, 3);
 const latest = rest.slice(3, 7);
 const inSection = (slug: string) => posts.filter((p) => p.id !== 'members-only-article' && p.data.terms?.category?.some((t: { slug?: string }) => t.slug === slug));
+const tiers = [
+	{ level: 'free', badge: 'Free', who: 'Everyone', what: 'City Hall, transit, science, the night market, corrections and most city guides. No account needed.' },
+	{ level: 'signed-in', badge: 'Signed in', who: 'Free account', what: 'Every briefing, election coverage and the Editorial Board. Sign in with your store account.' },
+	{ level: 'silver', badge: 'Silver', who: 'Silver members', what: 'The culture desk, the Pensions reports and the Fennel Hill guides.' },
+	{ level: 'gold', badge: 'Gold', who: 'Gold members', what: 'Investigations and Ledger Reports, the stories that take months.' },
+	{ level: 'silver gold', badge: 'Gold + Silver', who: 'Both', what: 'Everything we publish, including Harbor Money and stories that cross both desks.' },
+];
 const rows = [
 	{ name: 'Briefings', path: '/briefings/', note: 'The day in five minutes, free with a Ledger account.', collection: 'briefings', items: briefings },
 	{ name: 'City guides', path: '/guides/', note: 'Where to eat, walk and wait for the ferry.', collection: 'guides', items: guides },
@@ -33,12 +42,16 @@ const rows = [
 		<div class="hero-grid">
 			{lead && (
 				<article class="lead">
-					<a class="cover" href={href('posts', lead)} tabindex="-1" aria-hidden="true">
-						<div class="cover-lines"></div>
-						<span>THE<br />HARBORVIEW<br />LEDGER</span>
-						<small>REPORTING FROM THE WATERFRONT & BEYOND</small>
-					</a>
-					<div class="card-section">{kicker('posts', lead).label} · The lead story</div>
+					{lead.data.featured_image ? (
+						<a class="lead-image" href={href('posts', lead)} tabindex="-1" aria-hidden="true"><Image image={lead.data.featured_image} alt="" priority sizes="(max-width: 700px) 100vw, 720px" /></a>
+					) : (
+						<a class="cover" href={href('posts', lead)} tabindex="-1" aria-hidden="true">
+							<div class="cover-lines"></div>
+							<span>THE<br />HARBORVIEW<br />LEDGER</span>
+							<small>REPORTING FROM THE WATERFRONT & BEYOND</small>
+						</a>
+					)}
+					<div class="card-section" style={`--tone:${tone('posts', lead)}`}>{kicker('posts', lead).label} · The lead story</div>
 					<h1><a href={href('posts', lead)}>{lead.data.title}</a></h1>
 					<p class="lead-dek">{lead.data.dek}</p>
 					<div class="byline">
@@ -48,19 +61,27 @@ const rows = [
 					</div>
 				</article>
 			)}
-			<div class="side-stories">{side.map((p) => <StoryCard entry={p} compact />)}</div>
+			<div class="side-stories">{side.map((p) => <StoryCard entry={p} compact image="thumb" />)}</div>
 		</div>
 		<section class="section">
 			<div class="section-head"><h2>Latest</h2><span>THE STORIES SHAPING OUR CITY</span></div>
-			<div class="story-grid">{latest.map((p) => <StoryCard entry={p} />)}</div>
+			<div class="story-grid">{latest.map((p) => <StoryCard entry={p} image="top" />)}</div>
 		</section>
 		<section class="membership">
-			<div>
-				<span class="eyebrow">A CLOSER CONNECTION</span>
-				{home?.data.content && <div {...home.edit.content}><RichText value={home.data.content} /></div>}
-				<a class="text-link" href="/join/">How membership works →</a>
+			<div class="membership-head">
+				<div>
+					<span class="eyebrow">How the Ledger works</span>
+					{home?.data.content && <div {...home.edit.content}><RichText value={home.data.content} /></div>}
+				</div>
+				<a class="join" href="/join/">See membership</a>
 			</div>
+			<ul class="tiers">
+				{tiers.map((t) => (
+					<li data-level={t.level}><span class="badge redeemid-badge" data-redeemid-level={t.level}>{t.badge}</span><strong>{t.who}</strong><small>{t.what}</small></li>
+				))}
+			</ul>
 		</section>
+		<Sponsor />
 	</div>
 	<section class="reports-band">
 		<div class="wrap">
@@ -68,21 +89,21 @@ const rows = [
 				<div><span class="eyebrow">GO DEEPER</span><h2>Ledger Reports</h2></div>
 				<a href="/reports/">All reports →</a>
 			</div>
-			<div class="story-grid scroll">{reports.slice(0, 3).map((r) => <StoryCard entry={r} collection="reports" />)}</div>
+			<div class="story-grid scroll">{reports.slice(0, 3).map((r) => <StoryCard entry={r} collection="reports" image="top" />)}</div>
 		</div>
 	</section>
 	<div class="wrap">
 		{SECTIONS.map((section) => (
 			<section class="section">
 				<div class="section-head"><h2><a href={`/category/${section.slug}/`}>{section.label}</a></h2><a href={`/category/${section.slug}/`}>View section →</a></div>
-				<div class="story-grid scroll">{inSection(section.slug).slice(0, 4).map((p) => <StoryCard entry={p} />)}</div>
+				<div class="story-grid scroll">{inSection(section.slug).slice(0, 4).map((p) => <StoryCard entry={p} image="top" />)}</div>
 			</section>
 		))}
 		<div class="two-up">
 			{rows.map((row) => (
 				<section class="section">
 					<div class="section-head"><div><h2><a href={row.path}>{row.name}</a></h2><p class="section-note">{row.note}</p></div><a href={row.path}>View all →</a></div>
-					<div class="list">{row.items.slice(0, 4).map((item) => <StoryCard entry={item} collection={row.collection} brief />)}</div>
+					<div class="list">{row.items.slice(0, 4).map((item) => <StoryCard entry={item} collection={row.collection} brief image="thumb" />)}</div>
 				</section>
 			))}
 		</div>

@@ -4,7 +4,10 @@ import SiteLayout from '../../layouts/SiteLayout.astro';
 import RichText from '../../components/ui/RichText.astro';
 import StoryCard from '../../components/StoryCard.astro';
 import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
-import { NEWEST, isoDate, kicker, published, termLabels } from '../../lib/ledger';
+import Sponsor from '../../components/Sponsor.astro';
+import SupportBox from '../../components/SupportBox.astro';
+import { Image } from 'emdash/ui';
+import { NEWEST, href, isoDate, kicker, published, termLabels, tone } from '../../lib/ledger';
 
 const { section, slug } = Astro.params;
 if (!section || !slug) return Astro.redirect('/404');
@@ -18,6 +21,7 @@ const { entry, cacheHint } = await getEmDashEntry(collection, slug);
 if (!entry) return Astro.redirect('/404');
 Astro.cache.set(cacheHint);
 const data = entry.data;
+const cover = "featured_image" in data ? data.featured_image : undefined;
 const author = 'author_name' in data ? data.author_name : undefined;
 const top = kicker(collection, entry);
 const date = published(entry);
@@ -31,10 +35,15 @@ const same = category ? others.filter((e) => e.data.terms?.category?.some((t: { 
 const more = [...same, ...others.filter((e) => !same.includes(e))].slice(0, 4);
 const moreTitle = category ? `More from ${top.label}` : `More ${{ briefings: 'briefings', reports: 'Ledger Reports', guides: 'city guides', corrections: 'corrections' }[collection as string] ?? 'from the Ledger'}`;
 const topic = termLabels(entry, 'topic');
+// Previous (older) and next (newer) in the same collection.
+const order = listed.entries.filter((e) => e.id !== 'members-only-article');
+const at = order.findIndex((e) => e.id === entry.id);
+const newer = at > 0 ? order[at - 1] : undefined;
+const older = at >= 0 ? order[at + 1] : undefined;
 ---
 <SiteLayout title={data.title} description={data.dek} content={{ collection, id: data.id, slug: entry.id }}>
 	<article class="article">
-		<div class="card-section">{top.href ? <a href={top.href}>{top.label}</a> : top.label}{topic && <> · {topic}</>}</div>
+		<div class="card-section" style={`--tone:${tone(collection, entry)}`}>{top.href ? <a href={top.href}>{top.label}</a> : top.label}{topic && <> · {topic}</>}</div>
 		<h1 {...entry.edit.title}>{data.title}</h1>
 		<p class="dek" {...entry.edit.dek}>{data.dek}</p>
 		<div class="byline">
@@ -42,13 +51,24 @@ const topic = termLabels(entry, 'topic');
 			{author && <span class="byline-author">By {author}</span>}
 			{date && <time datetime={isoDate(entry)}>{date}</time>}
 		</div>
-		<hr class="article-rule" />
+		{cover ? (
+			<figure class="article-image"><Image image={cover} priority sizes="(max-width: 760px) 100vw, 720px" />{cover.alt && <figcaption>{cover.alt} Illustration: The Ledger.</figcaption>}</figure>
+		) : <hr class="article-rule" />}
 		<div class="article-body"><RichText value={data.content} collection={collection} terms={data.terms} id={data.id} /></div>
+		{collection !== 'corrections' && <Sponsor />}
+		{collection !== 'corrections' && <SupportBox />}
+		{topic && <p class="article-topics">Topics: {data.terms?.topic?.map((t: { slug?: string; label?: string }, i: number) => <>{i > 0 && ', '}<a href={`/topic/${t.slug}/`}>{t.label}</a></>)}</p>}
+		{(newer || older) && (
+			<nav class="article-nav" aria-label="More stories">
+				{older ? <a class="article-nav__prev" href={href(collection, older)}><span>Previous</span>{older.data.title}</a> : <span />}
+				{newer ? <a class="article-nav__next" href={href(collection, newer)}><span>Next</span>{newer.data.title}</a> : <span />}
+			</nav>
+		)}
 	</article>
 	{more.length > 0 && (
 		<section class="wrap section more">
 			<div class="section-head"><h2>{moreTitle}</h2>{top.href ? <a href={top.href}>View section →</a> : <a href={`/${section}/`}>View all →</a>}</div>
-			<div class="story-grid scroll">{more.map((e) => <StoryCard entry={e} collection={collection} />)}</div>
+			<div class="story-grid scroll">{more.map((e) => <StoryCard entry={e} collection={collection} image="top" />)}</div>
 		</section>
 	)}
 </SiteLayout>

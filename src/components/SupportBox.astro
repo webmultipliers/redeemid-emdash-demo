@@ -1,0 +1,16 @@
+---
+/**
+ * The end of every story: a small contribution form, or a thank-you for
+ * readers who hold the Supporter feature (the `supporter` Shopify tag).
+ */
+import Feature from '@redeemid/emdash/components/Feature.astro';
+import Contribution from '@redeemid/emdash/components/Contribution.astro';
+---
+<div class="support-box">
+	<Feature slug="supporter">
+		<p class="support-box__thanks">You support the Ledger. Thank you. <a href="/support/">Give again</a></p>
+		<Fragment slot="else">
+			<Contribution handle="contribution" amounts={[5, 10, 25]} title="Liked this story? Chip in." />
+		</Fragment>
+	</Feature>
+</div>

@@ -1,5 +1,5 @@
 ---
-import { getMenu, getSiteSettings } from 'emdash';
+import { getMenu, getSiteSettings, getEmDashCollection } from 'emdash';
 import { EmDashHead, EmDashBodyStart, EmDashBodyEnd } from 'emdash/ui';
 import { createPublicPageContext } from 'emdash/page';
 import Account from '@redeemid/emdash/components/Account.astro';
@@ -13,6 +13,7 @@ const settings=await getSiteSettings(); const menu=await getMenu('primary');
 const siteTitle=settings.title || 'The Harborview Ledger'; const documentTitle=title ? `${title} — ${siteTitle}`:siteTitle;
 const today=new Intl.DateTimeFormat('en-US',{weekday:'long',month:'long',day:'numeric',year:'numeric'}).format(new Date());
 const here=Astro.url.pathname;
+const briefing=(await getEmDashCollection('briefings',{limit:1,orderBy:{published_at:'desc'}})).entries[0];
 const more=[{label:'Briefings',url:'/briefings/'},{label:'Reports',url:'/reports/'},{label:'Guides',url:'/guides/'},{label:'Shop',url:'/shop/'},{label:'Search',url:'/search/'}];
 const ctx=createPublicPageContext({Astro,kind:content?'content':'custom',pageType:'website',title:documentTitle,pageTitle:title||siteTitle,description,content});
 ---
@@ -24,7 +25,7 @@ const ctx=createPublicPageContext({Astro,kind:content?'content':'custom',pageTyp
 <a class="skip" href="#main-content">Skip to content</a>
 <header>
 	<div class="top wrap">
-		<span>{today}</span>
+		<span class="top-left"><span>{today}</span>{briefing && <a href={`/briefings/${briefing.id}/`}>Today’s briefing</a>}<a href="/corrections/">Corrections</a><span class="sandbox">Demo</span></span>
 		<div class="topbar-actions"><Account /> <Cart label="Cart" href="/cart/" drawer /></div>
 	</div>
 	<div class="mast wrap">

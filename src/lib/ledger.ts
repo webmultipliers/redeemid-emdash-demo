@@ -78,3 +78,24 @@ export function isoDate(entry: Entry): string | undefined {
 	const raw = entry.data.publishedAt ?? entry.data.createdAt;
 	return raw ? new Date(raw).toISOString() : undefined;
 }
+
+/** Each section's colour, as on the WordPress demo: a dot before kickers. */
+export const TONES: Record<string, string> = {
+	investigations: "#7a1f2b",
+	"city-hall": "#1d3f63",
+	business: "#0d5c58",
+	technology: "#3d3a7a",
+	science: "#2f6440",
+	culture: "#8a4b12",
+	opinion: "#4a5160",
+	briefings: "#102a3c",
+	reports: "#102a3c",
+	guides: "#00654c",
+	corrections: "#5c6670",
+};
+
+/** The colour for an entry: its first section's, else its collection's. */
+export function tone(collection: string, entry: Entry): string {
+	const slug = entry.data.terms?.category?.[0]?.slug;
+	return (slug && TONES[slug]) || TONES[collection] || "#102a3c";
+}
