@@ -1,0 +1,14 @@
+---
+/**
+ * The sponsor slot, as on the WordPress demo. Members who hold the Ad-free
+ * reading feature (Plugins → RedeemID → Access → Features) don't see it.
+ */
+import Feature from '@redeemid/emdash/components/Feature.astro';
+---
+<Feature slug="ad-free">
+	<div slot="else" class="sponsor" role="complementary" aria-label="Sponsor">
+		<span class="sponsor__label">Sponsor</span>
+		<p><strong>Harbor Hardware &amp; Marine.</strong> Rope, paint and straight answers since 1962, on Pier Street.</p>
+		<a href="/join/">Read without sponsors</a>
+	</div>
+</Feature>

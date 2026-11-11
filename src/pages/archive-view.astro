@@ -1,5 +1,54 @@
 ---
-import {getEmDashCollection} from 'emdash'; import SiteLayout from '../layouts/SiteLayout.astro'; import StoryCard from '../components/StoryCard.astro';
-const kind=Astro.url.searchParams.get('kind')||'category'; const slug=Astro.url.searchParams.get('slug')||''; const {entries,cacheHint}=await getEmDashCollection(kind==='series'?'reports':'posts',{limit:100}); Astro.cache.set(cacheHint); const matches=entries.filter(e=>e.data.terms?.[kind]?.some(t=>t.slug===slug || (kind==='series' && slug==='harbor-money' && ['port-budgets','pensions'].includes(t.slug)))); const title=slug.replaceAll('-',' ').replace(/\b\w/g,c=>c.toUpperCase());
+import { getEmDashCollection } from 'emdash';
+import SiteLayout from '../layouts/SiteLayout.astro';
+import StoryCard from '../components/StoryCard.astro';
+import { NEWEST, SECTIONS } from '../lib/ledger';
+
+const kind = Astro.url.searchParams.get('kind') || 'category';
+const slug = Astro.url.searchParams.get('slug') || '';
+const collection = kind === 'series' ? 'reports' : 'posts';
+const { entries, cacheHint } = await getEmDashCollection(collection, { limit: 100, ...NEWEST });
+Astro.cache.set(cacheHint);
+// Harbor Money is the parent series: its page lists its children's reports too.
+const children: Record<string, string[]> = { 'harbor-money': ['port-budgets', 'pensions'] };
+const wanted = [slug, ...(kind === 'series' ? children[slug] ?? [] : [])];
+type Term = { slug?: string; label?: string };
+const matches = entries.filter((e) => e.id !== 'members-only-article' && e.data.terms?.[kind]?.some((t: Term) => wanted.includes(t.slug ?? '')));
+const term = entries.flatMap((e) => (e.data.terms?.[kind] ?? []) as Term[]).find((t) => t.slug === slug);
+const title = term?.label ?? slug.replaceAll('-', ' ').replace(/\b\w/g, (c) => c.toUpperCase());
+const eyebrow = { category: 'Section', tag: 'Tag', topic: 'Topic', series: 'Report series' }[kind] ?? kind;
+const notes: Record<string, string> = {
+	investigations: 'Months of records requests, audits and contracts.',
+	'city-hall': 'The council, the budget and the people who run the city.',
+	business: 'The port, the waterfront and the companies that employ Harborview.',
+	technology: 'The apps, networks and startups the city runs on.',
+	science: 'The bay, the tides and the labs studying them.',
+	culture: 'Museums, music and the night market.',
+	opinion: 'The Editorial Board and readers’ letters.',
+	'harbor-money': 'Where the port and the city spend your money. Every report in the series.',
+	'port-budgets': 'Line by line through the port’s budgets.',
+	pensions: 'What the city promised its workers, and what it set aside.',
+	'free-to-read': 'Stories we have opened to everyone.',
+	'elections-2026': 'Candidates, questions and results.',
+};
 ---
-<SiteLayout title={title}><div class="wrap archive"><div class="eyebrow">{kind}</div><h1>{title}</h1>{kind==='series' && <nav aria-label="Report series"><a href="/series/harbor-money/">Harbor Money</a> → <a href="/series/port-budgets/">Port budgets</a> · <a href="/series/pensions/">Pensions</a></nav>}<div class="archive-list">{matches.length?matches.map(e=>kind==='series'?<article><h3><a href={'/reports/'+e.id+'/'}>{e.data.title}</a></h3><p>{e.data.dek}</p></article>:<StoryCard entry={e}/>):<p>No stories in this archive yet.</p>}</div></div></SiteLayout>
+<SiteLayout title={title}>
+	<div class="wrap archive">
+		<div class="eyebrow">{eyebrow}</div>
+		<h1>{title}</h1>
+		{notes[slug] && <p class="archive-note">{notes[slug]}</p>}
+		{kind === 'category' && (
+			<nav class="chips" aria-label="Sections">{SECTIONS.map((s) => <a href={`/category/${s.slug}/`} aria-current={s.slug === slug ? 'page' : undefined}>{s.label}</a>)}</nav>
+		)}
+		{kind === 'series' && (
+			<nav class="chips" aria-label="Report series">
+				<a href="/series/harbor-money/" aria-current={slug === 'harbor-money' ? 'page' : undefined}>Harbor Money</a>
+				<a href="/series/port-budgets/" aria-current={slug === 'port-budgets' ? 'page' : undefined}>Port budgets</a>
+				<a href="/series/pensions/" aria-current={slug === 'pensions' ? 'page' : undefined}>Pensions</a>
+			</nav>
+		)}
+		<div class="archive-list">
+			{matches.length ? matches.map((e) => <StoryCard entry={e} collection={collection} image="top" />) : <p>No stories in this archive yet.</p>}
+		</div>
+	</div>
+</SiteLayout>

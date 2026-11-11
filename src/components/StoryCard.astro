@@ -1,5 +1,38 @@
 ---
 import AccessBadge from '@redeemid/emdash/components/AccessBadge.astro';
-const {entry,compact=false,collection='posts'}=Astro.props; const terms=entry.data.terms || {}; const section=terms.category?.[0]?.name || terms.category?.[0]?.label || 'The Ledger';
+import { Image } from 'emdash/ui';
+import { href, isoDate, kicker, published, tone } from '../lib/ledger';
+
+interface Props {
+	entry: { id: string; data: Record<string, any> };
+	collection?: string;
+	compact?: boolean;
+	/** Leave out the dek (short lists). */
+	brief?: boolean;
+	/** The featured image: on top of the card, as a small thumbnail beside it, or none. */
+	image?: 'top' | 'thumb' | false;
+}
+
+const { entry, compact = false, brief = false, collection = 'posts', image = false } = Astro.props;
+const top = kicker(collection, entry);
+const date = published(entry);
+const link = href(collection, entry);
+const picture = image ? entry.data.featured_image : null;
 ---
-<article class:list={['story-card',{'compact':compact}]}><div class="card-section">{section}</div><h3><a href={'/stories/'+entry.id+'/'}>{entry.data.title}</a></h3><p>{entry.data.dek}</p><div class="byline">{entry.data.author_name} <AccessBadge collection={collection} terms={terms} content={entry.data.content} class="badge"/></div></article>
+<article class:list={['story-card', { compact, 'has-thumb': picture && image === 'thumb' }]} style={`--tone:${tone(collection, entry)}`}>
+	{picture && (
+		<a class:list={['card-image', `is-${image}`]} href={link} tabindex="-1" aria-hidden="true">
+			<Image image={picture} alt="" sizes={image === 'thumb' ? '160px' : '(max-width: 700px) 90vw, 360px'} />
+		</a>
+	)}
+	<div class="card-text">
+		<div class="card-section">{top.href ? <a href={top.href}>{top.label}</a> : top.label}</div>
+		<h3><a href={link}>{entry.data.title}</a></h3>
+		{!brief && entry.data.dek && <p>{entry.data.dek}</p>}
+		<div class="byline">
+			<AccessBadge collection={collection} terms={entry.data.terms} content={entry.data.content} id={entry.id} class="badge" />
+			{entry.data.author_name && <span class="byline-author">By {entry.data.author_name}</span>}
+			{date && <time datetime={isoDate(entry)}>{date}</time>}
+		</div>
+	</div>
+</article>
