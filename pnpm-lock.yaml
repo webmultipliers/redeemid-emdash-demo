@@ -24,8 +24,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(ac337986b2d4935edd430db188fa355e)
       '@redeemid/emdash':
-        specifier: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.25/redeemid-emdash-0.0.25.tgz
-        version: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.25/redeemid-emdash-0.0.25.tgz(a067fb3610ba5a433b625645056c2d90)
+        specifier: ^0.0.31
+        version: 0.0.31(61b8730b0943fadc5b6b9bae4444d4c9)
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.3.0(@types/node@26.5.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -1369,14 +1369,16 @@ packages:
     resolution: {integrity: sha512-djfIGU9n6DRrunlvj2nIDAp17URo/nA4jSXGvf+Gupx8NLLy9fmJBZ3GL8yhqn9lSVc+cKCharjOa3aOBnWbRw==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.25/redeemid-emdash-0.0.25.tgz':
-    resolution: {integrity: sha512-x9c3WR5fisKRucn2YkLXYTvdrhelEvGOTyL+D1yhPSQWWZ6JugcwCRx+je/vS2AW4tQNNdus9U4BPGhdiiZx8Q==, tarball: https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.25/redeemid-emdash-0.0.25.tgz}
-    version: 0.0.25
+  '@redeemid/emdash@0.0.31':
+    resolution: {integrity: sha512-LFaMoHO9bCtZAXunQnm//gwN4Y9gzj808BxuHosnxA3n67GtmiR8n6exvc8nMNo3h/h4skBi41jaVcYDYF7dhA==}
     hasBin: true
     peerDependencies:
+      '@cloudflare/kumo': '>=2.6.0'
       '@emdash-cms/auth': '>=1.1.0'
+      '@emdash-cms/blocks': '>=1.4.0'
       astro: '>=6'
-      emdash: '>=1.1.0'
+      emdash: '>=1.4.0'
+      react: '>=19'
 
   '@rolldown/binding-android-arm-eabi@1.2.8':
     resolution: {integrity: sha512-tN5aztYkKCte4i5SIrrz5yK/HMjEuCqCSCJa418jOV8tZ1cBY3YF2otxB1ktPxzsLA1BeTqwapK0bfjxNvHJVw==}
@@ -5412,12 +5414,15 @@ snapshots:
 
   '@portabletext/types@4.0.2': {}
 
-  '@redeemid/emdash@https://github.com/webmultipliers/redeemid-emdash/releases/download/v0.0.25/redeemid-emdash-0.0.25.tgz(a067fb3610ba5a433b625645056c2d90)':
+  '@redeemid/emdash@0.0.31(61b8730b0943fadc5b6b9bae4444d4c9)':
     dependencies:
+      '@cloudflare/kumo': 2.6.0(@date-fns/tz@1.5.0)(@phosphor-icons/react@2.1.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/react@19.3.0)(date-fns@4.4.0)(echarts@6.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(zod@4.5.4)
       '@emdash-cms/auth': 1.1.0(astro@7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1))(kysely@0.29.5)
+      '@emdash-cms/blocks': 1.1.0(@date-fns/tz@1.5.0)(@types/react@19.3.0)(date-fns@4.4.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(zod@4.5.4)
       astro: 7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1)
       emdash: 1.1.0(@astrojs/react@6.0.5(@types/node@26.5.1)(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(esbuild@0.28.2)(jiti@2.7.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(yaml@2.9.1))(@atcute/cbor@2.3.7(@atcute/cid@2.4.2))(@atcute/cid@2.4.2)(@atcute/identity@2.0.2(@atcute/lexicons@2.1.0)(typescript@6.0.3))(@date-fns/tz@1.5.0)(@floating-ui/dom@1.8.0)(@tiptap/extensions@3.31.3(@tiptap/core@3.31.3(@tiptap/pm@3.31.3))(@tiptap/pm@3.31.3))(@types/react-dom@19.3.0(@types/react@19.3.0))(@types/react@19.3.0)(astro@7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1))(date-fns@4.4.0)(echarts@6.1.0)(prosemirror-model@1.25.11)(prosemirror-state@1.4.4)(prosemirror-view@1.42.3)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(typescript@6.0.3)
       jose: 6.2.12
+      react: 19.2.4
 
   '@rolldown/binding-android-arm-eabi@1.2.8':
     optional: true
