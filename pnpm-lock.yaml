@@ -24,8 +24,8 @@ importers:
         specifier: 1.1.0
         version: 1.1.0(ac337986b2d4935edd430db188fa355e)
       '@redeemid/emdash':
-        specifier: ^0.0.31
-        version: 0.0.31(61b8730b0943fadc5b6b9bae4444d4c9)
+        specifier: ^0.0.33
+        version: 0.0.33(61b8730b0943fadc5b6b9bae4444d4c9)
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.3.0(@types/node@26.5.1)(esbuild@0.28.2)(jiti@2.7.0)(yaml@2.9.1))
@@ -1369,8 +1369,8 @@ packages:
     resolution: {integrity: sha512-djfIGU9n6DRrunlvj2nIDAp17URo/nA4jSXGvf+Gupx8NLLy9fmJBZ3GL8yhqn9lSVc+cKCharjOa3aOBnWbRw==}
     engines: {node: '>=20.19 <22 || >=22.12'}
 
-  '@redeemid/emdash@0.0.31':
-    resolution: {integrity: sha512-LFaMoHO9bCtZAXunQnm//gwN4Y9gzj808BxuHosnxA3n67GtmiR8n6exvc8nMNo3h/h4skBi41jaVcYDYF7dhA==}
+  '@redeemid/emdash@0.0.33':
+    resolution: {integrity: sha512-DHQHw1Zw1b3YpXsapq/lT+Ly0yStowx9v/SCMLVb1dGrZYpu1cOD/2FZnxAVAbn7wouMQv2LXZNs5J7Ucn7OJA==}
     hasBin: true
     peerDependencies:
       '@cloudflare/kumo': '>=2.6.0'
@@ -5414,7 +5414,7 @@ snapshots:
 
   '@portabletext/types@4.0.2': {}
 
-  '@redeemid/emdash@0.0.31(61b8730b0943fadc5b6b9bae4444d4c9)':
+  '@redeemid/emdash@0.0.33(61b8730b0943fadc5b6b9bae4444d4c9)':
     dependencies:
       '@cloudflare/kumo': 2.6.0(@date-fns/tz@1.5.0)(@phosphor-icons/react@2.1.10(react-dom@19.2.4(react@19.2.4))(react@19.2.4))(@types/react@19.3.0)(date-fns@4.4.0)(echarts@6.1.0)(react-dom@19.2.4(react@19.2.4))(react@19.2.4)(zod@4.5.4)
       '@emdash-cms/auth': 1.1.0(astro@7.3.2(@emnapi/core@1.11.1)(@emnapi/runtime@1.11.3)(@types/node@26.5.1)(jiti@2.7.0)(yaml@2.9.1))(kysely@0.29.5)
