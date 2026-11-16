@@ -7,7 +7,8 @@ import { PortableText } from 'emdash/ui';
 const { handle = '' } = Astro.params;
 if (!/^[a-z0-9][a-z0-9-]*$/i.test(handle)) return Astro.redirect('/404');
 // The product's entry, when the demo keeps it (Plugins → RedeemID → Products):
-// its story goes under the buy box. The buy box itself always reads Shopify live.
+// its story goes under the buy box, and RedeemID adds its Product structured
+// data to the head. The buy box itself always reads Shopify live.
 const { entry } = await getEmDashEntry('products', handle).catch(() => ({ entry: null }));
 ---
-<SiteLayout title={entry?.data.title ?? 'Shop'}><div class="article simple shop-product"><a class="text-link" href="/shop/">← All goods</a><Product handle={handle} heading="h1"><h1>Not in the shop</h1><p>That product isn't for sale right now. <a href="/shop/">See what is →</a></p></Product>{entry?.data.content && <section class="product-story"><PortableText value={entry.data.content} /></section>}</div></SiteLayout>
+<SiteLayout title={entry?.data.title ?? 'Shop'} content={entry ? { collection: 'products', id: String(entry.data.id), slug: handle } : undefined}><div class="article simple shop-product"><a class="text-link" href="/shop/">← All goods</a><Product handle={handle} heading="h1" schema={!entry}><h1>Not in the shop</h1><p>That product isn't for sale right now. <a href="/shop/">See what is →</a></p></Product>{entry?.data.content && <section class="product-story"><PortableText value={entry.data.content} /></section>}</div></SiteLayout>
