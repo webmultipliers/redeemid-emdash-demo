@@ -1,8 +1,13 @@
 ---
 import SiteLayout from '../../layouts/SiteLayout.astro';
 import Product from '@redeemid/emdash/components/Product.astro';
+import { getEmDashEntry } from 'emdash';
+import { PortableText } from 'emdash/ui';
 
 const { handle = '' } = Astro.params;
 if (!/^[a-z0-9][a-z0-9-]*$/i.test(handle)) return Astro.redirect('/404');
+// The product's entry, when the demo keeps it (Plugins → RedeemID → Products):
+// its story goes under the buy box. The buy box itself always reads Shopify live.
+const { entry } = await getEmDashEntry('products', handle).catch(() => ({ entry: null }));
 ---
-<SiteLayout title="Shop"><div class="article simple shop-product"><a class="text-link" href="/shop/">← All goods</a><Product handle={handle} heading="h1"><h1>Not in the shop</h1><p>That product isn't for sale right now. <a href="/shop/">See what is →</a></p></Product></div></SiteLayout>
+<SiteLayout title={entry?.data.title ?? 'Shop'}><div class="article simple shop-product"><a class="text-link" href="/shop/">← All goods</a><Product handle={handle} heading="h1"><h1>Not in the shop</h1><p>That product isn't for sale right now. <a href="/shop/">See what is →</a></p></Product>{entry?.data.content && <section class="product-story"><PortableText value={entry.data.content} /></section>}</div></SiteLayout>
